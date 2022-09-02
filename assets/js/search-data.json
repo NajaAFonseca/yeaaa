@@ -3,9 +3,9 @@
     
         "post0": {
             "title": "Vocabulary and Notes for APCSP",
-            "content": "Vocabulary for Week 1 .",
-            "url": "https://najaafonseca.github.io/yeaaa/markdown/2020/09/02/Vocabulary.html",
-            "relUrl": "/markdown/2020/09/02/Vocabulary.html",
+            "content": "Notes + Vocabulary for Week 1 . Vocabulary: . Dynamic code: code that can change. | Static texts: unchanging code. | String: strings in python are surrounded by either single quotation marks, or double quotation marks. | Sequence of code: two or more lines of code form a sequence. | . Code: . Print(): outputs code, either strings, numbers, or variables. | Variables: Variables are containers for storing data values. A variable is created the moment you first assign a value to it. | . Introducing Python . Print Functions and Vocab . In python, the first code you learn to print out is a hello world message. Example below: | . print (&quot;Hello, World!&quot;) . &quot;Hello, World&quot; is a string and strings are static texts. | Static texts are called static texts because they do not change. | The print command outputs the message &quot;Hello, World!&quot; | An output is the code that is displayed after it is run. | . Variables, Inputs, and Outputs .",
+            "url": "https://najaafonseca.github.io/yeaaa/markdown/jupyter/2020/09/02/Vocabulary.html",
+            "relUrl": "/markdown/jupyter/2020/09/02/Vocabulary.html",
             "date": " • Sep 2, 2020"
         }
         
