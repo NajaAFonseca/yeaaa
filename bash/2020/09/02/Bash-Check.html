@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -136,6 +136,356 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="s2">"Using conditional statement to create a project directory and project"</span>
+
+<span class="c1"># Variable section</span>
+<span class="n">export</span> <span class="n">project_dir</span><span class="o">=</span><span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="n">vscode</span>  <span class="c1"># change vscode to different name to test git clone</span>
+<span class="n">export</span> <span class="n">project</span><span class="o">=</span><span class="err">$</span><span class="n">project_dir</span><span class="o">/</span><span class="n">APCSP</span>  <span class="c1"># change APCSP to name of project from git clone</span>
+<span class="n">export</span> <span class="n">project_repo</span><span class="o">=</span><span class="s2">"https://github.com/nighthawkcoders/APCSP.git"</span>  <span class="c1"># change to project of choice</span>
+
+<span class="n">cd</span> <span class="o">~</span>    <span class="c1"># start in home directory</span>
+
+<span class="c1"># Conditional block to make a project directory</span>
+<span class="k">if</span> <span class="p">[</span> <span class="o">!</span> -d <span class="nv">$project_dir</span> <span class="o">]</span>
+<span class="n">then</span> 
+    <span class="n">echo</span> <span class="s2">"Directory $project_dir does not exists... makinng directory $project_dir"</span>
+    <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="err">$</span><span class="n">project_dir</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s2">"Directory $project_dir exists."</span> 
+
+<span class="c1"># Conditional block to git clone a project from project_repo</span>
+<span class="k">if</span> <span class="p">[</span> <span class="o">!</span> -d <span class="nv">$project</span> <span class="o">]</span>
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">"Directory $project does not exists... cloning $project_repo"</span>
+    <span class="n">cd</span> <span class="err">$</span><span class="n">project_dir</span>
+    <span class="n">git</span> <span class="n">clone</span> <span class="err">$</span><span class="n">project_repo</span>
+    <span class="n">cd</span> <span class="o">~</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s2">"Directory $project exists."</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [1]</span>
+<span class="ansi-red-fg">    echo "Using conditional statement to create a project directory and project"</span>
+         ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="s2">"Navigate to project, then navigate to area wwhere files were cloned"</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+<span class="n">pwd</span>
+
+<span class="n">echo</span> <span class="s2">""</span>
+<span class="n">echo</span> <span class="s2">"list top level or root of files with project pulled from github"</span>
+<span class="n">ls</span>
+
+<span class="n">echo</span> <span class="s2">""</span>
+<span class="n">echo</span> <span class="s2">"list again with hidden files pulled from github"</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">a</span>   <span class="c1"># hidden files flag, many shell commands have flags</span>
+
+<span class="n">echo</span> <span class="s2">""</span>
+<span class="n">echo</span> <span class="s2">"list all files in long format"</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">al</span>   <span class="c1"># all files and long listing</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [4]</span>
+<span class="ansi-red-fg">    echo "Navigate to project, then navigate to area wwhere files were cloned"</span>
+         ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="s2">"Look for posts"</span>
+<span class="n">export</span> <span class="n">posts</span><span class="o">=</span><span class="err">$</span><span class="n">project</span><span class="o">/</span><span class="n">_posts</span>  <span class="c1"># _posts inside project</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">posts</span>  <span class="c1"># this should exist per fastpages</span>
+<span class="n">pwd</span>  <span class="c1"># present working directory</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>  <span class="c1"># list posts</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [8]</span>
+<span class="ansi-red-fg">    echo "Look for posts"</span>
+         ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="s2">"Look for notebooks"</span>
+<span class="n">export</span> <span class="n">notebooks</span><span class="o">=</span><span class="err">$</span><span class="n">project</span><span class="o">/</span><span class="n">_notebooks</span>  <span class="c1"># _notebooks is inside project</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">notebooks</span>   <span class="c1"># this should exist per fastpages</span>
+<span class="n">pwd</span>  <span class="c1"># present working directory</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>  <span class="c1"># list notebooks</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [9]</span>
+<span class="ansi-red-fg">    echo "Look for notebooks"</span>
+         ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="s2">"Look for images in notebooks, print working directory, list files"</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">notebooks</span><span class="o">/</span><span class="n">images</span>  <span class="c1"># this should exist per fastpages</span>
+<span class="n">pwd</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [10]</span>
+<span class="ansi-red-fg">    echo "Look for images in notebooks, print working directory, list files"</span>
+         ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="s2">"Navigate to project, then navigate to area wwhere files were cloned"</span>
+
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+<span class="n">echo</span> <span class="s2">"show the contents of README.md"</span>
+<span class="n">echo</span> <span class="s2">""</span>
+
+<span class="n">cat</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>  <span class="c1"># show contents of file, in this case markdown</span>
+<span class="n">echo</span> <span class="s2">""</span>
+<span class="n">echo</span> <span class="s2">"end of README.md"</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [7]</span>
+<span class="ansi-red-fg">    echo "Navigate to project, then navigate to area wwhere files were cloned"</span>
+         ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="s2">"Show the shell environment variables, key on left of equal value on right"</span>
+<span class="n">echo</span> <span class="s2">""</span>
+
+<span class="n">env</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [6]</span>
+<span class="ansi-red-fg">    echo "Show the shell environment variables, key on left of equal value on right"</span>
+         ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+
+<span class="n">echo</span> <span class="s2">""</span>
+<span class="n">echo</span> <span class="s2">"show the secrets of .git"</span>
+<span class="n">cd</span> <span class="o">.</span><span class="n">git</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
+
+<span class="n">echo</span> <span class="s2">""</span>
+<span class="n">echo</span> <span class="s2">"look at config file"</span>
+<span class="n">cat</span> <span class="n">config</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [5]</span>
+<span class="ansi-red-fg">    cd $project</span>
+       ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
