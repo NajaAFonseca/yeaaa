@@ -9,11 +9,11 @@ This website is powered by **[fastpages](https://github.com/fastai/fastpages)** 
 <table>
     <tr>
      <th></th>
-     <th></th>
-     <th></th>
-     <th></th>
-     <th></th>
-     <th></th>
+     <th>Age</th>
+     <th>Name</th>
+     <th>Favorite Hobby</th>
+     <th>Favorite Food</th>
+     <th>Favorite Subject</th>
     </tr>
 
     <tr>
