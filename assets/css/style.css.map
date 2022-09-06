@@ -3,8 +3,8 @@
 	"file": "style.css",
 	"sources": [
 		"style.scss",
-		"../../tmp/jekyll-remote-theme-20220906-1-2tayw5/_sass/jekyll-theme-dinky.scss",
-		"../../tmp/jekyll-remote-theme-20220906-1-2tayw5/_sass/rouge-github.scss"
+		"../../tmp/jekyll-remote-theme-20220906-1-loilmn/_sass/jekyll-theme-dinky.scss",
+		"../../tmp/jekyll-remote-theme-20220906-1-loilmn/_sass/rouge-github.scss"
 	],
 	"sourcesContent": [
 		"@import 'jekyll-theme-dinky';\n",
