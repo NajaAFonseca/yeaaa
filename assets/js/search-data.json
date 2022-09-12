@@ -80,7 +80,7 @@
     
         ,"post7": {
             "title": "Del Norte Athletic.net App",
-            "content": "",
+            "content": "Design . Program Purpose and Function . The purpose of this program was to establish an app that would wow Mr. Yeung and get me extra credit. . Code that makes up the app: . onEvent | console.log | variable | if, else, elseif | setScreen | getText | == | // | . onEvent - I used this code to start a function that lead to a button or option being clicked. . console.log - used to log all of my code in the console. . variable - I used a variable to define a dropdown menu in order to seperate the options of my dropdown menu. . if, else, elseif - I used this code to make it so my dropdown options would be able to be clicked seperately (took a lot of googling to figure this one out). . setScreen - used to redirect to a certain screen, normally initiated by a button. . getText - used to tell the if else command what to do in case of a certain text clicked. . == - used to see if certain options were equal leading to other parts of code. . // - used to keep my code organized; comments. . Data Abstraction . In my app, all of my data is stored in the console because of the console.log command which tells the console what goes on with each command. . Succeses . Programming . I did really well programming code and keeping organized. Along with learning new things and how to use a dropdown menu. It was a lot of google searches but I figured it out and am proud of my code. .",
             "url": "https://najaafonseca.github.io/yeaaa/markdown/jupyter/2020/09/11/Athletic-Net.html",
             "relUrl": "/markdown/jupyter/2020/09/11/Athletic-Net.html",
             "date": " • Sep 11, 2020"
