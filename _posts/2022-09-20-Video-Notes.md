@@ -45,7 +45,7 @@ layout: notebook
 </ul>
 <h4 id="Quote:">Quote:<a class="anchor-link" href="#Quote:"> </a></h4><p>"If you want to go fast, go alone. If you want to go far, go together."</p>
 
-<pre><code>    - African Proverb
+<pre><code> - African Proverb
 
 
 
@@ -194,6 +194,32 @@ What are outputs produced by a device?</p>
 </ul>
 </li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Collaboration">Collaboration<a class="anchor-link" href="#Collaboration"> </a></h1><p>My team collaborated mostly by helping each other out through slack and exchanging messages. We also created the flask project together and I shared that to my teammates. I think we did really well and I really hope that we get an A you know what I mean. Although we ran into some difficulties as a team, we were able to work out our differences.</p>
+<p>What was mostly hard was being a team of 3 girls and 1 guy. I'm sure Dylan suffered a little but we were able to get through this pretty nicely and our team is very nice you know. I couldn't of done this without them and I'm very grateful for them.</p>
+<h2 id="Success-as-a-Team">Success as a Team<a class="anchor-link" href="#Success-as-a-Team"> </a></h2><p>Our successful areas were in:</p>
+<ul>
+<li>Communication (bare minnimum i guess)</li>
+<li>Socializing</li>
+<li>Teamwork</li>
+<li>Helping each other</li>
+<li>Finding people to help us</li>
+<li>Slayyying</li>
+</ul>
+<h2 id="Improvements">Improvements<a class="anchor-link" href="#Improvements"> </a></h2><p>Things we could improve on are:</p>
+<ul>
+<li>Communication</li>
+<li>Talk less, work more</li>
+<li>Helping each other</li>
+<li>Slayyying (you can always slay more)</li>
+<li>Finding more people to help us again (the more the merrier)</li>
+</ul>
+<p>Yea, that's it!! GO TEAM!!!</p>
 
 </div>
 </div>
