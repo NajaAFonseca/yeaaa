@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: Notes from the  videos.
-title: "Video Notes"
+title: "Video Notes and Collaboration"
 toc: true
 branch: master
 badges: true
