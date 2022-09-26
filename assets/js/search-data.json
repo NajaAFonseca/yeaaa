@@ -159,7 +159,9 @@
   
 
   
-      ,"page1": {
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "Age Name Favorite Hobby Favorite Food Favorite Subject . About Me | 14 | Naja | Running XC | Spaghetti | Comp Sci! | .",
           "url": "https://najaafonseca.github.io/yeaaa/about/",
@@ -170,7 +172,7 @@
   
 
   
-      ,"page2": {
+      ,"page3": {
           "title": "Agile Methodology Diagram",
           "content": ".",
           "url": "https://najaafonseca.github.io/yeaaa/agile-methodology/",
@@ -202,7 +204,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://najaafonseca.github.io/yeaaa/robots.txt",
