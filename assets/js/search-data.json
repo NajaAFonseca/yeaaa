@@ -170,17 +170,6 @@
   
 
   
-      ,"page2": {
-          "title": "Agile Methodology Diagram",
-          "content": ".",
-          "url": "https://najaafonseca.github.io/yeaaa/agile-methodology/",
-          "relUrl": "/agile-methodology/",
-          "date": ""
-      }
-      
-  
-
-  
 
   
   
@@ -202,7 +191,7 @@
   
 
   
-      ,"page11": {
+      ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://najaafonseca.github.io/yeaaa/robots.txt",
