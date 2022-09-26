@@ -481,6 +481,79 @@ R, u, n, n, i, n, g,  , a, n, d,  , C, o, l, o, r, i, n, g
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Agile-Methodology">Agile Methodology<a class="anchor-link" href="#Agile-Methodology"> </a></h1><h2 id="7-Important-Transferable-Skills-Notes">7 Important Transferable Skills Notes<a class="anchor-link" href="#7-Important-Transferable-Skills-Notes"> </a></h2><h4 id="1.-Creativity">1. Creativity<a class="anchor-link" href="#1.-Creativity"> </a></h4><p>Creativity is mostly seen as how you approach tasks and solve problems. If you solve even the smallest problem, you’ve demonstrated creativity. This skill scales up: Big problems are enlarged small problems; small problems scaled up are big problems.</p>
+<p>Creativity includes:</p>
+<ul>
+<li>Conceptualize problems and solutions</li>
+<li>Display foresight</li>
+<li>Make connections</li>
+<li>Make intelligent inferences</li>
+<li>Synthesize ideas and data</li>
+</ul>
+<h4 id="2.-Critical-Thinking">2. Critical Thinking<a class="anchor-link" href="#2.-Critical-Thinking"> </a></h4><p>Solving complex or abstract problems requires critical thinking.</p>
+<ul>
+<li>The ability to take a step back and look at things more critically and say ‘Where might we have to have gotten this wrong?’ or ‘How might we be able to improve this?’ is critical thinking. If you can articulate this skill you will stand out!</li>
+<li>Critical thinkers head off problems before they arise. And if they do surface, they take them head-on.</li>
+</ul>
+<p>Be a critical thinker and you'll be able to face any problem!</p>
+<h4 id="3.-Communication">3. Communication<a class="anchor-link" href="#3.-Communication"> </a></h4><p>Effective communication is <strong>VERY</strong> important. Communication is KEY! Without effective communication, your team is doomed and so is everyone else who works with you.</p>
+<p>Important communication skills include:</p>
+<ul>
+<li>Verbal: speakinging clearly and sometimes being repetitive.</li>
+<li>Listening: learning to be quiet and listen with your eyes and ears.</li>
+<li>Writing: Taking notes are good writing skills.</li>
+<li>Technological: Being able to work through technical problems as a team and discussing them with teammates.</li>
+</ul>
+<h4 id="4.-Collaboration-and-thorough-Leadership">4. Collaboration and thorough Leadership<a class="anchor-link" href="#4.-Collaboration-and-thorough-Leadership"> </a></h4><p>Leadership skills generally encompass communication, problem-solving and managing conflict, relationship building and being able to get people on your team on board with a mission or project. Leaders should be inclusive, kind, and make good decisions that will benefit their team.</p>
+<p>Leadership skills:</p>
+<ul>
+<li>Delegating responsibility</li>
+<li>Demonstrating effective time management</li>
+<li>Initiating new ideas</li>
+<li>Major decision-making</li>
+<li>Managing conflict</li>
+<li>Managing groups</li>
+<li>Multitasking</li>
+<li>Teaching and mentoring</li>
+</ul>
+<h4 id="5.-Collaboration-through-Teamwork">5. Collaboration through Teamwork<a class="anchor-link" href="#5.-Collaboration-through-Teamwork"> </a></h4><p>Teammwork is very important to be able to work well with others. Trust is the major difference between working alone versus working in groups. And trust can be hard: Some people are skeptical by nature or want to work through an entire project lifecycle solo. But placing trust in an active, dynamic team provides more than just project completion. Teamwork — a sense of community — elevates spirits and improves productivity.</p>
+<p>Working as a Team includes:</p>
+<ul>
+<li>Accepting responsibility</li>
+<li>Making and implementing decisions</li>
+<li>Managing time wisely</li>
+<li>Meeting both short- and long-term goals</li>
+<li>Organizing</li>
+<li>Setting and meeting deadlines</li>
+</ul>
+<h4 id="6.-Researching">6. Researching<a class="anchor-link" href="#6.-Researching"> </a></h4><p>Every step in technology made requires research. Research is a key part of the lifecycle: changing plans, fluctuating results, and roadblocks require research before anyone can take action. Interacting with your teammates and collaborating also counts as research.</p>
+<p>Researching includes:</p>
+<ul>
+<li>Analyzing information</li>
+<li>Brainstorming solutions</li>
+<li>Delineating needs and requirements</li>
+<li>Extracting information from data</li>
+<li>Gathering information</li>
+<li>Forecasting possible roadblocks</li>
+<li>Setting goals</li>
+<li>Solving problems</li>
+</ul>
+<h4 id="7.-Technical">7. Technical<a class="anchor-link" href="#7.-Technical"> </a></h4><p>Try to stay current with the many technical advancements on your project. This includes collaborating with your teammates to make sure you're all caught up and on the same page as them. Be knowledgeable and speak to the technical things that you are learning.</p>
+<p>Technical skills include:</p>
+<ul>
+<li>Being easy to work with</li>
+<li>Having the ability to learn quickly</li>
+<li>Being excited/happy to learn</li>
+<li>Failing and Fixing</li>
+<li>Being willing to try new things</li>
+<li>Willing to open new doors in case of a drastic oversight</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
  
 

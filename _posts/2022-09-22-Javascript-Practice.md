@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: Learning and practicing with Javscript.
-title: "Javascript Practice"
+title: "Javascript Practice and Big Idea 1 'Program Purpose'"
 toc: true
 branch: master
 badges: true
@@ -114,7 +114,7 @@ object ; [ 1, 2, 3 ]
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a function to hold data for a Person AKA MEEEEE</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a function to hold data for a Person</span>
 <span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">ghID</span><span class="p">,</span> <span class="nx">classOf</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">ghID</span> <span class="o">=</span> <span class="nx">ghID</span><span class="p">;</span>
@@ -135,8 +135,8 @@ object ; [ 1, 2, 3 ]
 <span class="p">}</span>
 
 <span class="c1">// make a new Person and assign to variable teacher</span>
-<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Mr. Yeung&quot;</span><span class="p">,</span> <span class="s2">&quot;idk&quot;</span><span class="p">,</span> <span class="mf">2013</span><span class="p">);</span>
-<span class="nx">teacher</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Best Teacher :D&quot;</span><span class="p">);</span> <span class="c1">// you know im the best frfr</span>
+<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Mr Yeung&quot;</span><span class="p">,</span> <span class="s2">&quot;Syeung2&quot;</span><span class="p">,</span> <span class="mf">2013</span><span class="p">);</span>
+<span class="nx">teacher</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Coolest Teacher :)&quot;</span><span class="p">);</span>
 
 <span class="c1">// output of Object and JSON/string associated with Teacher</span>
 <span class="nx">logItType</span><span class="p">(</span><span class="nx">teacher</span><span class="p">);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
@@ -154,11 +154,11 @@ object ; [ 1, 2, 3 ]
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>object ; Person {
-  name: &#39;Mr. Yeung&#39;,
-  ghID: &#39;idk&#39;,
+  name: &#39;Mr Yeung&#39;,
+  ghID: &#39;Syeung2&#39;,
   classOf: 2013,
-  role: &#39;Best Teacher :D&#39; }
-string ; {&#34;name&#34;:&#34;Mr. Yeung&#34;,&#34;ghID&#34;:&#34;idk&#34;,&#34;classOf&#34;:2013,&#34;role&#34;:&#34;Best Teacher :D&#34;}
+  role: &#39;Coolest Teacher&#39; }
+string ; {&#34;name&#34;:&#34;Mr Yeung&#34;,&#34;ghID&#34;:&#34;Syeung2&#34;,&#34;classOf&#34;:2013,&#34;role&#34;:&#34;Coolest Teacher&#34;}
 </pre>
 </div>
 </div>
@@ -224,7 +224,11 @@ string ; {&#34;name&#34;:&#34;Mr. Yeung&#34;,&#34;ghID&#34;:&#34;idk&#34;,&#34;c
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>object ; [ Person { name: &#39;Mr. Yeung&#39;, ghID: &#39;idk&#39;, classOf: 2013, role: &#39;Teacher&#39; },
+<pre>object ; [ Person {
+    name: &#39;Mr Yeung&#39;,
+    ghID: &#39;Syeung2&#39;,
+    classOf: 2013,
+    role: &#39;Teacher&#39; },
   Person {
     name: &#39;Naja&#39;,
     ghID: &#39;NajaAFonseca&#39;,
@@ -245,9 +249,12 @@ string ; {&#34;name&#34;:&#34;Mr. Yeung&#34;,&#34;ghID&#34;:&#34;idk&#34;,&#34;c
     ghID: &#39;DylanGarrett&#39;,
     classOf: 2025,
     role: &#39;Student&#39; } ]
-string ; Mr. Yeung
-string ; {&#34;name&#34;:&#34;Mr. Yeung&#34;,&#34;ghID&#34;:&#34;idk&#34;,&#34;classOf&#34;:2013,&#34;role&#34;:&#34;Teacher&#34;}
-object ; { name: &#39;Mr. Yeung&#39;, ghID: &#39;idk&#39;, classOf: 2013, role: &#39;Teacher&#39; }
+string ; Mr Yeung
+string ; {&#34;name&#34;:&#34;Mr Yeung&#34;,&#34;ghID&#34;:&#34;Syeung2&#34;,&#34;classOf&#34;:2013,&#34;role&#34;:&#34;Teacher&#34;}
+object ; { name: &#39;Mr Yeung&#39;,
+  ghID: &#39;Syeung2&#39;,
+  classOf: 2013,
+  role: &#39;Teacher&#39; }
 </pre>
 </div>
 </div>
@@ -329,7 +336,7 @@ object ; { name: &#39;Mr. Yeung&#39;, ghID: &#39;idk&#39;, classOf: 2013, role: 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style='display:inline-block;background:black;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;'><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Mr. Yeung</td><td>idk</td><td>2013</td><td>Teacher</td><tr><tr><td>Naja</td><td>NajaAFonseca</td><td>2025</td><td>Student</td><tr><tr><td>Lydia</td><td>lydia-c2</td><td>2024</td><td>Student</td><tr><tr><td>Lina</td><td>linaawad1</td><td>2024</td><td>Student</td><tr><tr><td>Dylan</td><td>DylanGarrett</td><td>2025</td><td>Student</td><tr></table></div>
+<div style='display:inline-block;background:black;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;'><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Mr Yeung</td><td>Syeung2</td><td>2013</td><td>Teacher</td><tr><tr><td>Naja</td><td>NajaAFonseca</td><td>2025</td><td>Student</td><tr><tr><td>Lydia</td><td>lydia-c2</td><td>2024</td><td>Student</td><tr><tr><td>Lina</td><td>linaawad1</td><td>2024</td><td>Student</td><tr><tr><td>Dylan</td><td>DylanGarrett</td><td>2025</td><td>Student</td><tr></table></div>
 </div>
 
 </div>
