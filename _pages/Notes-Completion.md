@@ -27,7 +27,7 @@ Q1 Behavior of code that multiplies inside a loop
 - Again, with the mathematics, if I was aware, IF, I would of aced this quiz.
 
 Q2 Behavior of mystery procedure with if statement
-- Where does the values of true and false come out? Is this a boolean statement? How was I supposed to tell? 
+- Where does the values of true and false come out? Is this a boolean statement? How was I supposed to tell if it was? 
 
 Q5 How nested loops with lists function
 - Makes sense. would of gotten it right though. Probably just a misclick not gonna lie. 
