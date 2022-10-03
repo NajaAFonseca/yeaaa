@@ -4,4 +4,4 @@ title: Completed Quizzes for Notes
 permalink: /notes-completion/
 ---
 
-![]({{site.baseurl}}/images/Quiz-Completion.png)
+![]({{site.baseurl}}/images/Quiz-Completion.PNG)
