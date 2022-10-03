@@ -30,7 +30,7 @@ Q2 Behavior of mystery procedure with if statement
 - Where does the values of true and false come out? Is this a boolean statement? How was I supposed to tell if it was? 
 
 Q5 How nested loops with lists function
-- Makes sense. would of gotten it right though. Probably just a misclick not gonna lie. 
+- Makes sense. Would of gotten it right though. Probably just a misclick not gonna lie. 
 
 Q6 Inputs provided by customer on food delivery app
 - I thought that the question meant, the credit card or payment info for the purchaser as in the customer giving payment info to the cashregister. If I was an English Major, I would've been able to read. Actually, I wouldn't even be illeterate. Clearly, a questioin issue, I'm all good though.
