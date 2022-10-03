@@ -33,4 +33,4 @@ Q5 How nested loops with lists function
 - Makes sense. Would of gotten it right though. Probably just a misclick not gonna lie. 
 
 Q6 Inputs provided by customer on food delivery app
-- I thought that the question meant, the credit card or payment info for the purchaser as in the customer giving payment info to the cashregister. If I was an English Major, I would've been able to read. Actually, I wouldn't even be illeterate. Clearly, a questioin issue, I'm all good though.
+- I thought that the question meant, the credit card or payment info for the purchaser as in the customer giving payment info to the cashregister. If I was an English Major, I would've been able to read. Actually, I wouldn't even be illeterate. Clearly, a question issue, I'm all good though.
