@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Application Programming Interface (API) Practice | Naja’s Webpage!</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Application Programming Interface (API) Practice" />
+<meta name="author" content="Naja Fonseca" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="APIs can be found all over the internet. A great consolidator of many APIs is RapidAPI. In this blog I will use a site to consolidate API stats. Learning a few lines of code and you can start extracting lots of data from the internet via APIs." />
+<meta property="og:description" content="APIs can be found all over the internet. A great consolidator of many APIs is RapidAPI. In this blog I will use a site to consolidate API stats. Learning a few lines of code and you can start extracting lots of data from the internet via APIs." />
+<link rel="canonical" href="https://najaafonseca.github.io/yeaaa/API" />
+<meta property="og:url" content="https://najaafonseca.github.io/yeaaa/API" />
+<meta property="og:site_name" content="Naja’s Webpage!" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-03T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Application Programming Interface (API) Practice" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Naja Fonseca"},"dateModified":"2022-10-03T00:00:00-05:00","datePublished":"2022-10-03T00:00:00-05:00","description":"APIs can be found all over the internet. A great consolidator of many APIs is RapidAPI. In this blog I will use a site to consolidate API stats. Learning a few lines of code and you can start extracting lots of data from the internet via APIs.","headline":"Application Programming Interface (API) Practice","mainEntityOfPage":{"@type":"WebPage","@id":"https://najaafonseca.github.io/yeaaa/API"},"url":"https://najaafonseca.github.io/yeaaa/API"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/yeaaa/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://najaafonseca.github.io/yeaaa/feed.xml" title="Naja's Webpage!" /><link rel="shortcut icon" type="image/x-icon" href="/yeaaa/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/yeaaa/">Naja&#39;s Webpage!</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/yeaaa/notes-completion/">Completed Quizzes for Notes</a><a class="page-link" href="/yeaaa/about/">About Me</a><a class="page-link" href="/yeaaa/agile-methodology/">Agile Methodology Diagram</a><a class="page-link" href="/yeaaa/search/">Search</a><a class="page-link" href="/yeaaa/submenu">Submenu</a><a class="page-link" href="/yeaaa/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Application Programming Interface (API) Practice</h1><p class="page-description">APIs can be found all over the internet.  A great consolidator of many APIs is <mark>RapidAPI</mark>.  In this blog I will use a site to consolidate API stats.  Learning a few lines of code and you can start extracting lots of data from the internet via APIs.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-03T00:00:00-05:00" itemprop="datePublished">
+        Oct 3, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Naja Fonseca</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/yeaaa/categories/#markdown">markdown</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/yeaaa/categories/#python">python</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/NajaAFonseca/yeaaa/tree/master/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/yeaaa/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/NajaAFonseca/yeaaa/master?filepath=_notebooks%2F2022-10-03-PBL-python_rapidapi.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yeaaa/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/NajaAFonseca/yeaaa/blob/master/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yeaaa/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FNajaAFonseca%2Fyeaaa%2Fblob%2Fmaster%2F_notebooks%2F2022-10-03-PBL-python_rapidapi.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/yeaaa/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#Covid19-RapidAPI-Example">Covid19 RapidAPI Example </a></li>
+<li class="toc-entry toc-h1"><a href="#Love-calculator">Love calculator </a></li>
+<li class="toc-entry toc-h1"><a href="#Superheroes">Superheroes </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-03-PBL-python_rapidapi.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Covid19-RapidAPI-Example">
+<a class="anchor" href="#Covid19-RapidAPI-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Covid19 RapidAPI Example<a class="anchor-link" href="#Covid19-RapidAPI-Example"> </a>
+</h3>
+<blockquote>
+<p>To begin the API journey.  You need to find an API provider.</p>
+</blockquote>
+<ul>
+<li>RapidAPI is a great option.  You must setup and account, but there are many free options.</li>
+<li>Goto this page for starters, the <a href="https://rapidapi.com/spamakashrajtech/api/corona-virus-world-and-india-data/">Corona virus World and India data</a>- Under Code Snippets pick Python - Requests</li>
+</ul>
+<p>RapidAPI, you will select Python Requests type of code to work with you Notebook.</p>
+<ul>
+<li>The url is the endpoint to which the API is directed</li>
+<li>The headers is a dictionary data structure to send special messaging to the endpoint </li>
+<li>The requests.request() python function is used to send a request and retrieve their responses</li>
+<li>The response variable receives result of of the request in JSON text</li>
+</ul>
+<p>Next step, is to format the response according to your data science needs</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">"""</span>
+<span class="sd">Requests is a HTTP library for the Python programming language. </span>
+<span class="sd">The goal of the project is to make HTTP requests simpler and more human-friendly. </span>
+<span class="sd">"""</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="sd">"""</span>
+<span class="sd">RapidAPI is the world's largest API Marketplace. </span>
+<span class="sd">Developers use Rapid API to discover and connect to thousands of APIs. </span>
+<span class="sd">"""</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://corona-virus-world-and-india-data.p.rapidapi.com/api"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'x-rapidapi-key'</span><span class="p">:</span> <span class="s2">"dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063"</span><span class="p">,</span>
+    <span class="s1">'x-rapidapi-host'</span><span class="p">:</span> <span class="s2">"corona-virus-world-and-india-data.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="c1"># Request Covid Data</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="c1"># print(response.text)  # uncomment this line to see raw data</span>
+
+<span class="c1"># This code looks for "world data"</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"World Totals"</span><span class="p">)</span>
+<span class="n">world</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'world_total'</span><span class="p">)</span>  <span class="c1"># turn response to json() so we can extract "world_total"</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">world</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>  <span class="c1"># this finds key, value pairs in country</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># This code looks for USA in "countries_stats"</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Country Totals"</span><span class="p">)</span>
+<span class="n">countries</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'countries_stat'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">countries</span><span class="p">:</span>  <span class="c1"># countries is a list</span>
+    <span class="k">if</span> <span class="n">country</span><span class="p">[</span><span class="s2">"country_name"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"USA"</span><span class="p">:</span>  <span class="c1"># this filters for USA</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">country</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>  <span class="c1"># this finds key, value pairs in country</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>World Totals
+total_cases 509,268,964
+new_cases 204,268
+total_deaths 6,242,509
+new_deaths 630
+total_recovered 461,827,849
+active_cases 41,198,606
+serious_critical 42,510
+total_cases_per_1m_population 65,334
+deaths_per_1m_population 800.9
+statistic_taken_at 2022-04-24 11:18:01
+
+Country Totals
+country_name USA
+cases 82,649,779
+deaths 1,018,316
+region 
+total_recovered 80,434,925
+new_deaths 0
+new_cases 0
+serious_critical 1,465
+active_cases 1,196,538
+total_cases_per_1m_population 247,080
+deaths_per_1m_population 3,044
+total_tests 1,000,275,726
+tests_per_1m_population 2,990,303
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Love-calculator">
+<a class="anchor" href="#Love-calculator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Love calculator<a class="anchor-link" href="#Love-calculator"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://love-calculator.p.rapidapi.com/getPercentage"</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"sname"</span><span class="p">:</span><span class="s2">"naja"</span><span class="p">,</span><span class="s2">"fname"</span><span class="p">:</span><span class="s2">"comp sci"</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"429049e20amsh168c822ee8b3e75p1d8e72jsncf75688bb197"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"love-calculator.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"fname":"comp sci","sname":"naja","percentage":"34","result":"Can choose someone better."}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://love-calculator.p.rapidapi.com/getPercentage"</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"sname"</span><span class="p">:</span><span class="s2">"naja"</span><span class="p">,</span><span class="s2">"fname"</span><span class="p">:</span><span class="s2">"comp sci"</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"429049e20amsh168c822ee8b3e75p1d8e72jsncf75688bb197"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"love-calculator.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Love Calculator"</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">stats</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">querystring</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Love Calculator
+{'sname': 'naja', 'fname': 'comp sci'}
+{'sname': 'naja', 'fname': 'comp sci'}
+{'sname': 'naja', 'fname': 'comp sci'}
+{'sname': 'naja', 'fname': 'comp sci'}
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Superheroes">
+<a class="anchor" href="#Superheroes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Superheroes<a class="anchor-link" href="#Superheroes"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://superhero-search.p.rapidapi.com/api/heroes"</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"429049e20amsh168c822ee8b3e75p1d8e72jsncf75688bb197"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"superhero-search.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{"id":334,"name":"Huntress","slug":"334-huntress","powerstats":{"intelligence":69,"strength":10,"speed":23,"durability":28,"power":34,"combat":95},"appearance":{"gender":"Female","race":null,"height":["5'11","180 cm"],"weight":["130 lb","59 kg"],"eyeColor":"Blue","hairColor":"Black"},"biography":{"fullName":"Helena Rosa Bertinelli","alterEgos":"Batgirl III","aliases":["Batgirl","Sicilian","Mafia Princess"],"placeOfBirth":"-","firstAppearance":"Huntress #1 (April 1989)","publisher":"Batgirl III","alignment":"good"},"work":{"occupation":"Vigilante; High school English teacher","base":"Mobile; primarily Gotham City and Metropolis"},"connections":{"groupAffiliation":"Batman Family, Birds of Prey, formerly Checkmate, Justice League of America, Outsiders","relatives":"Giuseppe Bertinelli (great-grandfather; deceased), Alfredo Bertinelli (grandfather; deceased), Franco Bertinelli (father; deceased), Maria Panessa Bertinelli (mother; deceased), Santo Cassamento (biological father; deceased), Pino Bertinelli (brother; deceased), Freddy Caldone (cousin; deceased), Tomaso Panessa (uncle), Graziella Panessa (aunt), Monica Simonetta Panessa (cousin), Claudio Panessa (cousin; deceased)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/334-huntress.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/334-huntress.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/334-huntress.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/334-huntress.jpg"}},{"id":389,"name":"King Kong","slug":"389-king-kong","powerstats":{"intelligence":56,"strength":100,"speed":71,"durability":75,"power":47,"combat":75},"appearance":{"gender":"Male","race":"Animal","height":["100'0","30.5 meters"],"weight":["20000000 lb","9,000 tons"],"eyeColor":"Yellow","hairColor":"Black"},"biography":{"fullName":"King Kong","alterEgos":"No alter egos found.","aliases":["the 8th Wonder of the World","King of Skull Island"],"placeOfBirth":"Skull Island","firstAppearance":"King Kong (1933)","publisher":"","alignment":"good"},"work":{"occupation":"-","base":"Skull Island"},"connections":{"groupAffiliation":"-","relatives":"-"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/389-king-kong.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/389-king-kong.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/389-king-kong.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/389-king-kong.jpg"}},{"id":220,"name":"DL Hawkins","slug":"220-dl-hawkins","powerstats":{"intelligence":50,"strength":12,"speed":12,"durability":56,"power":48,"combat":56},"appearance":{"gender":"Male","race":null,"height":["-","0 cm"],"weight":["- lb","0 kg"],"eyeColor":"-","hairColor":"-"},"biography":{"fullName":"Daniel Lawrence Hawkins","alterEgos":"No alter egos found.","aliases":["-"],"placeOfBirth":"-","firstAppearance":"Heroes S01E05 - Hiros","publisher":"NBC - Heroes","alignment":"good"},"work":{"occupation":"Construction worker, Firefighter","base":"Las Vegas, NV"},"connections":{"groupAffiliation":"-","relatives":"Niki Sanders (wife), Micah Sanders (son), Paulette Hawkins (mother), Monica Dawson (cousin), Damon Dawson (cousin)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/220-dl-hawkins.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/220-dl-hawkins.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/220-dl-hawkins.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/220-dl-hawkins.jpg"}},{"id":506,"name":"Osiris","slug":"506-osiris","powerstats":{"intelligence":75,"strength":85,"speed":60,"durability":95,"power":65,"combat":42},"appearance":{"gender":"Male","race":null,"height":["-","0 cm"],"weight":["- lb","0 kg"],"eyeColor":"Brown","hairColor":"Brown"},"biography":{"fullName":"Amon Tomaz","alterEgos":"No alter egos found.","aliases":["-"],"placeOfBirth":"-","firstAppearance":"-","publisher":"DC Comics","alignment":"good"},"work":{"occupation":"-","base":"Shiruta, Kahndaq"},"connections":{"groupAffiliation":"-","relatives":"Isis (Sister, deceased), Black Adam (Brother-in-Law)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/506-osiris.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/506-osiris.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/506-osiris.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/506-osiris.jpg"}},{"id":627,"name":"Spock","slug":"627-spock","powerstats":{"intelligence":81,"strength":18,"speed":17,"durability":40,"power":56,"combat":40},"appearance":{"gender":"Male","race":"Human-Vulcan","height":["6'1","185 cm"],"weight":["180 lb","81 kg"],"eyeColor":"Brown","hairColor":"Black"},"biography":{"fullName":"S'chn T'gai Spock","alterEgos":"No alter egos found.","aliases":["-"],"placeOfBirth":"-","firstAppearance":"Star Trek S01E01: The Man Trap","publisher":"Star Trek","alignment":"good"},"work":{"occupation":"-","base":"-"},"connections":{"groupAffiliation":"-","relatives":"-"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/627-spock.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/627-spock.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/627-spock.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/627-spock.jpg"}},{"id":30,"name":"Ant-Man","slug":"30-ant-man","powerstats":{"intelligence":100,"strength":18,"speed":23,"durability":28,"power":32,"combat":32},"appearance":{"gender":"Male","race":"Human","height":["6'11","211 cm"],"weight":["270 lb","122 kg"],"eyeColor":"Blue","hairColor":"Blond"},"biography":{"fullName":"Hank Pym","alterEgos":"Giant-Man, Goliath, Wasp II, Yellowjacket","aliases":["Hank Pym","Doctor Pym","Ant-Man","Goliath","Yellowjacket","Wasp","Earth's Scientist Supreme"],"placeOfBirth":"Elmsford, New York","firstAppearance":"Tales to Astonish #27 (January, 1962) (as Hank Pym)  Tales to Astonish #35 (September, 1962) (as Ant-Man)","publisher":"Giant-Man","alignment":"good"},"work":{"occupation":"Adventurer, Biochemist, former manager of Avengers Compound","base":"Avengers Compound, Los Angeles; formerly Infinite Avengers Mansion; Captive aboard a Skrull ship; Avengers Mansion, New York City, New York"},"connections":{"groupAffiliation":"Avengers Academy, Secret Avengers; formerly Mighty Avengers, Avengers (founding member), Defenders, Future Iron Man's Team","relatives":"-"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/30-ant-man.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/30-ant-man.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/30-ant-man.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/30-ant-man.jpg"}},{"id":640,"name":"Sunspot","slug":"640-sunspot","powerstats":{"intelligence":63,"strength":63,"speed":35,"durability":25,"power":90,"combat":70},"appearance":{"gender":"Male","race":"Mutant","height":["5'8","173 cm"],"weight":["170 lb","77 kg"],"eyeColor":"brown","hairColor":"black"},"biography":{"fullName":"Roberto DaCosta","alterEgos":"No alter egos found.","aliases":["Robert DaCosta","Bobby; Black Rook","Black King","Reignfire"],"placeOfBirth":"Rio de Janeiro, Brazil","firstAppearance":"Marvel Graphic Novel #4 (October, 1982)","publisher":"Marvel Comics","alignment":"good"},"work":{"occupation":"Adventurer, businessman","base":"1128 Mission Street, San Francisco, California"},"connections":{"groupAffiliation":"Avengers; formerly X-Men, New Mutants, Young X-Men, X-Corporation (Los Angeles branch), MLF, X-Force, Fallen Angels, Hellfire Club, Bratpack","relatives":"Emmanuel da Costa (father, deceased), Nina da Costa (mother), Reignfire (genetic copy, deceased)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/640-sunspot.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/640-sunspot.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/640-sunspot.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/640-sunspot.jpg"}},{"id":402,"name":"Leech","slug":"402-leech","powerstats":{"intelligence":25,"strength":5,"speed":12,"durability":14,"power":62,"combat":14},"appearance":{"gender":"Male","race":null,"height":["-","0 cm"],"weight":["- lb","0 kg"],"eyeColor":"-","hairColor":"-"},"biography":{"fullName":"","alterEgos":"No alter egos found.","aliases":["-"],"placeOfBirth":"-","firstAppearance":"Uncanny X-Men #179","publisher":"Marvel Comics","alignment":"good"},"work":{"occupation":"Survivor, former student","base":"-"},"connections":{"groupAffiliation":"198; formerly Generation X, Daydreamers, Morlocks, X-Factor (trainee)","relatives":"Annalee (foster mother, deceased)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/402-leech.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/402-leech.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/402-leech.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/402-leech.jpg"}},{"id":303,"name":"Groot","slug":"303-groot","powerstats":{"intelligence":75,"strength":85,"speed":33,"durability":70,"power":100,"combat":64},"appearance":{"gender":"Male","race":"Flora Colossus","height":["23'0","701 cm"],"weight":["8200 lb","4 tons"],"eyeColor":"Yellow","hairColor":"-"},"biography":{"fullName":"Groot","alterEgos":"No alter egos found.","aliases":["The Monster from Planet X; His Divine Majesty King Groot the 23rd","Monarch of Planet X","custodian of the branch worlds","ruler of all the shades","Flora colossus Information-silk"],"placeOfBirth":"-","firstAppearance":"Tales to Astonish #13 (November, 1960)","publisher":"Marvel Comics","alignment":"good"},"work":{"occupation":"-","base":"Area 13 (the Howling Commandos' base)"},"connections":{"groupAffiliation":"Guardians of the Galaxy, Unnamed Kree covert ops team, formerly Galactic Council, Howling Commandos","relatives":"-"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/303-groot.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/303-groot.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/303-groot.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/303-groot.jpg"}},{"id":269,"name":"Franklin Richards","slug":"269-franklin-richards","powerstats":{"intelligence":63,"strength":80,"speed":50,"durability":60,"power":100,"combat":50},"appearance":{"gender":"Male","race":"Mutant","height":["4'8","142 cm"],"weight":["100 lb","45 kg"],"eyeColor":"Blue","hairColor":"Blond"},"biography":{"fullName":"Franklin  Richards","alterEgos":"No alter egos found.","aliases":["Franklin Benjamin","Tattletale","Psi-Lord","Ego-Spawn","Avatar"],"placeOfBirth":"New York, New York","firstAppearance":"Fantastic Four Annual #6","publisher":"Marvel Comics","alignment":"good"},"work":{"occupation":"Student","base":"Baxter Building, New York, New York (formerly) Four Freedoms Plaza; Pier 4; Massachusetts Academy"},"connections":{"groupAffiliation":"Future Foundation; formerly Power Pack, Generation X, Daydreamers","relatives":"Reed Richards (Mister Fantastic, father), Susan Storm Richards (Invisible Woman, mother), Valeria Richards (sister), Jonathan Storm (Human Torch, uncle), Nathaniel Richards (paternal grandfather), Franklin Storm (maternal grandfather, deceased), Evelyn Richards, Mary Storm (grandmothers (paternal and maternal respectively), deceased), Benjamin J. Grimm (Thing, godfather), Alicia Masters (godmother)."},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/269-franklin-richards.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/269-franklin-richards.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/269-franklin-richards.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/269-franklin-richards.jpg"}},{"id":728,"name":"Ymir","slug":"728-ymir","powerstats":{"intelligence":50,"strength":100,"speed":27,"durability":100,"power":98,"combat":28},"appearance":{"gender":"Male","race":"Frost Giant","height":["1000","304.8 meters"],"weight":["- lb","0 kg"],"eyeColor":"White","hairColor":"No Hair"},"biography":{"fullName":"Ymir","alterEgos":"No alter egos found.","aliases":["Aurgelmir"],"placeOfBirth":"Niffleheim","firstAppearance":"JOURNEY INTO MYSTERY #97","publisher":"Marvel Comics","alignment":"good"},"work":{"occupation":"-","base":"Niffleheim"},"connections":{"groupAffiliation":"-","relatives":"Utgard-Loki, Loki, and the race of Frost Giants (descendants)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/728-ymir.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/728-ymir.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/728-ymir.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/728-ymir.jpg"}},{"id":298,"name":"Green Arrow","slug":"298-green-arrow","powerstats":{"intelligence":81,"strength":12,"speed":35,"durability":28,"power":39,"combat":90},"appearance":{"gender":"Male","race":"Human","height":["6'2","188 cm"],"weight":["195 lb","88 kg"],"eyeColor":"Green","hairColor":"Blond"},"biography":{"fullName":"Oliver Queen","alterEgos":"No alter egos found.","aliases":["The Emerald Archer","Battling Bowman"],"placeOfBirth":"-","firstAppearance":"More Fun Comics #73 (November 1941)","publisher":"DC Comics","alignment":"good"},"work":{"occupation":"Professional Crime-fighter; Multi-Billionaire","base":"Star City, California; Formerly Seattle, Washington"},"connections":{"groupAffiliation":"Justice League Reserve, Connor Hawke, Mia Dearden,  Arsenal, Green Arrows of the World, Black Canary, Green Lantern Hal Jordan, Shado, Eddie Fyers, Justice League Elite, Seven Soldiers of Victory, All-Star Squadron","relatives":"Conner Hawke (son); Robert (son); Cissie King (possible daughter); Roy Harper - Red Arrow (adoptive son); Dinah Laurel Lance (wife); Dinah Drake Lance (mother-in-law, deceased); Larry Lance (father-in-law, deceased)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/298-green-arrow.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/298-green-arrow.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/298-green-arrow.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/298-green-arrow.jpg"}},{"id":200,"name":"Daphne Powell","slug":"200-daphne-powell","powerstats":{"intelligence":38,"strength":10,"speed":8,"durability":10,"power":56,"combat":10},"appearance":{"gender":"Female","race":null,"height":["-","0 cm"],"weight":["- lb","0 kg"],"eyeColor":"-","hairColor":"-"},"biography":{"fullName":"Daphne Powell","alterEgos":"No alter egos found.","aliases":["-"],"placeOfBirth":"-","firstAppearance":"No Ordinary Family S01E01 (2010)","publisher":"ABC Studios","alignment":"good"},"work":{"occupation":"Student","base":"-"},"connections":{"groupAffiliation":"-","relatives":"Jim Powell and Stephanie Powell (parents), JJ Powell (brother)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/200-daphne-powell.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/200-daphne-powell.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/200-daphne-powell.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/200-daphne-powell.jpg"}},{"id":718,"name":"Wonder Girl","slug":"718-wonder-girl","powerstats":{"intelligence":75,"strength":90,"speed":25,"durability":80,"power":39,"combat":60},"appearance":{"gender":"Female","race":"Demi-God","height":["5'5","165 cm"],"weight":["114 lb","51 kg"],"eyeColor":"Blue","hairColor":"Blond"},"biography":{"fullName":"Cassandra Elizabeth Sandsmark","alterEgos":"No alter egos found.","aliases":["Cassandra Sandsmark","Cassie","Helen Troy","Wonder Woman","Cassie Sandsmark"],"placeOfBirth":"-","firstAppearance":"Wonder Woman (vol. 2) #105 (January 1996)","publisher":"DC Comics","alignment":"good"},"work":{"occupation":"-","base":"-"},"connections":{"groupAffiliation":"Teen Titans, Young Justice, Themyscira","relatives":"-"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/718-wonder-girl.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/718-wonder-girl.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/718-wonder-girl.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/718-wonder-girl.jpg"}},{"id":28,"name":"Animal Man","slug":"28-animal-man","powerstats":{"intelligence":56,"strength":48,"speed":47,"durability":85,"power":73,"combat":80},"appearance":{"gender":"Male","race":"Human","height":["6'0","183 cm"],"weight":["185 lb","83 kg"],"eyeColor":"Blue","hairColor":"Blond"},"biography":{"fullName":"Bernhard Baker","alterEgos":"No alter egos found.","aliases":["The Human Zoo; A-Man; The Man with Animal Powers"],"placeOfBirth":"-","firstAppearance":"Strange Adventures #180 (September, 1965)","publisher":"DC Comics","alignment":"good"},"work":{"occupation":"-","base":"San Diego, California"},"connections":{"groupAffiliation":"Formerly Animal Masters, Forgotten Heroes, Justice League of America, Justice League Europe","relatives":"Ellen Frazier (wife), Cliff Baker (son), Maxine Baker (daughter), unnamed second daughter, Frank Baker, Jr. (father), Phyllis Baker (mother), unnamed sister, Frank, Sr (grandfather), Teddy (great grandfather), Sherman (great-great grandfather), Jack (great-great-great grandfather), Mary Frazier (mother-in-law), Dudley (uncle-in-law), Annie Cassidy (mother of second daughter), Lucy Cassidy (half-sister of second daughter)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/28-animal-man.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/28-animal-man.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/28-animal-man.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/28-animal-man.jpg"}},{"id":654,"name":"Tempest","slug":"654-tempest","powerstats":{"intelligence":38,"strength":10,"speed":45,"durability":28,"power":66,"combat":60},"appearance":{"gender":"Female","race":null,"height":["5'4","163 cm"],"weight":["121 lb","54 kg"],"eyeColor":"Brown","hairColor":"Black"},"biography":{"fullName":"Angel Salvadore Bohusk","alterEgos":"Angel Salvadore","aliases":["-"],"placeOfBirth":"-","firstAppearance":"New X-Men #118 (November, 2001)","publisher":"Angel Salvadore","alignment":"good"},"work":{"occupation":"-","base":"-"},"connections":{"groupAffiliation":"Formerly New Warriors; Special Class","relatives":"Tito Bohusk (son); Axel Bohusk (son); Kara Bohusk (daughter); three other unidentified children;"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/654-tempest.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/654-tempest.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/654-tempest.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/654-tempest.jpg"}},{"id":312,"name":"Hawk","slug":"312-hawk","powerstats":{"intelligence":38,"strength":38,"speed":35,"durability":95,"power":43,"combat":42},"appearance":{"gender":"Male","race":null,"height":["6'1","185 cm"],"weight":["197 lb","89 kg"],"eyeColor":"Red","hairColor":"Brown"},"biography":{"fullName":"Henry Hall","alterEgos":"No alter egos found.","aliases":["Monarch","Extant"],"placeOfBirth":"-","firstAppearance":"Showcase #75 (June, 1968)","publisher":"DC Comics","alignment":"good"},"work":{"occupation":"-","base":"-"},"connections":{"groupAffiliation":"Black Lantern Corps, Teen Titans, Hawk and Dove, Titans West","relatives":"Don Hall (brother, deceased), Irwin Hall (father), Rae Penfield (mother), James Penfield (uncle)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/312-hawk.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/312-hawk.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/312-hawk.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/312-hawk.jpg"}},{"id":723,"name":"X-23","slug":"723-x-23","powerstats":{"intelligence":75,"strength":24,"speed":42,"durability":100,"power":55,"combat":95},"appearance":{"gender":"Female","race":"Mutant / Clone","height":["5'1","155 cm"],"weight":["110 lb","50 kg"],"eyeColor":"Green","hairColor":"Black"},"biography":{"fullName":"Laura Kinney","alterEgos":"No alter egos found.","aliases":["Laura Logan","Laura Howlett","Laura X","Talon","Wolverine","X23"],"placeOfBirth":"The Facility, location unrevealed","firstAppearance":"NYX #3","publisher":"Marvel Comics","alignment":"good"},"work":{"occupation":"Adventurer, Student, former; Assassin, Prostitute","base":"Mobile. Formerly Avengers Mansion, New York City and Avengers Compound"},"connections":{"groupAffiliation":"New X-Men, formerly Xavier Institute Student Body, The Facility","relatives":"Sarah Kinney (surrogate mother, deceased), James Howlett (Wolverine, genetic progenitor)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/723-x-23.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/723-x-23.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/723-x-23.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/723-x-23.jpg"}},{"id":549,"name":"Red Robin","slug":"549-red-robin","powerstats":{"intelligence":81,"strength":11,"speed":27,"durability":32,"power":29,"combat":80},"appearance":{"gender":"Male","race":"Human","height":["5'5","165 cm"],"weight":["125 lb","56 kg"],"eyeColor":"Blue","hairColor":"Black"},"biography":{"fullName":"Tim Drake","alterEgos":"Robin III","aliases":["Alvin Draper","Batman","Robin","Timothy Wayne","Time Drake"],"placeOfBirth":"Gotham City","firstAppearance":"Batman #436 (August, 1989)","publisher":"Robin III","alignment":"good"},"work":{"occupation":"-","base":"Gotham City; Titans Tower, San Francisco"},"connections":{"groupAffiliation":"Teen Titans, Batman Family, Batman Inc., Wayne Enterprises; formerly Young Justice","relatives":"Jack Drake (father, deceased), Janet Drake (mother, deceased), Dana Winters Drake (step-mother, status unknown), Bruce Wayne (adoptive father), Damian Wayne (adoptive brother), Dick Grayson (adoptive brother), Jason Todd (adoptive brother), Cassandra Cain (adoptive sister)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/549-red-robin.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/549-red-robin.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/549-red-robin.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/549-red-robin.jpg"}},{"id":607,"name":"Snowbird","slug":"607-snowbird","powerstats":{"intelligence":50,"strength":32,"speed":27,"durability":42,"power":70,"combat":52},"appearance":{"gender":"Female","race":null,"height":["5'10'","178 cm"],"weight":["108 lb","49 kg"],"eyeColor":"White","hairColor":"Blond"},"biography":{"fullName":"Narya","alterEgos":"No alter egos found.","aliases":["Anne McKenzie-Thompson"],"placeOfBirth":"Near Resolute Bay, Northwest Territories, Canada","firstAppearance":"Uncanny X-Men #120","publisher":"Marvel Comics","alignment":"good"},"work":{"occupation":"Goddess, adventurer, former records officer","base":"formerly Department H"},"connections":{"groupAffiliation":"God Squad; formerly Alpha Flight, Eskimo Gods, Royal Canadian Mounted Police, The Flight","relatives":"Hodiak (grandfather), Nelvanna (mother), Richard Lawrence Easton (father, deceased), Michael Twoyoungmen (Shaman, foster father), Douglas Thompson (husband, deceased), unnamed son (deceased)"},"images":{"xs":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/607-snowbird.jpg","sm":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/607-snowbird.jpg","md":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/607-snowbird.jpg","lg":"https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/607-snowbird.jpg"}}]
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="NajaAFonseca/yeaaa"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/yeaaa/API" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/yeaaa/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/yeaaa/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/yeaaa/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Welcome to my description! Not much going on here, just learning new things ¯\_(ツ)_/¯</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/yeaaa/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/yeaaa/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

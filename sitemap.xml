@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://najaafonseca.github.io/yeaaa/Program-Design</loc>
+<lastmod>2010-09-22T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://najaafonseca.github.io/yeaaa/markdown/2020/01/14/test-markdown-post.html</loc>
 <lastmod>2020-01-14T00:00:00-06:00</lastmod>
 </url>
@@ -57,7 +61,11 @@
 <lastmod>2022-09-26T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://najaafonseca.github.io/yeaaa/markdown/python/2022/10/03/PBL-python_rapidapi.html</loc>
+<loc>https://najaafonseca.github.io/yeaaa/collegeboard/error</loc>
+<lastmod>2022-10-03T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://najaafonseca.github.io/yeaaa/API</loc>
 <lastmod>2022-10-03T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -76,6 +84,12 @@
 <loc>https://najaafonseca.github.io/yeaaa/search/</loc>
 </url>
 <url>
+<loc>https://najaafonseca.github.io/yeaaa/submenu</loc>
+</url>
+<url>
 <loc>https://najaafonseca.github.io/yeaaa/categories/</loc>
+</url>
+<url>
+<loc>https://najaafonseca.github.io/yeaaa/page2/</loc>
 </url>
 </urlset>
