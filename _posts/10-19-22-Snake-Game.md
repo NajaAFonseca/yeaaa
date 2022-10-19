@@ -1,0 +1,4 @@
+<!DOCTYPE html>
+<html>
+<canvas id="gameCanvas" width="400" height="400"></canvas>
+</html>
