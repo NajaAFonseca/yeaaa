@@ -20,11 +20,12 @@
     </style>
   </body>
 
+// Beautifying the border and snake!!
   <script>
-    const board_border = 'black';
-    const board_background = "white";
-    const snake_col = 'lightblue';
-    const snake_border = 'darkblue';
+    const board_border = 'pink';
+    const board_background = "lightblue";
+    const snake_col = 'purple';
+    const snake_border = 'lightpink';
     
     let snake = [
       {x: 200, y: 200},
