@@ -7,7 +7,7 @@
   </head>
 
   <body>
-
+    // setting the canvas up as a 
     <canvas id="snakeboard" width="400" height="400"></canvas>
 
     <style>
@@ -24,7 +24,7 @@
   <script>
     const board_border = 'pink';
     const board_background = "lightblue";
-    const snake_col = 'purple';
+    const snake_col = 'lightpurple';
     const snake_border = 'lightpink';
     
     let snake = [
