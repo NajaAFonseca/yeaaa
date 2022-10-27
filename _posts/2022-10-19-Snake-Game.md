@@ -36,6 +36,8 @@
       {x: 160, y: 200}
     ]
 
+    // True if changing direction
+    let changing_direction = false;
     // Horizontal velocity
     let dx = 10;
     // Vertical velocity
@@ -47,11 +49,13 @@
     const snakeboard_ctx = snakeboard.getContext("2d");
     // Start game
     main();
+
+    document.addEventListener("keydown", change_direction);
     
     // main function called repeatedly to keep the game running
     function main() {
 
-        if (game_ended())return;
+        if (has_game_ended()) return;
 
         changing_direction = false;
         setTimeout(function onTick() {
@@ -94,7 +98,7 @@
       snakeboard_ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
     }
 
-    function game_ended() {
+    function has_game_ended() {
       for (let i = 4; < snake.length; i++) {
         if (snake [i].x ===snake [0].x && snake[i].y === snake [0].y) return true
       }
