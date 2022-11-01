@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- tittle of game -->
+    <!-- title of game -->
   	<title>Snake Game</title>
     <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
 
   </head>
 
   <body>
-    <!-- setting the canvas up as a id and positioning canvas in middle of page-->
+    <!--setting the canvas up as a id and canvas size-->
     <canvas id="snakeboard" width="400" height="400"></canvas>
- 
+
+  <!--setting up the position of the board/canvas-->
     <style>
       #snakeboard {
         position: absolute;
@@ -21,13 +22,14 @@
     </style>
   </body>
 
-  <!-- Beautifying the border and snake!! --> 
+  <!--Beautifying the border and snake--> 
   <script>
     const board_border = 'green';
     const board_background = "lightblue";
     const snake_col = 'green';
     const snake_border = 'pink';
-    
+
+    // setting up the snakes position  
     let snake = [
       {x: 200, y: 200},
       {x: 190, y: 200},
@@ -149,6 +151,26 @@
       snake.unshift(head);
       snake.pop();
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+  pTag = document.querySelector("div");
+  newVal = document.createElement("p");
+  newVal.innerHTML = '';
+  pTag.appendChild(newVal);
+});
+// Async Tests Example
+/*
+window.onModulesLoaded = new Promise( function( resolve, reject ) {
+  setTimeout(function() {
+    pTag = document.querySelector("div");
+    pTag.innerHTML = '';
+    newVal = document.createElement("p");
+    newVal.innerHTML = 'Hello World';
+    pTag.appendChild(newVal);
+    resolve();
+  }, 100)
+});
+*/
     
   </script>
 </html>
