@@ -19,6 +19,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+  <!--Setting up the score label-->
+      #score {
+        text-align: center;
+        font-size: 100px;
+      }
     </style>
   </body>
 
@@ -38,9 +43,13 @@
       {x: 160, y: 200}
     ]
 
+
+    let score = 0;
     // True if changing direction
     let changing_direction = false;
     // Horizontal velocity
+    let food_x;
+    let food_y;
     let dx = 10;
     // Vertical velocity
     let dy = 0;
@@ -51,6 +60,9 @@
     const snakeboard_ctx = snakeboard.getContext("2d");
     // Start game
     main();
+
+    // generate food
+    gen_food();
 
     document.addEventListener("keydown", change_direction);
     
@@ -100,6 +112,15 @@
       snakeboard_ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
     }
 
+
+    // drawing the food :p
+    function drawFood() {
+      snakeboard_ctx.fillStyle = 'lightblue';
+      snakeboard_ctx.strokestyle = 'darkgreen';
+      snakeboard_ctx.fillRect(food_x, food_y, 10, 10);
+      snakeboard_ctxstrokeRect(food_x, food_y, 10, 10);
+    }
+
     function has_game_ended() {
       for (let i = 4; < snake.length; i++) {
         if (snake [i].x === snake [0].x && snake[i].y === snake [0].y) return true
@@ -109,6 +130,21 @@
       const hitToptWall = snake[0].y < 0;
       const hitBottomWall = snake[0].y > snakeboard.height - 10;
       return hitLeftWall || hitRightWall || hitToptWall || hitBottomWall
+    }
+
+    // new random food location 
+    function random_food(min, max) {
+        return Math.round((Math.random () * (max-min) + min) / 10 ) * 10;
+    }
+
+    function gen_food()
+    {
+      food_x = random_food(0, snakeboard.width - 10);
+      food_y = random_food(0, snakeboard.height - 10);
+      snake.forEach(function has _snake_eaten_food(part) {
+        const has_eaten = part.x == food_x && party.y == food_y;
+        if (has_eaten) gen_food();
+      });
     }
 
     function change_direction(event) {
@@ -151,26 +187,6 @@
       snake.unshift(head);
       snake.pop();
     }
-
-    document.addEventListener("DOMContentLoaded", function () {
-  pTag = document.querySelector("div");
-  newVal = document.createElement("p");
-  newVal.innerHTML = '';
-  pTag.appendChild(newVal);
-});
-// Async Tests Example
-/*
-window.onModulesLoaded = new Promise( function( resolve, reject ) {
-  setTimeout(function() {
-    pTag = document.querySelector("div");
-    pTag.innerHTML = '';
-    newVal = document.createElement("p");
-    newVal.innerHTML = 'Hello World';
-    pTag.appendChild(newVal);
-    resolve();
-  }, 100)
-});
-*/
     
   </script>
 </html>
