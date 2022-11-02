@@ -29,7 +29,7 @@
     const snake_col = 'green';
     const snake_border = 'pink';
 
-    // setting up the snakes position  
+    // setting up the snakes' position  
     let snake = [
       {x: 200, y: 200},
       {x: 190, y: 200},
@@ -102,7 +102,7 @@
 
     function has_game_ended() {
       for (let i = 4; < snake.length; i++) {
-        if (snake [i].x ===snake [0].x && snake[i].y === snake [0].y) return true
+        if (snake [i].x === snake [0].x && snake[i].y === snake [0].y) return true
       }
       const hitLeftWall = snake[0].x < 0;
       const hitRightWall = snake[0].x > snakeboard.width - 10;
