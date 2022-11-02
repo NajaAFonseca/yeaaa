@@ -1,3 +1,9 @@
+---
+layout: page
+title: Snake Game 2
+permalink: /snake-game-2
+---
+
 <!DOCTYPE html>
 <html>
   <head>
