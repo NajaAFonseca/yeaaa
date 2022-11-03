@@ -36,12 +36,13 @@ permalink: /snake-game
 
   <!--Beautifying the border and snake--> 
   <script>
+    // const will be the consistent reference to our board border + background, snake color + border
     const board_border = 'green';
     const board_background = "lightblue";
     const snake_col = 'green';
     const snake_border = 'pink';
 
-    // setting up the snakes' position  
+    // setting up the snakes' body position  
     let snake = [
       {x: 200, y: 200},
       {x: 190, y: 200},
@@ -50,16 +51,16 @@ permalink: /snake-game
       {x: 160, y: 200}
     ]
 
-
+    // setting the starting score at 0
     let score = 0;
     // True if changing direction
     let changing_direction = false;
-    // Horizontal velocity
+    // Horizontal velocity + food
     let food_x;
-    let food_y;
     let dx = 10;
-    // Vertical velocity
+    // Vertical velocity + food
     let dy = 0;
+    let food_y;
     
     // Get the canvas element
     const snakeboard = document.getElementById("snakeboard");
