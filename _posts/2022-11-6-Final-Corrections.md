@@ -20,5 +20,3 @@ Basically it was supposed to be:
 r --> q which is 30 to 20.
 
 Therefore r was 20 and not 10.
-
-Stupid question ong. 
