@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "My Singular Test Correction",
-            "content": "Question 41 . . Crying. Sobbing. Throwing myself down the stairs because of this question. . Basically it was supposed to be: . r –&gt; q which is 30 to 20. . Therefore r was 20 and not 10. .",
+            "content": "Question 41 . . Crying. Sobbing. Throwing myself down the stairs because of this question. . Basically it was supposed to be: . r –&gt; q which overrides r to make it to 20 because q is equal to 20. . Therefore r was 20 and not 10. .",
             "url": "https://najaafonseca.github.io/yeaaa/2022/11/06/Final-Corrections.html",
             "relUrl": "/2022/11/06/Final-Corrections.html",
             "date": " • Nov 6, 2022"
