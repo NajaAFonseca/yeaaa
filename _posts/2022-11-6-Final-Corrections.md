@@ -11,7 +11,7 @@ comments: true
 
 ### Question 41
 
-![]({{site.baseurl}}/images/singularmiss.jpeg)
+![]({{site.baseurl}}/images/miss.jpg)
 
 Crying. Sobbing. Throwing myself down the stairs because of this question. 
 
