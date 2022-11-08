@@ -1,6 +1,7 @@
 ---
 title: My Singular Test Correction
 author: Naja Fonseca
+layout: page
 description: Correcting my one painful mistake on the final.
 ---
 
