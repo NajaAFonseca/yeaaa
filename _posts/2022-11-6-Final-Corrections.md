@@ -13,7 +13,6 @@ Crying. Sobbing. Throwing myself down the stairs because of this question.
 
 Basically it was supposed to be:
 
-q --> p which is 10 to 20.
 r --> q which is 30 to 20.
 
 Therefore r was 20 and not 10.
