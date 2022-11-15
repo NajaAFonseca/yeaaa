@@ -45,6 +45,62 @@ layout: notebook
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">menu</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;burger&quot;</span><span class="p">:</span> <span class="mf">3.99</span><span class="p">,</span>
+<span class="s2">&quot;fries&quot;</span><span class="p">:</span> <span class="mf">1.99</span><span class="p">,</span>
+<span class="s2">&quot;drink&quot;</span><span class="p">:</span> <span class="mf">0.99</span><span class="p">}</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mf">3.99</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menu&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">menu</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
+<span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;burger&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prics is 3.99&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;fries&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Price is 1.99&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;drink&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Price is 0.99&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;burger and fries&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Menu
+{&#39;burger&#39;: 3.99, &#39;fries&#39;: 1.99, &#39;drink&#39;: 0.99}
+Please select an item from the menu
+Prics is 3.99
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="My-Python-Quiz">My Python Quiz<a class="anchor-link" href="#My-Python-Quiz"> </a></h3>
