@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 5 through 7 Lesson Notes and Hacks | Naja’s Webpage!</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 5 through 7 Lesson Notes and Hacks" />
+<meta name="author" content="Naja Fonseca" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Following along a lesson plan made by my classmates using ntoes and completing the hacks." />
+<meta property="og:description" content="Following along a lesson plan made by my classmates using ntoes and completing the hacks." />
+<link rel="canonical" href="https://najaafonseca.github.io/yeaaa/fastpages/jupyter/2022/11/30/Unit3.5-3.7.html" />
+<meta property="og:url" content="https://najaafonseca.github.io/yeaaa/fastpages/jupyter/2022/11/30/Unit3.5-3.7.html" />
+<meta property="og:site_name" content="Naja’s Webpage!" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-30T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unit 5 through 7 Lesson Notes and Hacks" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Naja Fonseca"},"dateModified":"2022-11-30T00:00:00-06:00","datePublished":"2022-11-30T00:00:00-06:00","description":"Following along a lesson plan made by my classmates using ntoes and completing the hacks.","headline":"Unit 5 through 7 Lesson Notes and Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://najaafonseca.github.io/yeaaa/fastpages/jupyter/2022/11/30/Unit3.5-3.7.html"},"url":"https://najaafonseca.github.io/yeaaa/fastpages/jupyter/2022/11/30/Unit3.5-3.7.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/yeaaa/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://najaafonseca.github.io/yeaaa/feed.xml" title="Naja's Webpage!" /><link rel="shortcut icon" type="image/x-icon" href="/yeaaa/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/yeaaa/">Naja&#39;s Webpage!</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/yeaaa/notes-completion/">Completed Quizzes for Notes</a><a class="page-link" href="/yeaaa/about/">About Me</a><a class="page-link" href="/yeaaa/agile-methodology/">Agile Methodology Diagram</a><a class="page-link" href="/yeaaa/search/">Search</a><a class="page-link" href="/yeaaa/submenu">Submenu</a><a class="page-link" href="/yeaaa/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 5 through 7 Lesson Notes and Hacks</h1><p class="page-description">Following along a lesson plan made by my classmates using ntoes and completing the hacks.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-30T00:00:00-06:00" itemprop="datePublished">
+        Nov 30, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Naja Fonseca</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/yeaaa/categories/#fastpages">fastpages</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/yeaaa/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/NajaAFonseca/yeaaa/tree/master/_notebooks/2022-12-1-Unit3.5-3.7.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/yeaaa/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/NajaAFonseca/yeaaa/master?filepath=_notebooks%2F2022-12-1-Unit3.5-3.7.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yeaaa/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/NajaAFonseca/yeaaa/blob/master/_notebooks/2022-12-1-Unit3.5-3.7.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yeaaa/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FNajaAFonseca%2Fyeaaa%2Fblob%2Fmaster%2F_notebooks%2F2022-12-1-Unit3.5-3.7.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/yeaaa/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Unit-3-Section-5-Notes">Unit 3 Section 5 Notes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Vocab">Vocab </a></li>
+<li class="toc-entry toc-h3"><a href="#Relational-Operators">Relational Operators </a></li>
+<li class="toc-entry toc-h3"><a href="#Logical-Operators">Logical Operators </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Unit-3-Section-6-Notes">Unit 3 Section 6 Notes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Voacab">Voacab </a></li>
+<li class="toc-entry toc-h3"><a href="#Conditional-Statements">Conditional Statements </a></li>
+<li class="toc-entry toc-h3"><a href="#Categories">Categories </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Unit-3-Section-7-Notes">Unit 3 Section 7 Notes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Vocab">Vocab </a></li>
+<li class="toc-entry toc-h3"><a href="#Nested-conditionals">Nested conditionals </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Unit-3-Hacks-Unit-5">Unit 3 Hacks Unit 5 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Practice-Questions">Practice Questions </a></li>
+<li class="toc-entry toc-h3"><a href="#Binary-Truth-Tables">Binary Truth Tables </a></li>
+<li class="toc-entry toc-h3"><a href="#Python-Practice">Python Practice </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Unit-3-Section-6-Hacks">Unit 3 Section 6 Hacks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Ap-Prep">Ap Prep </a></li>
+<li class="toc-entry toc-h3"><a href="#Using-Python">Using Python </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Unit-3-Section-7-Hacks">Unit 3 Section 7 Hacks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Excercise-One">Excercise One </a></li>
+<li class="toc-entry toc-h3"><a href="#Excercise-Two">Excercise Two </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-1-Unit3.5-3.7.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-3-Section-5-Notes">
+<a class="anchor" href="#Unit-3-Section-5-Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Section 5 Notes<a class="anchor-link" href="#Unit-3-Section-5-Notes"> </a>
+</h1>
+<h3 id="Vocab">
+<a class="anchor" href="#Vocab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab<a class="anchor-link" href="#Vocab"> </a>
+</h3>
+<p>Boolean - binary variable with only two possible values of either true or false.</p>
+<h3 id="Relational-Operators">
+<a class="anchor" href="#Relational-Operators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Relational Operators<a class="anchor-link" href="#Relational-Operators"> </a>
+</h3>
+<ul>
+<li>=</li>
+<li>&lt;</li>
+<li>&gt;</li>
+<li>≠</li>
+<li>≥</li>
+<li>≤</li>
+</ul>
+<h3 id="Logical-Operators">
+<a class="anchor" href="#Logical-Operators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Logical Operators<a class="anchor-link" href="#Logical-Operators"> </a>
+</h3>
+<ul>
+<li>allow for booleans to be evaluated</li>
+<li>pseudocode uses the logical operators NOT, AND, and OR</li>
+<li>javascript uses the &amp;&amp;(and), | |(or), |(not).</li>
+</ul>
+<h1 id="Unit-3-Section-6-Notes">
+<a class="anchor" href="#Unit-3-Section-6-Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Section 6 Notes<a class="anchor-link" href="#Unit-3-Section-6-Notes"> </a>
+</h1>
+<h3 id="Voacab">
+<a class="anchor" href="#Voacab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Voacab<a class="anchor-link" href="#Voacab"> </a>
+</h3>
+<p>Algorithm - finite set of instructions that accomplish a specific task.</p>
+<h3 id="Conditional-Statements">
+<a class="anchor" href="#Conditional-Statements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conditional Statements<a class="anchor-link" href="#Conditional-Statements"> </a>
+</h3>
+<ul>
+<li>allow the code to act based on multiple conditions</li>
+<li>Use conditionals in algorithms in order to receive different outputs from a set of code and help achieve the general purpose of the algorithm.</li>
+</ul>
+<h3 id="Categories">
+<a class="anchor" href="#Categories" aria-hidden="true"><span class="octicon octicon-link"></span></a>Categories<a class="anchor-link" href="#Categories"> </a>
+</h3>
+<p>Contain if-statements and if-else statements.</p>
+<ul>
+<li>if statement: will go through certain statements if the if expression is true.</li>
+<li>if-else statement: will go through a statement no matter what, but the statement which is run depends on the if expression is true or false.</li>
+</ul>
+<h1 id="Unit-3-Section-7-Notes">
+<a class="anchor" href="#Unit-3-Section-7-Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Section 7 Notes<a class="anchor-link" href="#Unit-3-Section-7-Notes"> </a>
+</h1>
+<h3 id="Vocab">
+<a class="anchor" href="#Vocab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab<a class="anchor-link" href="#Vocab"> </a>
+</h3>
+<p>Nested conditional - A conditional inside of a conditional.</p>
+<h3 id="Nested-conditionals">
+<a class="anchor" href="#Nested-conditionals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nested conditionals<a class="anchor-link" href="#Nested-conditionals"> </a>
+</h3>
+<ul>
+<li>used in algorithms in order to print specific data or run certain tasks</li>
+<li>use conditionals inside conditionals to create further conditions in algorithms</li>
+<li>use flowcharts to help display an easy to understand diagram of what we want a code segment to do</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h1>
+<h2 id="Unit-3-Hacks-Unit-5">
+<a class="anchor" href="#Unit-3-Hacks-Unit-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Hacks Unit 5<a class="anchor-link" href="#Unit-3-Hacks-Unit-5"> </a>
+</h2>
+<h3 id="Practice-Questions">
+<a class="anchor" href="#Practice-Questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Practice Questions<a class="anchor-link" href="#Practice-Questions"> </a>
+</h3>
+<p><strong>1. 90(D) = 1000(B)</strong></p>
+<ul>
+<li>A. True</li>
+<li>B. False</li>
+</ul>
+<p><strong>My Answer:</strong> False</p>
+<p><strong>2. 10(D) ≠ 0110(B)</strong></p>
+<ul>
+<li>A. True</li>
+<li>B. False</li>
+</ul>
+<p><strong>My Answer:</strong> True</p>
+<p><strong>3. 56(D) ≥ 111000(B)</strong></p>
+<ul>
+<li>A. True</li>
+<li>B. False</li>
+</ul>
+<p><strong>My Answer:</strong> True</p>
+<p><strong>3. 99(D) &lt; 1110011(B)</strong></p>
+<ul>
+<li>A. True</li>
+<li>B. False</li>
+</ul>
+<p><strong>My Answer:</strong> True</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Binary-Truth-Tables">
+<a class="anchor" href="#Binary-Truth-Tables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Truth Tables<a class="anchor-link" href="#Binary-Truth-Tables"> </a>
+</h3>
+<style>
+    table, th, td { 
+        border:2px solid white;
+    }
+</style>
+    <div>AND Operator</div>
+    <div>
+        <table>
+            <tr>
+                <th>Value 1</th>
+                <th>Value 2</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+    <div>OR Operator</div>
+    <div>
+        <table>
+            <tr>
+                <th>Value 1</th>
+                <th>Value 2</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+    <div>Not operator</div>
+    <div>
+        <table>
+            <tr>
+                <th>Not</th>
+                <th>Value</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>Not</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Not</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <td>BLANK</td>
+            &lt;/tr&gt;
+        </table>
+    </div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Python-Practice">
+<a class="anchor" href="#Python-Practice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python Practice<a class="anchor-link" href="#Python-Practice"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">20</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">)</span> <span class="c1"># How can you change the operator to print a value of False?</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">z</span><span class="p">)</span> <span class="c1"># How can this return true by only manipulating the operator?</span>
+
+<span class="c1"># Manipulate the variables x, y, and z to make the below statement return true</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="n">z</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>False
+True
+True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-3-Section-6-Hacks">
+<a class="anchor" href="#Unit-3-Section-6-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Section 6 Hacks<a class="anchor-link" href="#Unit-3-Section-6-Hacks"> </a>
+</h1>
+<h3 id="Ap-Prep">
+<a class="anchor" href="#Ap-Prep" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ap Prep<a class="anchor-link" href="#Ap-Prep"> </a>
+</h3>
+<p><strong>1. What is displayed by this code?</strong></p>
+<ul>
+<li>result &lt;-- 75</li>
+<li>IF result &lt; 80 {
+  DISPLAY("Please schedule a retake.")
+}</li>
+<li>ELSE {
+  DISPLAY("Nice job!")
+}</li>
+</ul>
+<ol>
+<li>Nice job!</li>
+<li>Display</li>
+<li>Please schedule a retake.</li>
+<li>75</li>
+</ol>
+<p><strong>My Answer:</strong> 3</p>
+<p><strong>2. How is an if statement different from an if-else statement.</strong></p>
+<ol>
+<li>Extra words.</li>
+<li>An if statement will only go through a process if a condition is met. An if-else statement will go through code no matter the conditions.</li>
+<li>They are the exact same.</li>
+<li>An if statement will go through the entire code segment every single time and the if-else statement is always used in an algorithm, no matter the conditions.</li>
+</ol>
+<p><strong>My Answer:</strong> 4</p>
+<p><strong>3. What would be most appropriate for this situation? Ben wants to check his bank account. If his car fuel is full, he will go to the bank. Otherwise, he will go home. If he goes to the bank, he will withdraw money only if his balance is above $1000.</strong></p>
+<ol>
+<li>If statement</li>
+<li>If-else statement</li>
+</ol>
+<p><strong>My Answer:</strong> 2</p>
+<p><strong>4. What would be most appropriate for this situation? Luke wants to play basketball. If it is sunny outside he will go to the park to play basketball.</strong></p>
+<ol>
+<li>If statement</li>
+<li>If-else statement</li>
+</ol>
+<p><strong>My Answer:</strong> 1</p>
+<h3 id="Using-Python">
+<a class="anchor" href="#Using-Python" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using Python<a class="anchor-link" href="#Using-Python"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"lion"</span><span class="p">,</span> <span class="s2">"tiger"</span><span class="p">,</span> <span class="s2">"wildebeest"</span><span class="p">,</span> <span class="s2">"shark"</span><span class="p">,</span> <span class="s2">"jellyfish"</span><span class="p">,</span> <span class="s2">"blobfish"</span><span class="p">,</span> <span class="s2">"raven"</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">animals</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s2">"shark"</span><span class="p">:</span> <span class="c1"># What boolean value does this statement cause?</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Fun Fact: The smallest shark is the dwarf lantern shark, and it is small enough to hold in your hand!"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">animals</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s2">"lion"</span> <span class="ow">or</span> <span class="s2">"wildebeest"</span> <span class="ow">or</span> <span class="s2">"raven"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"This animal lives in the desert"</span><span class="p">)</span>
+
+<span class="c1"># Practice</span>
+<span class="c1"># Using only one more if statement, alter the code to print out a statement saying if an animal lives in the desert, based on booleans</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>lion
+tiger
+wildebeest
+Fun Fact: The smallest shark is the dwarf lantern shark, and it is small enough to hold in your hand!
+jellyfish
+blobfish
+raven
+This animal lives in the desert
+This animal lives in the desert
+This animal lives in the desert
+This animal lives in the desert
+This animal lives in the desert
+This animal lives in the desert
+This animal lives in the desert
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The code "if i == "shark":" will output the boolean value of true.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-3-Section-7-Hacks">
+<a class="anchor" href="#Unit-3-Section-7-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 3 Section 7 Hacks<a class="anchor-link" href="#Unit-3-Section-7-Hacks"> </a>
+</h1>
+<h3 id="Excercise-One">
+<a class="anchor" href="#Excercise-One" aria-hidden="true"><span class="octicon octicon-link"></span></a>Excercise One<a class="anchor-link" href="#Excercise-One"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ChickenAlfredo</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"meat"</span><span class="p">:</span> <span class="n">true</span>
+    <span class="s2">"time to prepare"</span><span class="p">:</span> <span class="mi">60</span>
+<span class="p">}</span>
+
+<span class="n">CheeseQuesadilla</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"meat"</span><span class="p">:</span> <span class="n">false</span>
+    <span class="s2">"time to prepare"</span><span class="p">:</span> <span class="mi">10</span>
+<span class="p">}</span>
+
+<span class="n">BeefWellington</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"meat"</span><span class="p">:</span> <span class="n">true</span>
+    <span class="s2">"time to prepare"</span><span class="p">:</span> <span class="mi">150</span>
+    <span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">cook</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">meat</span> <span class="o">==</span> <span class="n">false</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">"Can't cook this meal."</span><span class="p">)</span>
+    <span class="k">else</span> <span class="n">meat</span> <span class="o">==</span> <span class="n">true</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Can cook this meal"</span><span class="p">)</span>
+
+<span class="n">cook</span><span class="p">(</span><span class="n">ChickenAlfredo</span><span class="p">)</span>
+<span class="n">cook</span><span class="p">(</span><span class="n">CheeseQuesadilla</span><span class="p">)</span>
+<span class="n">cook</span><span class="p">(</span><span class="n">BeefWellington</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [14]</span>
+<span class="ansi-red-fg">    "time to prepare": 60</span>
+    ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Excercise-Two">
+<a class="anchor" href="#Excercise-Two" aria-hidden="true"><span class="octicon octicon-link"></span></a>Excercise Two<a class="anchor-link" href="#Excercise-Two"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sudo Code and Flowchart</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="NajaAFonseca/yeaaa"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/yeaaa/fastpages/jupyter/2022/11/30/Unit3.5-3.7.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/yeaaa/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/yeaaa/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/yeaaa/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Welcome to my description! Not much going on here, just learning new things ¯\_(ツ)_/¯</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
