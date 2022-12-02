@@ -16,13 +16,13 @@ Reflection on our group presentation: I thought we presented really well for the
 
 My Grade: .9/1
 
-Why: I completed all my notes and answers but should have explained my notes for 3.3 video 2
+Why: I completed all my notes and answers but should have explained my answers for 3.3 video 2
 
 Reflection: I enjoyed the lesson and thought it was really good. They explained their lesson really well and it was easily understandable. I took notes to keep up with what I learned and payed attention to the best of their ability. I learned about algorithms, iteration, selection, sequincing, arithmic operators, srings, concats, substrings and variables.
 
 ### 3.5 to 3.7
 
-My Graade: TBD
+My Grade: TBD
 
 Why: --
 
