@@ -30,7 +30,7 @@ Reflection: I enjoyed the lesson and thought it was organized and well planned o
 
 ### 3.8 to 3.10
 
-My grade: 1/1
+My grade: .9/1
 
 Why: And I quote "Perfect; really efficient/clever way of avoiding an index out of range error."
 
