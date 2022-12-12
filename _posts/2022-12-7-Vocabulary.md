@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-description: Describing vocab words :p
+description: Describing vocab words
 title: Vocabulary 
 toc: true 
 badges: true
