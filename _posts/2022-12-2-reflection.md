@@ -35,3 +35,19 @@ My grade: .9/1
 Why: And I quote "Perfect; really efficient/clever way of avoiding an index out of range error."
 
 Reflection: I enjoyed the lesson, however it was a little confusing due to the pace of which the presenters presented. However, after going through my own notes and completing the hacks I was able to understand the lesson to the fullest of my potential.
+
+### 3.11 and 3.12
+
+My grade: /1
+
+Why: 
+
+Reflection: 
+
+### 3.14 and 3.15 
+
+My grade:
+
+Why:
+
+Reflection:
