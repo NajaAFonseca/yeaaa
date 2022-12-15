@@ -28,7 +28,7 @@ Why: My grader said I completed all the notes and the lesson with good notes and
 
 Reflection: I enjoyed the lesson and thought it was organized and well planned out. It went by really fast and I was a bit confused but the teachers were able to help. I took notes to keep up with the lesson and learned about flow charts, relational operators, logical operators, conditional statements, and nested conditionals.
 
-### 3.8 to 3.10
+### 3.8 and 3.10
 
 My grade: .9/1
 
@@ -36,18 +36,42 @@ Why: And I quote "Perfect; really efficient/clever way of avoiding an index out 
 
 Reflection: I enjoyed the lesson, however it was a little confusing due to the pace of which the presenters presented. However, after going through my own notes and completing the hacks I was able to understand the lesson to the fullest of my potential.
 
-### 3.11 and 3.12
+### 3.9 and 3.11
 
-My grade: /1
+My grade: .92/1
 
-Why: 
+Why: Took great notes and included vocab, great descriptions and explained each question's answer well. Good Job!!!
 
-Reflection: 
+Reflection: **TBD**
 
-### 3.14 and 3.15 
+### 3.12 and 3.13
 
-My grade:
+My grade: .9/1
+
+Why: Added everything need and more. Made answers super simple and understandable. 
+
+Reflection: **TBD**
+
+### 3.14 and 3.15
+
+My grade: TBD
 
 Why:
 
 Reflection:
+
+### 3.16 
+
+My grade: TBD
+
+Why:
+
+Reflection:
+
+### 3.17 and 3.18
+
+My grade: TBD
+
+Why:
+
+Reflection: 
