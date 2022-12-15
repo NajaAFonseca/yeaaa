@@ -42,7 +42,7 @@ My grade: .92/1
 
 Why: Took great notes and included vocab, great descriptions and explained each question's answer well. Good Job!!!
 
-Reflection: **TBD**
+Reflection: I really enjoyed this lesson and the interactions. My favorite part was probably the part where we all rapped it was super enjoyable and fun. I thought the lesson was well paced and overall super fun to have. 
 
 ### 3.12 and 3.13
 
