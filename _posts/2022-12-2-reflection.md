@@ -50,15 +50,15 @@ My grade: .9/1
 
 Why: Added everything need and more. Made answers super simple and understandable. 
 
-Reflection: **TBD**
+Reflection: This lesson was really good and well paced, I did get a bit confused but was able to figure things out. I thought the pace was a bit fast but overall it was a good lesson and I learned a lot from it. 
 
 ### 3.14 and 3.15
 
-My grade: TBD
+My grade: .89/1
 
-Why:
+Why: I completed everything however, I believe I got a multiple choice question wrong. 
 
-Reflection:
+Reflection: This was a really good lesson, I loved the pace and presentation it was super well done and I really enjoyed it. I learned a lot from the lesson and thought it was so smooth and really well done. 
 
 ### 3.16 
 
@@ -66,7 +66,7 @@ My grade: TBD
 
 Why:
 
-Reflection:
+Reflection: 
 
 ### 3.17 and 3.18
 
