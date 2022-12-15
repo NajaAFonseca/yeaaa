@@ -56,7 +56,7 @@ Reflection: This lesson was really good and well paced, I did get a bit confused
 
 My grade: .89/1
 
-Why: I completed everything however, I believe I got a multiple choice question wrong. 
+Why: I completed everything however, I got a multiple choice question wrong. 
 
 Reflection: This was a really good lesson, I loved the pace and presentation it was super well done and I really enjoyed it. I learned a lot from the lesson and thought it was so smooth and really well done. 
 
