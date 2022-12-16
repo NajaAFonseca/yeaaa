@@ -176,7 +176,9 @@ layout: post
 
 ---
 
-- **Traversing Strings** - 
+- **Traversing Strings** - traverse a string as a substring by using the Python slice operator ([]). It cuts off a substring from the original string and thus allows to iterate over it partially.
+
+![]({{site.baseurl}}/images/traverse.jpg)
 
 ---
 
