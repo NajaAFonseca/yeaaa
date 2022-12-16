@@ -72,8 +72,10 @@ layout: post
 
 ## Data Compression: 
 
-- Lossy - 
-- Lossless - 
+- **Lossy** -  file compression describe whether all original data can be recovered when the file is uncompressed.
+- **Lossless** - lossless compression, every bit of data originally in a file remains after it is uncompressed, and all the information is restored. Lossy compression reduces a file by permanently eliminating certain information, especially redundant information.
+
+![]({{site.baseurl}}/images/lossy.jpg) 
 
 # Unit 3 Algorithm/Programming Terms
 
@@ -121,12 +123,22 @@ layout: post
 ![]({{site.baseurl}}/images/expression.jpg)
 
 ---
-- Comparison Operators 
-- Booleans Expressions and Selection - 
-- Booleans Expressions and Iteration - 
---- 
 
-- **Truth Tables** - 
+- **Comparison Operators** - used to compare two values:
+
+![]({{site.baseurl}}/images/operators.jpg)
+
+---
+
+- **Booleans Expressions and Iteration** - Expressions that can only result in one of two answers, iteration is the process of iterating between any possible answers.
+
+- **Booleans Expressions and Selection** - Expressions that can only result in one of two answers, selection is the process of selecting one of the two answers.
+
+![]({{site.baseurl}}/images/bselection.jpg)
+
+---
+
+- **Truth Tables** - tables that evaluate true or false.
 
 ![]({{site.baseurl}}/images/truth-tables.jpg)
 
@@ -142,19 +154,56 @@ layout: post
     - Example: "Hello", 'hi', "Strings can say anything!"
 
 ---
-- Length - 
-- Concatenation - 
-- Upper - 
-- Lower -  
-- Traversing Strings - 
-- Python If - 
-- Elif - 
-- Else conditionals -  
-- Nested Selection Statements - 
-- Procedural Abstraction - 
-- Python Def procedures -  
-- Parameters - 
-- Return Values - 
+
+- **Length** - 
+
+--- 
+
+- **Concatenation** - 
+
+---
+
+- **Upper** - 
+
+---
+
+- **Lower** -  
+
+---
+
+- **Traversing Strings** - 
+
+---
+
+- **Python If** - 
+
+---
+
+- **Elif** - 
+
+---
+
+- **Else conditionals** -
+
+---
+
+- **Nested Selection Statements** -
+
+---
+
+- **Procedural Abstraction** -
+
+---
+
+- **Python Def procedures** -  
+
+---
+
+- **Parameters** - 
+
+---
+
+- **Return Values** - 
 
 - Python For While loops with Range, with List
 Combining loops with conditionals to Break, Continue
