@@ -67,15 +67,20 @@ Combining loops with conditionals to Break, Continue
 
 #### Managing Complexity with Variables:  
 
-- Lists - a sequence of several variables grouped together. Example: list = [1, 2, 3, 4, 5]
+- **Lists** - a sequence of several variables grouped together. 
+    - Example: list = [1, 2, 3, 4, 5]
 
 ---
 
-- 2D Lists - a two-dimensional data structure stored linearly in the memory
+- **2D Lists** - a two-dimensional data structure stored linearly in the memory.
 
 ![]({{site.baseurl}}/images/2D.jpg)
 
 ---
 
-- Dictionaries - 
-- Class - 
+- **Dictionaries** - used to store data values.
+
+![]({{site.baseurl}}/images/dictionary.jpg)
+---
+
+- **Class** - a code template for creating objects.
