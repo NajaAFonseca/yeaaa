@@ -202,13 +202,15 @@ layout: post
 
 ---
 
-- **Python Def procedures** -  defines a function by the def keyword, then you write the function identifier (name) followed by parentheses and a colon.
+- **Python Def procedures** - defines a function by the def keyword, then you write the function identifier (name) followed by parentheses and a colon.
 
 ![]({{site.baseurl}}/images/def.jpg)
 
 ---
 
-- **Parameters** - 
+- **Parameters** - the variable listed inside the parentheses in the function definition.
+
+![]({{site.baseurl}}/images/param.jpg)
 
 ---
 
