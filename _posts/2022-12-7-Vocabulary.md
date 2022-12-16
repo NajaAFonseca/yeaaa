@@ -192,7 +192,9 @@ layout: post
 
 ---
 
-- **Nested Selection Statements** -
+- **Nested Selection Statements** -  used when more than one decision must be made before carrying out a task.
+
+![]({{site.baseurl}}/images/nss.jpg)
 
 ---
 
