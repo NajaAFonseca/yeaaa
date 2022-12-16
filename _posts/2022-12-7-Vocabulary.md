@@ -198,7 +198,7 @@ layout: post
 
 ---
 
-- **Procedural Abstraction** -
+- **Procedural Abstraction** - write code sections (called "procedures" or in Java, "static methods") which are generalised by having variable parameters.
 
 ---
 
