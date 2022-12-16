@@ -182,15 +182,13 @@ layout: post
 
 ---
 
-- **Python If** - 
+- **Python If** - an if statement sets something into motion IF a certain thing occurs.
 
----
+- **Elif** - an elif condition goes into motion if the first if statement isn't true, but you want to check for another condition such as the else condition before. 
 
-- **Elif** - 
+- **Else conditionals** - an else condition goes into play if an if statement is not true.
 
----
-
-- **Else conditionals** -
+![]({{site.baseurl}}/images/elif.jpg)
 
 ---
 
