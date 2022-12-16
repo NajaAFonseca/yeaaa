@@ -160,7 +160,9 @@ layout: post
 
 --- 
 
-- **Concatenation** - 
+- **Concatenation** - joining strings together end-to-end to create a new string.
+
+![]({{site.baseurl}}/images/con.jpg)
 
 ---
 
