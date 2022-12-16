@@ -10,9 +10,20 @@ layout: post
 
 ## Unit 2 Binary/Data Terms
 
-- Bits - 
-- Bytes - 
-- Hexadecimal / Nibbles - 
+- **Bits** - the minimum unit of binary information stored in a computer system.
+    - Example: 0 or 1.
+
+![]({{site.baseurl}}/images/bits.jpg)
+
+--- 
+
+- **Bytes** - a group of binary digits or bits (usually eight) operated on as a unit.
+
+![]({{site.baseurl}}/images/bytes.jpg)
+
+---
+
+- **Hexadecimal / Nibbles** - each hexadecimal digit represents four bits (binary digits), also known as a nibble (or nybble).
 
 #### Binary Numbers: 
 
@@ -22,10 +33,28 @@ layout: post
 
 #### Binary Data Abstractions: 
 
-- Boolean - 
-- ASCII - 
-- Unicode -
-- RGB - 
+- **Boolean** - assign a True or False value or even an expression that ultimately evaluates to one of these values.
+
+![]({{site.baseurl}}/images/boolean.jpg)
+
+---
+
+- **ASCII** - returns a string containing a printable representation of an object for non-alphabets or invisible characters.
+
+![]({{site.baseurl}}/images/character.jpg)
+
+---
+
+- **Unicode** - a specification that aims to list every character used by human languages and give each character its own unique code.
+
+
+![]({{site.baseurl}}/images/unicode.jpg)
+
+---
+
+- **RGB** - describes a color as a tuple of three components. 
+
+![]({{site.baseurl}}/images/rgb.jpg)
 
 #### Data Compression: 
 
@@ -35,8 +64,8 @@ layout: post
 ## Unit 3 Algorithm/Programming Terms
 
 - **Variables** - a way of storing information in a computer program, which could later be changed, referenced, and used.
-    - examples: age, gender, name, height
-    - variables can be anything you want to name/make them
+    - Examples: age, gender, name, height
+    - Variables can be anything you want to name/make them
 
 ---
 
@@ -59,12 +88,12 @@ layout: post
 --- 
 
 - **Sequence** - doing steps in order.
-    - example: following steps 1, 2, and 3. Must go in order!
+    - Example: following steps 1, 2, and 3. Must go in order!
 
 ---
 
 - **Selection** - deciding between two different outcomes. 
-    - example: if else statements offer two different outcomes. 
+    - Example: if else statements offer two different outcomes. 
 
 ---
 
