@@ -59,11 +59,15 @@ layout: post
 --- 
 
 - **Sequence** - doing steps in order.
-
-
+    - example: following steps 1, 2, and 3. Must go in order!
 
 ---
-- Selection - 
+
+- **Selection** - deciding between two different outcomes. 
+    - example: if else statements offer two different outcomes. 
+    
+---
+
 - Iteration - 
 - Expressions - 
 - Comparison Operators 
