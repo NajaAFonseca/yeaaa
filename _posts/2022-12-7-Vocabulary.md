@@ -25,9 +25,15 @@ layout: post
 
 - **Hexadecimal / Nibbles** - each hexadecimal digit represents four bits (binary digits), also known as a nibble (or nybble).
 
+![]({{site.baseurl}}/images/nibble.jpg)
+
 #### Binary Numbers: 
 
-- Unsigned Integer -  
+- **Unsigned Integer** -   numbers without any '+'or '-' sign
+
+![]({{site.baseurl}}/images/unsigned.jpg)
+
+---
 - Signed Integer - 
 - Floating Point - 
 
