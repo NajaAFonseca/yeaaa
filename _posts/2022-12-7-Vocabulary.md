@@ -65,10 +65,15 @@ layout: post
 
 - **Selection** - deciding between two different outcomes. 
     - example: if else statements offer two different outcomes. 
-    
+
 ---
 
-- Iteration - 
+- **Iteration** - repeating a step until the condition is fulfilled.
+
+![]({{site.baseurl}}/images/iteration.jpg)
+
+---
+
 - Expressions - 
 - Comparison Operators 
 - Booleans Expressions and Selection - 
