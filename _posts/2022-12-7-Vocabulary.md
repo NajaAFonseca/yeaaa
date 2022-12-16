@@ -41,7 +41,9 @@ layout: post
 
 ---
 
-- **Floating Point** - 
+- **Floating Point** - are decimals or fractions represented in binary.
+
+![]({{site.baseurl}}/images/point.jpg)
 
 #### Binary Data Abstractions: 
 
