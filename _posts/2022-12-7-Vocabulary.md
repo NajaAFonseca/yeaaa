@@ -8,7 +8,7 @@ comments: true
 layout: post
 ---
 
-## Unit 2 Binary/Data Terms
+# Unit 2 Binary/Data Terms
 
 - **Bits** - the minimum unit of binary information stored in a computer system.
     - Example: 0 or 1.
@@ -27,7 +27,7 @@ layout: post
 
 ![]({{site.baseurl}}/images/nibble.jpg)
 
-### Binary Numbers: 
+## Binary Numbers: 
 
 - **Unsigned Integer** -   numbers without any '+'or '-' sign
 
@@ -45,7 +45,7 @@ layout: post
 
 ![]({{site.baseurl}}/images/point.jpg)
 
-### Binary Data Abstractions: 
+## Binary Data Abstractions: 
 
 - **Boolean** - assign a True or False value or even an expression that ultimately evaluates to one of these values.
 
@@ -70,12 +70,12 @@ layout: post
 
 ![]({{site.baseurl}}/images/rgb.jpg)
 
-### Data Compression: 
+## Data Compression: 
 
 - Lossy - 
 - Lossless - 
 
-## Unit 3 Algorithm/Programming Terms
+# Unit 3 Algorithm/Programming Terms
 
 - **Variables** - a way of storing information in a computer program, which could later be changed, referenced, and used.
     - Examples: age, gender, name, height
@@ -159,7 +159,7 @@ layout: post
 - Python For While loops with Range, with List
 Combining loops with conditionals to Break, Continue
 
-### Managing Complexity with Variables:  
+## Managing Complexity with Variables:  
 
 - **Lists** - a sequence of several variables grouped together. 
     - Example: list = [1, 2, 3, 4, 5]
