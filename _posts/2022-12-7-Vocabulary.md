@@ -218,8 +218,27 @@ layout: post
 
 ![]({{site.baseurl}}/images/return.jpg)
 
-- Python For While loops with Range, with List
-Combining loops with conditionals to Break, Continue
+---
+
+- **Python For loops** - used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+![]({{site.baseurl}}/images/for.jpg)
+
+---
+
+- **While loop with range** - iterates over the range through a while loop.
+
+![]({{site.baseurl}}/images/whilerange.jpg)
+
+---
+
+- **While loop with a list** - iterates over the list in a while loop.
+
+![]({{site.baseurl}}/images/whilelist.jpg)
+
+---
+
+
 
 ## Managing Complexity with Variables:  
 
