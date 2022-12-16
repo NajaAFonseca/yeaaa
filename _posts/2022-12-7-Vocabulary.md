@@ -89,8 +89,16 @@ layout: post
 
 ---
 
-- Characters - 
-- Strings
+- **Characters** - arrays of bytes representing unicode characters.
+
+![]({{site.baseurl}}/images/character.jpg)
+
+---
+
+- **Strings** - strings in python are surrounded by either single quotation marks, or double quotation marks.
+    - Example: "Hello", 'hi', "Strings can say anything!"
+
+---
 - Length - 
 - Concatenation - 
 - Upper - 
