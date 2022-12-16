@@ -236,10 +236,6 @@ layout: post
 
 ![]({{site.baseurl}}/images/whilelist.jpg)
 
----
-
-
-
 ## Managing Complexity with Variables:  
 
 - **Lists** - a sequence of several variables grouped together. 
