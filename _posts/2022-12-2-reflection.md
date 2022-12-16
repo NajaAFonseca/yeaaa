@@ -70,8 +70,8 @@ Reflection: This lesson went by really quick, however I learned a lot. I thought
 
 ### 3.17 and 3.18
 
-My grade: TBD
+My grade: .9/1
 
-Why:
+Why: No reflection at the end, but really well-done explanations for each hack and all of the hacks were attempted, most were successful.
 
-Reflection: 
+Reflection: I thought the lesson was really good and really well paced. The hacks were ok except for hack 3 which I found quite difficult. Despite not being able to do it I wrote about the differences in a lengthened code and the shortened code. I learned a lot from this lesson and enjoyed it.
