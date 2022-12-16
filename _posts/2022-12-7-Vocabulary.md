@@ -34,8 +34,14 @@ layout: post
 ![]({{site.baseurl}}/images/unsigned.jpg)
 
 ---
-- Signed Integer - 
-- Floating Point - 
+
+- **Signed Integer** - numbers with a “+” or “-“ sign.
+
+![]({{site.baseurl}}/images/unsigned.jpg)
+
+---
+
+- **Floating Point** - 
 
 #### Binary Data Abstractions: 
 
