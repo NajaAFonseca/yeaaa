@@ -34,11 +34,35 @@ layout: post
 
 ## Unit 3 Algorithm/Programming Terms
 
-- Variables - 
-- Data Types - 
-- Assignment Operators - 
-- Algorithms - 
-- Sequence - 
+- **Variables** - a way of storing information in a computer program, which could later be changed, referenced, and used.
+    - examples: age, gender, name, height
+    - variables can be anything you want to name/make them
+
+---
+
+- **Data Types** - a set of values and operations on those values.
+
+![]({{site.baseurl}}/images/data-tables.jpg)
+
+---
+
+- **Assignment Operators** - used to perform operations on variables or operands and assign values to the operand on the left side of the operator.
+
+![]({{site.baseurl}}/images/assignment-operators.jpg)
+
+---
+
+- **Algorithms** - a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output.
+
+![]({{site.baseurl}}/images/algorithm.jpg)
+
+--- 
+
+- **Sequence** - doing steps in order.
+
+
+
+---
 - Selection - 
 - Iteration - 
 - Expressions - 
@@ -84,3 +108,5 @@ Combining loops with conditionals to Break, Continue
 ---
 
 - **Class** - a code template for creating objects.
+
+![]({{site.baseurl}}/images/class.jpg)
