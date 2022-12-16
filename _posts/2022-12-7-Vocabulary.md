@@ -166,11 +166,13 @@ layout: post
 
 ---
 
-- **Upper** - 
+- **Upper** - changing all the strings to uppercase.
+    - Example: 'HELLO', 'PIE', 'CHEETAH'
 
 ---
 
-- **Lower** -  
+- **Lower** - changing all the strings to lowercase.
+    - Example: 'hello', 'pie', 'cheetah'
 
 ---
 
