@@ -214,7 +214,9 @@ layout: post
 
 ---
 
-- **Return Values** - 
+- **Return Values** - a return statement consists of the return keyword followed by an optional return value.
+
+![]({{site.baseurl}}/images/return.jpg)
 
 - Python For While loops with Range, with List
 Combining loops with conditionals to Break, Continue
