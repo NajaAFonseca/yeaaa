@@ -155,7 +155,8 @@ layout: post
 
 ---
 
-- **Length** - 
+- **Length** - returns the length of an object.
+    - Example: len()
 
 --- 
 
