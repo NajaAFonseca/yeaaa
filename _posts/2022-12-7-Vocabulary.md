@@ -73,12 +73,15 @@ layout: post
 ![]({{site.baseurl}}/images/iteration.jpg)
 
 ---
-
 - Expressions - 
 - Comparison Operators 
 - Booleans Expressions and Selection - 
 - Booleans Expressions and Iteration - 
-- Truth Tables - 
+--- 
+- **Truth Tables** - 
+
+![]({{site.baseurl}}/images/truth-tables.jpg)
+
 - Characters - 
 - Strings
 - Length - 
