@@ -62,11 +62,11 @@ Reflection: This was a really good lesson, I loved the pace and presentation it 
 
 ### 3.16 
 
-My grade: TBD
+My grade: .85/1
 
-Why:
+Why: 4/6; Took good notes on the assignment as well as finished the multiple choice
 
-Reflection: 
+Reflection: This lesson went by really quick, however I learned a lot. I thought their hacks were simple and easy to complete. I got 4/6 on the multiple choice and didn't do extra credit. 
 
 ### 3.17 and 3.18
 
