@@ -73,14 +73,21 @@ layout: post
 ![]({{site.baseurl}}/images/iteration.jpg)
 
 ---
-- Expressions - 
+- **Expressions** - a combination of operators and operands. 
+
+![]({{site.baseurl}}/images/expression.jpg)
+
+---
 - Comparison Operators 
 - Booleans Expressions and Selection - 
 - Booleans Expressions and Iteration - 
 --- 
+
 - **Truth Tables** - 
 
 ![]({{site.baseurl}}/images/truth-tables.jpg)
+
+---
 
 - Characters - 
 - Strings
