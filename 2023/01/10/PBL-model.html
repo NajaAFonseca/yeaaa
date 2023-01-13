@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -324,7 +324,7 @@ window.onload = wrap_img;
     <span class="n">u</span><span class="o">.</span><span class="n">dob</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1963</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">]</span>
     <span class="n">u</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">calculate_age</span><span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">1963</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">))</span>
     <span class="n">u</span><span class="o">.</span><span class="n">classOf</span> <span class="o">=</span> <span class="s2">"1981"</span>
-    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"123qwerty"</span><span class="p">,</span> <span class="n">dob</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">u3</span><span class="o">.</span><span class="n">classOf</span><span class="p">)</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"123qwerty"</span><span class="p">,</span> <span class="n">u3</span><span class="o">.</span><span class="n">dob</span><span class="p">,</span> <span class="n">u3</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="n">u3</span><span class="o">.</span><span class="n">classOf</span><span class="p">)</span>
 
 
     <span class="c1"># Make dictionary</span>
@@ -353,36 +353,26 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Test 1, find user 3
-name: "Oprah Winfrey", id: "oprah", psw: "sha256$C2G...", dob: "[1954, 1, 29]", age: "68", classOf: "1972"
-name: "Nicholas Tesla", id: "nick", psw: "sha256$BDy...", dob: "[1973, 4, 28]", age: "49", classOf: "1991"
-* name: "Graham Cracker", id: "graham", psw: "sha256$53f...", dob: "[2001, 5, 20]", age: "21", classOf: "2019"
-name: "Whitney Houston", id: "whitney", psw: "sha256$XMd...", dob: "[1964, 7, 9]", age: "58", classOf: "1982"
-name: "Jeffrey Fonseca", id: "jeffrey", psw: "sha256$iJz...", dob: "[2005, 5, 8]", age: "17", classOf: "2023"
-name: "Naja Fonseca", id: "naja", psw: "sha256$Pzz...", dob: "[2007, 9, 20]", age: "15", classOf: "2025"
-name: "Sean Yeung", id: "syeung", psw: "sha256$uhE...", dob: "[1995, 2, 3]", age: "27", classOf: "2013"
+name: "Oprah Winfrey", id: "oprah", psw: "sha256$LY2...", dob: "[1954, 1, 29]", age: "68", classOf: "1972"
+name: "Nicholas Tesla", id: "nick", psw: "sha256$3ew...", dob: "[1973, 4, 28]", age: "49", classOf: "1991"
+* name: "Graham Cracker", id: "graham", psw: "sha256$2Nk...", dob: "[2001, 5, 20]", age: "21", classOf: "2019"
+name: "Whitney Houston", id: "whitney", psw: "sha256$sti...", dob: "[1964, 7, 9]", age: "58", classOf: "1982"
+name: "Jeffrey Fonseca", id: "jeffrey", psw: "sha256$6n2...", dob: "[2005, 5, 8]", age: "17", classOf: "2023"
+name: "Naja Fonseca", id: "naja", psw: "sha256$SqN...", dob: "[2007, 9, 20]", age: "15", classOf: "2025"
+name: "Sean Yeung", id: "syeung", psw: "sha256$wji...", dob: "[1995, 2, 3]", age: "27", classOf: "2013"
 Test 2, change user 3
+name: "Oprah Winfrey", id: "oprah", psw: "sha256$LY2...", dob: "[1954, 1, 29]", age: "68", classOf: "1972"
+name: "Nicholas Tesla", id: "nick", psw: "sha256$3ew...", dob: "[1973, 4, 28]", age: "49", classOf: "1991"
+* name: "John Mortensen", id: "jm1021", psw: "sha256$xgh...", dob: "[1963, 1, 21]", age: "59", classOf: "1981"
+name: "Whitney Houston", id: "whitney", psw: "sha256$sti...", dob: "[1964, 7, 9]", age: "58", classOf: "1982"
+name: "Jeffrey Fonseca", id: "jeffrey", psw: "sha256$6n2...", dob: "[2005, 5, 8]", age: "17", classOf: "2023"
+name: "Naja Fonseca", id: "naja", psw: "sha256$SqN...", dob: "[2007, 9, 20]", age: "15", classOf: "2025"
+name: "Sean Yeung", id: "syeung", psw: "sha256$wji...", dob: "[1995, 2, 3]", age: "27", classOf: "2013"
+Test 3, make a dictionary
+[{"_name": "Oprah Winfrey", "_uid": "oprah", "_password": "sha256$LY28XzRCCLEdJthj$819b1b5f9eb98e1500bb035dd93551e0bcd9aa1766ed543cdfeb96ee0d47954b", "_dob": [1954, 1, 29], "_age": 68, "_classOf": "1972"}, {"_name": "Nicholas Tesla", "_uid": "nick", "_password": "sha256$3ewGeaMs6AojPycf$ef6a70654cec071c0a2e7b31f355334c8edf74333f5b68c6724c85b4e5169804", "_dob": [1973, 4, 28], "_age": 49, "_classOf": "1991"}, {"_name": "John Mortensen", "_uid": "jm1021", "_password": "sha256$xghE0JhIP9lawNwK$ebcf946a1b10ee32e34623c37f4d13a0986f9129c0341c66a9cac7d5436912cb", "_dob": [1963, 1, 21], "_age": 59, "_classOf": "1981"}, {"_name": "Whitney Houston", "_uid": "whitney", "_password": "sha256$stiugOXaC4ZF3vQY$ccc962cf3618432f1211f4c5da22b0d1745ebf763225abcf1569a557f9890bf6", "_dob": [1964, 7, 9], "_age": 58, "_classOf": "1982"}, {"_name": "Jeffrey Fonseca", "_uid": "jeffrey", "_password": "sha256$6n2auCNNB2eaV8f3$2e1fdc5420fde0d3023e86327cfe079c04809622202ebbaad86ee3e8d88a6c6b", "_dob": [2005, 5, 8], "_age": 17, "_classOf": "2023"}, {"_name": "Naja Fonseca", "_uid": "naja", "_password": "sha256$SqNiX2cKy6qfmVfT$3166328b71a5c160c6f1b0c4a69d97dae1663a634e1917ae73ba85dd124b0e04", "_dob": [2007, 9, 20], "_age": 15, "_classOf": "2025"}, {"_name": "Sean Yeung", "_uid": "syeung", "_password": "sha256$wjik6L0zXnNViBBV$f1eb7dcae9b1deacb052244ea545ccb81810943f51e7a2d9823492f8666861a0", "_dob": [1995, 2, 3], "_age": 27, "_classOf": "2013"}]
+Test 4, make a dictionary
+[{"_name": "Oprah Winfrey", "_uid": "oprah", "_password": "sha256$LY28XzRCCLEdJthj$819b1b5f9eb98e1500bb035dd93551e0bcd9aa1766ed543cdfeb96ee0d47954b", "_dob": [1954, 1, 29], "_age": 68, "_classOf": "1972"}, {"_name": "Nicholas Tesla", "_uid": "nick", "_password": "sha256$3ewGeaMs6AojPycf$ef6a70654cec071c0a2e7b31f355334c8edf74333f5b68c6724c85b4e5169804", "_dob": [1973, 4, 28], "_age": 49, "_classOf": "1991"}, {"_name": "John Mortensen", "_uid": "jm1021", "_password": "sha256$xghE0JhIP9lawNwK$ebcf946a1b10ee32e34623c37f4d13a0986f9129c0341c66a9cac7d5436912cb", "_dob": [1963, 1, 21], "_age": 59, "_classOf": "1981"}, {"_name": "Whitney Houston", "_uid": "whitney", "_password": "sha256$stiugOXaC4ZF3vQY$ccc962cf3618432f1211f4c5da22b0d1745ebf763225abcf1569a557f9890bf6", "_dob": [1964, 7, 9], "_age": 58, "_classOf": "1982"}, {"_name": "Jeffrey Fonseca", "_uid": "jeffrey", "_password": "sha256$6n2auCNNB2eaV8f3$2e1fdc5420fde0d3023e86327cfe079c04809622202ebbaad86ee3e8d88a6c6b", "_dob": [2005, 5, 8], "_age": 17, "_classOf": "2023"}, {"_name": "Naja Fonseca", "_uid": "naja", "_password": "sha256$SqNiX2cKy6qfmVfT$3166328b71a5c160c6f1b0c4a69d97dae1663a634e1917ae73ba85dd124b0e04", "_dob": [2007, 9, 20], "_age": 15, "_classOf": "2025"}, {"_name": "Sean Yeung", "_uid": "syeung", "_password": "sha256$wjik6L0zXnNViBBV$f1eb7dcae9b1deacb052244ea545ccb81810943f51e7a2d9823492f8666861a0", "_dob": [1995, 2, 3], "_age": 27, "_classOf": "2013"}]
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb Cell 4</span> in <span class="ansi-cyan-fg">&lt;cell line: 113&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb#W3sZmlsZQ%3D%3D?line=138'&gt;139&lt;/a&gt;</span> u.age = calculate_age(date(1963, 1, 21))
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb#W3sZmlsZQ%3D%3D?line=139'&gt;140&lt;/a&gt;</span> u.classOf = "1981"
-<span class="ansi-green-fg">--&gt; &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb#W3sZmlsZQ%3D%3D?line=140'&gt;141&lt;/a&gt;</span> u = tester(users, u.uid, "123qwerty", dob, age, u3.classOf)
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb#W3sZmlsZQ%3D%3D?line=143'&gt;144&lt;/a&gt;</span> # Make dictionary
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb#W3sZmlsZQ%3D%3D?line=144'&gt;145&lt;/a&gt;</span> ''' 
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb#W3sZmlsZQ%3D%3D?line=145'&gt;146&lt;/a&gt;</span> The __dict__ in Python represents a dictionary or any mapping object that is used to store the attributes of the object. 
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb#W3sZmlsZQ%3D%3D?line=146'&gt;147&lt;/a&gt;</span> Every object in Python has an attribute that is denoted by __dict__. 
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb#W3sZmlsZQ%3D%3D?line=147'&gt;148&lt;/a&gt;</span> Use the json.dumps() method to convert the list of Users to a JSON string.
-<span class="ansi-green-intense-fg ansi-bold">    &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-01-10-PBL-model.ipynb#W3sZmlsZQ%3D%3D?line=148'&gt;149&lt;/a&gt;</span> '''
-
-<span class="ansi-red-fg">NameError</span>: name 'dob' is not defined</pre>
 </div>
 </div>
 
