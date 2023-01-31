@@ -8,9 +8,16 @@ comments: true
 layout: post
 ---
 
-### Questions I Got Wrong
+### Questio I Got Wrong
  
-None :D
+![]({{site.baseurl}}/images/q10.jpg)
+
+My answer:  (num greater than 15) and (num equals 15)
+
+Correct answer: (num greater than 15) or (num equals 15)
+
+The expression (num greater than 15) or (num equals 15) evaluates to true if (num greater than 15)is true, or if (num equals 15)is true, or if both are true. The original expressio (the expression in this problem) evaluates to true if  numis greater than or equal to 15.
+
 
 ### Reflection
 
