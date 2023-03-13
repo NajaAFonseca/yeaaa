@@ -92,6 +92,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#video-notes">Video Notes</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#lesson-objective--essential-knowledge">Lesson Objective + Essential Knowledge</a></li>
+<li class="toc-entry toc-h3"><a href="#what-is-data-compression">What is Data Compression?:</a></li>
 </ul>
 </li>
 </ul><h1 id="video-notes">
@@ -106,8 +107,24 @@ window.onload = wrap_img;
   </li>
   <li>Data compression can reduce the size of transmitted or stored data</li>
   <li>Fewer bits does not = less info</li>
-  <li>
+  <li>The amount of size reduction from compression depends on both the amount of redundancy in the original data representation and the compression algorithm applied</li>
+  <li>Lossless data compression can usually reduce the number of bits stored or transmitted while gauranteeing complete reconstruction of the original data</li>
+  <li>Lossy data compression algorithms can significally reduce he number of bits stored or transmitted but only allow reconstruction of an approxomation of the original data</li>
+  <li>Lossy data compression algorithms can usually reduce the number of its stored or transmitted more than lossless compression algorithms</li>
+  <li>In situations where quality or ability to reconstruct the original is maximally important, lossless compression algorithms are typically chosen</li>
+  <li>In situations where minimizing data size or transmission time is maximally important, lossy compression algorithms are typically chosen</li>
 </ul>
+
+<h3 id="what-is-data-compression">
+<a class="anchor" href="#what-is-data-compression" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is Data Compression?:</h3>
+
+<ul>
+  <li>a reduction in the number of bits needed to represent data</li>
+  <li>used to save transmission time and storage space</li>
+</ul>
+
+<p>###</p>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
