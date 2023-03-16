@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      10 min read
     
 </span></p>
 
@@ -274,6 +274,30 @@ window.onload = wrap_img;
 <p>A primary key is a parameter from classes to userid, dob. The primary key in that list is userid because id is unique to the user. Primary keys should be unique, the first thing you identify somebody by.</p>
 <p><strong>What are the data types you might find in a table?</strong></p>
 <p>Integers, strings, booleans, float, or any type of type. You can have structures, a list, or a dictionary.</p>
+<p><strong>What is the purpose of identity Column in SQL database?</strong></p>
+<p><em>Note I used ChatGPT to aid me in answering this question</em></p>
+<p>The purpose of identity Column in SQL database is to be able to automatically generate unique numeric values for each row added to a table. identity Columns are useful because:</p>
+<ul>
+<li>Primary key: An identity column can be used as the primary key for the table, which is a unique identifier for each row that allows for efficient searching and indexing of the data.</li>
+<li>Relational integrity: An identity column can be used as a foreign key in other tables to establish relationships between the data in different tables, ensuring relational integrity.</li>
+<li>Data audit: An identity column provides a unique identifier for each row, which can be useful for auditing and tracking changes to the data over time.</li>
+<li>Simplify data entry: An identity column can simplify data entry by automatically generating unique values, reducing the risk of human error and improving data quality.</li>
+</ul>
+<p><strong>What are the Data Types in SQL table?</strong></p>
+<ul>
+<li>Integer</li>
+<li>Float</li>
+<li>Boolean</li>
+<li>Char</li>
+<li>String</li>
+</ul>
+<p><em>ChatGPT:</em></p>
+<ul>
+<li>Blob: Used to store binary data (e.g., images or other non-text data).</li>
+<li>Varchar: Used to store variable-length character strings (e.g., "hello world").</li>
+<li>Date/Time: Used to store date and time values (e.g., 2023-03-16 12:00:00).</li>
+<li>Text: Used to store large text values (e.g., blog posts or articles).</li>
+</ul>
 <h1 id="Code-Ouput">
 <a class="anchor" href="#Code-Ouput" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Ouput<a class="anchor-link" href="#Code-Ouput"> </a>
 </h1>
@@ -528,10 +552,38 @@ Cursor allows you to do things in the sqlite.db file.</p>
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#update()</span>
+<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb Cell 13</span> in <span class="ansi-cyan-fg">&lt;cell line: 35&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X15sZmlsZQ%3D%3D?line=31'&gt;32&lt;/a&gt;</span>     cursor.close()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X15sZmlsZQ%3D%3D?line=32'&gt;33&lt;/a&gt;</span>     conn.close()
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X15sZmlsZQ%3D%3D?line=34'&gt;35&lt;/a&gt;</span> update()
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb Cell 13</span> in <span class="ansi-cyan-fg">update</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X15sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span>     message = "successfully updated"
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X15sZmlsZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> # Connect to the database file
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X15sZmlsZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> conn = sqlite3.connect(database)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X15sZmlsZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span> # Create a cursor object to execute SQL commands
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X15sZmlsZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span> cursor = conn.cursor()
+
+<span class="ansi-red-fg">NameError</span>: name 'database' is not defined</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -546,6 +598,9 @@ Cursor allows you to do things in the sqlite.db file.</p>
 </h1>
 <p><strong>What does the hacked part do?</strong></p>
 <p>The hacked part of the code types the message telling the user they've been hacked if their password is less than 2 characters. This is to prevent users from updating their password to weak passwords.</p>
+<p><strong>Explain try/except, when would except occur?</strong></p>
+<p>Except will occur when you want to select certain rows from a table/database. It is used to take two SELECT statements and returns only the distinct rows of the first SELECT statement.</p>
+<p>**What code seems to be repeated in each of these examples to point, why is it repeated?</p>
 
 </div>
 </div>
