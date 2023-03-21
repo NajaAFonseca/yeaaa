@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      15 min read
     
 </span></p>
 
@@ -760,6 +760,35 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 15</span> in <span class="ansi-cyan-fg">&lt;cell line: 38&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=34'&gt;35&lt;/a&gt;</span>         except:  # error raised if object not created
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=35'&gt;36&lt;/a&gt;</span>             print("Unknown error uid {uid}")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=37'&gt;38&lt;/a&gt;</span> create()
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 15</span> in <span class="ansi-cyan-fg">create</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> def create():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     # optimize user time to see if uid exists
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     uid = input("Enter your user id:")
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     user = find_by_uid(uid)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     try:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/najafonseca/yeaaa/yeaaa/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>         print("Found\n", user.read())
+
+<span class="ansi-red-fg">NameError</span>: name 'find_by_uid' is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -833,6 +862,11 @@ window.onload = wrap_img;
 <h1 id="Note">
 <a class="anchor" href="#Note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note<a class="anchor-link" href="#Note"> </a>
 </h1>
+<p><strong>User.query.all</strong></p>
+<p>User.query.all() retrieves all the users from the database, and the read() function then reads each user's data and returns it as a list of JSON objects.</p>
+<p><strong>json_ready assignment</strong></p>
+<p>json_ready is a list of JSON objects, where each JSON object represents a single user's data from the User table in the database. The list of JSON objects is then returned by the read() function when it is called.</p>
+
 </div>
 </div>
 </div>
@@ -847,6 +881,17 @@ window.onload = wrap_img;
 <li>Add Update functionality to this blog.</li>
 <li>Add Delete functionality to this blog.</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>How would I add update functionality to this blog?</strong></p>
+<p>I can change the findbyuid from returning none to adding a create() function where you can then update yourself into the user databse. I would have to do this by using an if statement that will run as if user is None: and then put in user input for name, uid, dob, and password. I will also have to add the error checking for dob by using the command used for error checking in the previous code cell. The else portion of the elif statement will be that if the user is in the database, they can update it. You can do this by asking the user if they want to update their user with a yes or no answer and then if no stop running and if they do, the user will be asked what they want to update and then they can pick from name, uid, dob, and password. Once they update it, it will ask if they want to update or exit and so on so forth, it will repeat until the user is satisfied.</p>
+<p><strong>Add Delete functionality to this blog?</strong></p>
+<p>Like what I was just talking about you can also search for your user like the above and if it's found it will also ask if you want to delete your user. This can be used through a two factor authentication such as asking "Do you want to delete" then ask "Are you sure" so the user can be 100% sure since we discussed why deleting in SQLAlchemy is dangerous.</p>
 
 </div>
 </div>
