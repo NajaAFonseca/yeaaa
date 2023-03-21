@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      13 min read
     
 </span></p>
 
@@ -133,10 +133,19 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#Initial-Data">Initial Data </a></li>
 <li class="toc-entry toc-h2"><a href="#Check-for-given-Credentials-in-users-table-in-sqlite.db">Check for given Credentials in users table in sqlite.db </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Note">Note </a>
+<ul>
 <li class="toc-entry toc-h2"><a href="#Create-a-new-User-in-table-in-Sqlite.db">Create a new User in table in Sqlite.db </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Note">Note </a>
+<ul>
 <li class="toc-entry toc-h2"><a href="#Reading-users-table-in-sqlite.db">Reading users table in sqlite.db </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h1"><a href="#Note">Note </a></li>
 <li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a></li>
 </ul><!--
 #################################################
@@ -492,18 +501,29 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Note">
 <a class="anchor" href="#Note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note<a class="anchor-link" href="#Note"> </a>
 </h1>
 <p><strong>classs User: What's the purpose?</strong></p>
-<p>The purpose of having a class user is so that</p>
+<p>The purpose of the class User is to provide a model for managing actions in the 'users' table of a database using SQLAlchemy Object Relational Mapping. The class defines the schema for the 'users' table and has methods to perform CRUD (Create, Read, Update, and Delete) operations on the table. The class represents the data that we want to store in the 'users' table, and it is built on top of the db.Model layer, which is an inner layer of the SQLAlchemy ORM. The User class has instance variables such as id, name, uid, password, and dob that represent the columns in the 'users' table. It also has methods to get and set the values of these variables, as well as methods to verify and update passwords. The class provides methods for creating a new record in the 'users' table, reading an existing record from the table, updating an existing record, and deleting a record from the table. Additionally, the class has methods to convert the object to a human-readable string and to a dictionary that can be used for an API response.</p>
+<p><strong>db.model inheritance</strong></p>
+<p>In this code, User class inherits from db.Model class, which means that User class is a subclass of db.Model class.</p>
+<p>db.Model is a base class provided by the SQLAlchemy ORM (Object Relational Mapping) library. It provides a set of common functionality to be used by classes that are mapped to database tables. When a class inherits from db.Model, it gains the ability to interact with the database through the SQLAlchemy ORM, such as the ability to define</p>
+<p><strong>init method: What is it?</strong></p>
+<p>The <strong>init</strong> method is the constructor method for the User class. It is called when a new User object is created and initializes the object's instance variables (_name, _uid, _password, and _dob) with the provided arguments (or default values if none are provided). It also calls the set_password method to hash the provided password.</p>
+<p><strong>What does property and setter do?</strong></p>
+<ul>
+<li>@property is a decorator that defines a method as a "getter" for a class attribute, which allows the attribute to be accessed like a regular attribute but with some additional functionality. When a @property method is called, it returns the value of the attribute it is associated with.</li>
+<li>In Python, setters are created using the @<attribute>.setter decorator. When a setter method is called, it updates the value of the attribute it is associated with.&lt;/li&gt;
+&lt;/ul&gt;
+<p><strong>Additional methods?</strong></p>
+<hr>
 
-</div>
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -653,6 +673,24 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Note">
+<a class="anchor" href="#Note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note<a class="anchor-link" href="#Note"> </a>
+</h1>
+<p><strong>What is the User.query.filter_by?</strong></p>
+<p><em>My Answer</em></p>
+<p>User.query.filter_by() is a method provided by the SQLAlchemy library, which is an Object-Relational Mapping (ORM) library for Python. It is used to query the database and extract records from a specific table.</p>
+<p><em>ChatGPT Elaborated</em></p>
+<p>In the given code, User.query.filter_by(_uid=uid) is used to extract a single user from the database table User, where _uid matches the provided uid. The filter_by() method filters the records of a table based on the given conditions, and first() method returns the first record from the filtered result set.</p>
+<p>So, user variable will hold the record of the User table whose _uid field matches the uid parameter provided to the function. If there is no matching record, None will be returned.</p>
+<p><strong>What is the user.password?</strong></p>
+<p>user.password refers to an attribute of the User class that stores the user's password in a hashed format. The is_password() method is then used to verify if the password entered by the user matches the hashed password stored in the database.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Create-a-new-User-in-table-in-Sqlite.db">
 <a class="anchor" href="#Create-a-new-User-in-table-in-Sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create a new User in table in Sqlite.db<a class="anchor-link" href="#Create-a-new-User-in-table-in-Sqlite.db"> </a>
 </h2>
@@ -728,6 +766,26 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Note">
+<a class="anchor" href="#Note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note<a class="anchor-link" href="#Note"> </a>
+</h1>
+<p><strong>user=User(...)</strong></p>
+<p><em>ChatGPT</em></p>
+<p>In the given code segment, user = User(name=name, uid=uid, password=password) is used to create a new instance of the User class with the provided values for name, uid, and password. This instance is then assigned to the user variable.</p>
+<p>The purpose of this line of code is to create a User object that represents a new user that will be added to the database. By initializing a new instance of the User class with the provided values, we can create a new user with the required information.</p>
+<p>Once the User object is created, it is further modified in the subsequent code block by adding the user's date of birth (dob) to the object. Finally, the object is written to the database using the user.create() method.</p>
+<p>Therefore, the purpose of setting user = User(...) is to create a new User object that can be further processed before it is added to the database.</p>
+<p><strong>user.dob</strong></p>
+<p>Code allows users to input their own date of birth in the order of year, month, to day. If users enter it in incorrectly, the code will input an error so if you tried to enter in  a date like 2032 in 2022 the error would occur and set your dob back to default.</p>
+<p><strong>user.create()</strong></p>
+<p>Allows you to add in your info which makes it so you can create a new user using user.create().</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Reading-users-table-in-sqlite.db">
 <a class="anchor" href="#Reading-users-table-in-sqlite.db" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reading users table in sqlite.db<a class="anchor-link" href="#Reading-users-table-in-sqlite.db"> </a>
 </h2>
@@ -772,6 +830,15 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Note">
+<a class="anchor" href="#Note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note<a class="anchor-link" href="#Note"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hacks">
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
@@ -787,7 +854,11 @@ window.onload = wrap_img;
 &lt;/div&gt;
  
 
-</column>
+</attribute>
+</li>
+</ul>
+</div>
+</div></div></column>
 </li>
 </ul>
 </div>
