@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 4.3a Parallel Computing | Naja’s Webpage!</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 4.3a Parallel Computing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Observe an algorithm using parallel computing in Python Code. Monitor processes on host." />
+<meta property="og:description" content="Observe an algorithm using parallel computing in Python Code. Monitor processes on host." />
+<link rel="canonical" href="https://najaafonseca.github.io/yeaaa/2023/03/29/AP-unit4-3a-parallel-computing.html" />
+<meta property="og:url" content="https://najaafonseca.github.io/yeaaa/2023/03/29/AP-unit4-3a-parallel-computing.html" />
+<meta property="og:site_name" content="Naja’s Webpage!" />
+<meta property="og:image" content="https://najaafonseca.github.io/yeaaa/images/python.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-29T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://najaafonseca.github.io/yeaaa/images/python.png" />
+<meta property="twitter:title" content="Unit 4.3a Parallel Computing" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-29T00:00:00-05:00","datePublished":"2023-03-29T00:00:00-05:00","description":"Observe an algorithm using parallel computing in Python Code. Monitor processes on host.","headline":"Unit 4.3a Parallel Computing","image":"https://najaafonseca.github.io/yeaaa/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://najaafonseca.github.io/yeaaa/2023/03/29/AP-unit4-3a-parallel-computing.html"},"url":"https://najaafonseca.github.io/yeaaa/2023/03/29/AP-unit4-3a-parallel-computing.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/yeaaa/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://najaafonseca.github.io/yeaaa/feed.xml" title="Naja's Webpage!" /><link rel="shortcut icon" type="image/x-icon" href="/yeaaa/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/yeaaa/">Naja&#39;s Webpage!</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/yeaaa/notes-completion/">Completed Quizzes for Notes</a><a class="page-link" href="/yeaaa/about/">About Me</a><a class="page-link" href="/yeaaa/agile-methodology/">Agile Methodology Diagram</a><a class="page-link" href="/yeaaa/search/">Search</a><a class="page-link" href="/yeaaa/submenu">Submenu</a><a class="page-link" href="/yeaaa/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 4.3a Parallel Computing</h1><p class="page-description">Observe an algorithm using parallel computing in Python Code.  Monitor processes on host.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-29T00:00:00-05:00" itemprop="datePublished">
+        Mar 29, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      8 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/NajaAFonseca/yeaaa/tree/master/_notebooks/2023-03-29-AP-unit4-3a-parallel-computing.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/yeaaa/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/NajaAFonseca/yeaaa/master?filepath=_notebooks%2F2023-03-29-AP-unit4-3a-parallel-computing.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yeaaa/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/NajaAFonseca/yeaaa/blob/master/_notebooks/2023-03-29-AP-unit4-3a-parallel-computing.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yeaaa/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FNajaAFonseca%2Fyeaaa%2Fblob%2Fmaster%2F_notebooks%2F2023-03-29-AP-unit4-3a-parallel-computing.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/yeaaa/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Analyzing-Parallel-Computing">Analyzing Parallel Computing </a></li>
+<li class="toc-entry toc-h2"><a href="#Sequential-Processing">Sequential Processing </a></li>
+<li class="toc-entry toc-h2"><a href="#Parallel-Computing">Parallel Computing </a></li>
+<li class="toc-entry toc-h2"><a href="#Observing-Parallel-Computing-and-Threads">Observing Parallel Computing and Threads </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+<li class="toc-entry toc-h1"><a href="#4.3-Video-Notes,-Video-Question-Answers,-+-Examples">4.3 Video Notes, Video Question Answers, + Examples </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Learning-Objectives:">Learning Objectives: </a></li>
+<li class="toc-entry toc-h3"><a href="#Essential-Knowledge:">Essential Knowledge: </a></li>
+<li class="toc-entry toc-h3"><a href="#Sequential,-Parallel-and-Distributed-Computing">Sequential, Parallel and Distributed Computing </a></li>
+<li class="toc-entry toc-h3"><a href="#Sequential-Computing">Sequential Computing </a></li>
+<li class="toc-entry toc-h3"><a href="#Parallel-Computing-Pt.-1">Parallel Computing Pt. 1 </a></li>
+<li class="toc-entry toc-h3"><a href="#Parallel-Computing-Pt.-2">Parallel Computing Pt. 2 </a></li>
+<li class="toc-entry toc-h3"><a href="#Comparing-Efficiency-of-Solutions">Comparing Efficiency of Solutions </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-03-29-AP-unit4-3a-parallel-computing.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Analyzing-Parallel-Computing">
+<a class="anchor" href="#Analyzing-Parallel-Computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Analyzing Parallel Computing<a class="anchor-link" href="#Analyzing-Parallel-Computing"> </a>
+</h2>
+<blockquote>
+<p>Once again we will use image lab, this time to review Parallel Computing.</p>
+<ul>
+<li>Change baseWidth in this line in code to increase computation requirements:<code>def process_image(image, baseWidth=512):</code>  For instance 320, 512, 1024, 2048, 4096.- Compare Sequential and Parallel computing code and time to achieve outputs</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">display</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>  <span class="c1"># https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span> <span class="k">as</span> <span class="n">pilImage</span> <span class="c1"># as PIL Image is used to avoid conflicts</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="kn">import</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># prepares a series of images</span>
+<span class="k">def</span> <span class="nf">image_data</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">"images/"</span><span class="p">),</span> <span class="n">images</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>  <span class="c1"># path of static images is defaulted</span>
+    <span class="k">if</span> <span class="n">images</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># default image</span>
+        <span class="n">images</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Internet"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Green Square"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"green-square-16.png"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Peter Carolin"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Clouds Impression"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"clouds-impression.png"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">'source'</span><span class="p">:</span> <span class="s2">"Peter Carolin"</span><span class="p">,</span> <span class="s1">'label'</span><span class="p">:</span> <span class="s2">"Lassen Volcano"</span><span class="p">,</span> <span class="s1">'file'</span><span class="p">:</span> <span class="s2">"lassen-volcano.jpg"</span><span class="p">}</span>
+        <span class="p">]</span>
+    <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
+        <span class="c1"># File to open</span>
+        <span class="n">image</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">]</span> <span class="o">=</span> <span class="n">path</span> <span class="o">/</span> <span class="n">image</span><span class="p">[</span><span class="s1">'file'</span><span class="p">]</span>  <span class="c1"># file with path</span>
+    <span class="k">return</span> <span class="n">images</span>
+
+<span class="c1"># Scale to baseWidth</span>
+<span class="k">def</span> <span class="nf">scale_image</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">baseWidth</span><span class="p">):</span>
+    <span class="n">scalePercent</span> <span class="o">=</span> <span class="p">(</span><span class="n">baseWidth</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="n">scaleHeight</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="nb">float</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">size</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="nb">float</span><span class="p">(</span><span class="n">scalePercent</span><span class="p">)))</span>
+    <span class="n">scale</span> <span class="o">=</span> <span class="p">(</span><span class="n">baseWidth</span><span class="p">,</span> <span class="n">scaleHeight</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">img</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">scale</span><span class="p">)</span>
+
+<span class="c1"># PIL image converted to base64</span>
+<span class="k">def</span> <span class="nf">image_to_base64</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="nb">format</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">BytesIO</span><span class="p">()</span> <span class="k">as</span> <span class="n">buffer</span><span class="p">:</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="nb">format</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">buffer</span><span class="o">.</span><span class="n">getvalue</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+    
+<span class="c1"># Convert pixels to Grey Scale</span>
+<span class="k">def</span> <span class="nf">grey_pixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">):</span>
+    <span class="n">average</span> <span class="o">=</span> <span class="p">(</span><span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">//</span> <span class="mi">3</span>  <span class="c1"># average pixel values and use // for integer division</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">return</span><span class="p">(</span> <span class="p">(</span><span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="p">)</span> <span class="c1"># PNG format</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span><span class="p">(</span> <span class="p">(</span><span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">average</span><span class="p">)</span> <span class="p">)</span>
+    
+<span class="c1"># Convert pixels to Red Scale</span>
+<span class="k">def</span> <span class="nf">red_pixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">return</span><span class="p">(</span> <span class="p">(</span><span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="p">)</span> <span class="c1"># PNG format</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span><span class="p">(</span> <span class="p">(</span><span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="p">)</span>
+    
+<span class="c1"># Convert pixels to Red Scale</span>
+<span class="k">def</span> <span class="nf">green_pixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">return</span><span class="p">(</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="p">)</span> <span class="c1"># PNG format</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span><span class="p">(</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="p">)</span>
+    
+<span class="c1"># Convert pixels to Red Scale</span>
+<span class="k">def</span> <span class="nf">blue_pixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">return</span><span class="p">(</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="p">)</span> <span class="c1"># PNG format</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span><span class="p">(</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pixel</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="p">)</span>
+        
+<span class="c1"># Set Properties of Image, Scale, and convert to Base64</span>
+<span class="k">def</span> <span class="nf">image_management</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">baseWidth</span><span class="p">):</span>  <span class="c1"># path of static images is defaulted        </span>
+    <span class="c1"># Image open return PIL image object</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">pilImage</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">])</span>
+    
+    <span class="c1"># Python Image Library operations</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">format</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'mode'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">mode</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'size'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+    <span class="c1"># Scale the Image</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">scale_image</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">baseWidth</span><span class="p">)</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'pil'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'scaled_size'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'numpy'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">getdata</span><span class="p">())</span>
+    <span class="c1"># Scaled HTML</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'html'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'&lt;img src="data:image/png;base64,</span><span class="si">%s</span><span class="s1">"&gt;'</span> <span class="o">%</span> <span class="n">image_to_base64</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'pil'</span><span class="p">],</span> <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">])</span>
+    
+    <span class="c1"># Grey HTML</span>
+    <span class="c1"># each pixel in numpy array is turned to grey </span>
+    <span class="c1"># then resulting list, using List Comprehension, is put back into img    </span>
+    <span class="n">img</span><span class="o">.</span><span class="n">putdata</span><span class="p">([</span><span class="n">grey_pixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="k">for</span> <span class="n">pixel</span> <span class="ow">in</span> <span class="n">image</span><span class="p">[</span><span class="s1">'numpy'</span><span class="p">]])</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'html_grey'</span><span class="p">]</span> <span class="o">=</span>  <span class="s1">'&lt;img src="data:image/png;base64,</span><span class="si">%s</span><span class="s1">"&gt;'</span> <span class="o">%</span> <span class="n">image_to_base64</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">])</span>
+    
+    <span class="c1"># Red HTML</span>
+    <span class="n">img</span><span class="o">.</span><span class="n">putdata</span><span class="p">([</span><span class="n">red_pixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="k">for</span> <span class="n">pixel</span> <span class="ow">in</span> <span class="n">image</span><span class="p">[</span><span class="s1">'numpy'</span><span class="p">]])</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'html_red'</span><span class="p">]</span> <span class="o">=</span>  <span class="s1">'&lt;img src="data:image/png;base64,</span><span class="si">%s</span><span class="s1">"&gt;'</span> <span class="o">%</span> <span class="n">image_to_base64</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">])</span>
+    
+    <span class="c1"># Green HTML</span>
+    <span class="n">img</span><span class="o">.</span><span class="n">putdata</span><span class="p">([</span><span class="n">green_pixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="k">for</span> <span class="n">pixel</span> <span class="ow">in</span> <span class="n">image</span><span class="p">[</span><span class="s1">'numpy'</span><span class="p">]])</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'html_green'</span><span class="p">]</span> <span class="o">=</span>  <span class="s1">'&lt;img src="data:image/png;base64,</span><span class="si">%s</span><span class="s1">"&gt;'</span> <span class="o">%</span> <span class="n">image_to_base64</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">])</span>
+    
+    <span class="c1"># Blue HTML</span>
+    <span class="n">img</span><span class="o">.</span><span class="n">putdata</span><span class="p">([</span><span class="n">blue_pixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">)</span> <span class="k">for</span> <span class="n">pixel</span> <span class="ow">in</span> <span class="n">image</span><span class="p">[</span><span class="s1">'numpy'</span><span class="p">]])</span>
+    <span class="n">image</span><span class="p">[</span><span class="s1">'html_blue'</span><span class="p">]</span> <span class="o">=</span>  <span class="s1">'&lt;img src="data:image/png;base64,</span><span class="si">%s</span><span class="s1">"&gt;'</span> <span class="o">%</span> <span class="n">image_to_base64</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">])</span>
+    
+    
+<span class="k">def</span> <span class="nf">process_image</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">baseWidth</span><span class="o">=</span><span class="mi">320</span><span class="p">):</span>
+    <span class="n">image_management</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">baseWidth</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"---- meta data -----"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'label'</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'source'</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'mode'</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Original size: "</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">'size'</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Scaled size: "</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">'scaled_size'</span><span class="p">])</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"-- images --"</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html'</span><span class="p">]))</span> 
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html_grey'</span><span class="p">]))</span> 
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html_red'</span><span class="p">]))</span> 
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html_green'</span><span class="p">]))</span> 
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'html_blue'</span><span class="p">]))</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sequential-Processing">
+<a class="anchor" href="#Sequential-Processing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sequential Processing<a class="anchor-link" href="#Sequential-Processing"> </a>
+</h2>
+<blockquote>
+<p>The for loop iterates over the list of images and processes them one at a time, in order.</p>
+<p>Sequential - going through a sequence.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Parallel-Computing">
+<a class="anchor" href="#Parallel-Computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parallel Computing<a class="anchor-link" href="#Parallel-Computing"> </a>
+</h2>
+<blockquote>
+<p>In parallel or concurrent mode, the ThreadPoolExecutor is used to submit each image to a separate worker thread, allowing multiple images to be processed simultaneously. Multithreading allows multiple concurrent tasks of a process at the same time. The executor.map() method is used to apply the process_image function to each image in the images list.</p>
+<ul>
+<li>The order in which the images are processed is not guaranteed, as threads are performed simultaneously.</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">concurrent.futures</span>
+
+<span class="c1"># Jupyter Notebook Visualization of Images</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="c1"># setup default images</span>
+    <span class="n">images</span> <span class="o">=</span> <span class="n">image_data</span><span class="p">()</span>
+    
+    <span class="c1"># Parallel Processsing</span>
+    <span class="c1"># executor allocates threads, it considers core execution capability of machine</span>
+    <span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">()</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
+        <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">process_image</span><span class="p">,</span> <span class="n">images</span><span class="p">)</span>  <span class="c1"># order is not predictable</span>
+        
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Observing-Parallel-Computing-and-Threads">
+<a class="anchor" href="#Observing-Parallel-Computing-and-Threads" aria-hidden="true"><span class="octicon octicon-link"></span></a>Observing Parallel Computing and Threads<a class="anchor-link" href="#Observing-Parallel-Computing-and-Threads"> </a>
+</h2>
+<blockquote>
+<p>You can observe Processes, CPU Percentage, and Threads with Tools on your machine. Common tools to monitor performance are Activity Monitor on MacOS or Task Manager on Windows.</p>
+</blockquote>
+<ul>
+<li>This example is using <code>top</code> launched in VSCode Terminal. (mac)</li>
+<li>
+<p>Try <code>top -H</code> for linux.</p>
+<ul>
+<li>PID is Process ID.  </li>
+<li>COMMAND is task running on machine.  Python is activated when running this Jupyter notebook.</li>
+<li>#TH is number of threads.   This increases from 15/1 to 18/1 on my machine when running python parallel computing example.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+<blockquote>
+<p>AP Classroom. Provide answers and thoughts on theoritical question form college board Video in section 4.3.  They start at about the 9 minute mark.</p>
+<ul>
+<li>Example 1</li>
+<li>Example 2</li>
+</ul>
+<p>Data Structures.  Build a List Comprehension example</p>
+<ul>
+<li>list = [calc(item) for item in items]</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.3-Video-Notes,-Video-Question-Answers,-+-Examples">
+<a class="anchor" href="#4.3-Video-Notes,-Video-Question-Answers,-+-Examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.3 Video Notes, Video Question Answers, + Examples<a class="anchor-link" href="#4.3-Video-Notes,-Video-Question-Answers,-+-Examples"> </a>
+</h1>
+<h2 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+</h2>
+<h3 id="Learning-Objectives:">
+<a class="anchor" href="#Learning-Objectives:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Learning Objectives:<a class="anchor-link" href="#Learning-Objectives:"> </a>
+</h3>
+<ul>
+<li>
+<p>For sequential, parallel, and distributed computing:</p>
+<ul>
+<li>compare problem solutions</li>
+<li>determine the eficiency of solutions and describe benefits and challenges of parallel distributed computing</li>
+</ul>
+</li>
+<li>
+<p>Describe benefits and challeneges of parallel and distributed computing</p>
+</li>
+</ul>
+<h3 id="Essential-Knowledge:">
+<a class="anchor" href="#Essential-Knowledge:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Essential Knowledge:<a class="anchor-link" href="#Essential-Knowledge:"> </a>
+</h3>
+<ul>
+<li>Sequential computing is a computational model in which operations are performed in order one at atime</li>
+<li>Parallel computing is a computational model where the program is broken into multiple smaller sequential computing operations, some of which are performed simultaneously</li>
+<li>Distributed computing is a computational model in which multiple devices are used to run a program</li>
+<li>Comparing efficiency of solutions can be done by comparing the time it takes them to perform the same task</li>
+<li>A sequential solution takes as long as the sum of all of its steps</li>
+<li>A parallel compution solution takes as long as its sequential tasks plus the longest of its parallel tasks</li>
+<li>The "speedup" of a parallel solution is measured in the time it took to complete the task sequentially divided by the time it took to complete the task when done in parallel</li>
+<li>Parallel computing consists of a parallel portion and a sequential portion</li>
+<li>Solutions that use parallel computing can scale more effectively than solutions that use sequential computing
+Distributed computing allows problems to be solved that could not be solved on a single computer because of either the processing time or the storage needs involved</li>
+<li>Distributed computing allows much larger problems to be solved quicker than they could be solved using a single computer</li>
+<li>When increasing the use of parallel computing in a solution, the efficiency of the solution is still limited by the sequential portion. This means that at some point, adding parallel portions will no longer meaningfully increase efficiency</li>
+</ul>
+<h3 id="Sequential,-Parallel-and-Distributed-Computing">
+<a class="anchor" href="#Sequential,-Parallel-and-Distributed-Computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sequential, Parallel and Distributed Computing<a class="anchor-link" href="#Sequential,-Parallel-and-Distributed-Computing"> </a>
+</h3>
+<p><strong>Computer Tasks</strong></p>
+<ul>
+<li>
+<p>A computer needs to handle many tasks as it operates:</p>
+<ul>
+<li>
+<p><strong>System Tasks:</strong> the operating system has dozens of tasks, like scheduling what it will be doing next, managing hardware, working with the network, etc.</p>
+</li>
+<li>
+<p><strong>User Tasks:</strong> executing programs that the user has selected, such as running MS Excel and MS Word, or computer games</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Tasks need to be <strong>scheduled</strong> by the operating system. Balance tasks so all CPUs are being used evenly and fully.</p>
+</li>
+</ul>
+<p>☆ Running tasks can be done sequentially, in parallel, and be distributed to other computers.</p>
+<h3 id="Sequential-Computing">
+<a class="anchor" href="#Sequential-Computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sequential Computing<a class="anchor-link" href="#Sequential-Computing"> </a>
+</h3>
+<p><strong>Sequential Computing.</strong> Tasks are done one after another, in a sequence. It is a computational model in which operations are performed in order one at a time.</p>
+<p>The computer works tasks A, B, C, ... one at a time.
+<strong>Why does a computer use sequential computing to run one task at a time</strong></p>
+
+<pre><code>- **Limited hardware:** It only has one CPU (older hardware).
+- **Tasks are dependent:** Task B depends on Task A, Task C depends on Task B, so the needed order is A, B, and then C. 
+
+</code></pre>
+<p>Execution Time: Sequential Operations add up all the individual task execution times.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Task A takes 50ms</li>
+<li>Task B takes 40 ms</li>
+<li>Task C takes 35 ms</li>
+<li>Total processing time is 50ms + 40ms + 35ms = 125 ms</li>
+</ul>
+<p>Think of Sequential Computing as items one at a time on a conveyor belt.</p>
+<h3 id="Parallel-Computing-Pt.-1">
+<a class="anchor" href="#Parallel-Computing-Pt.-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parallel Computing Pt. 1<a class="anchor-link" href="#Parallel-Computing-Pt.-1"> </a>
+</h3>
+<ul>
+<li>
+<p>Why Parallel:</p>
+<ul>
+<li>
+<p>Hardware driven: New hardware has several processors in one system, called cores. 1 CPU can have 64+ cores. Graphics cards for gaming can have thousands of cores.</p>
+</li>
+<li>
+<p>Faster Operations: Supercomputers link hundreds of CPUs together to work the same problem.</p>
+</li>
+<li>
+<p>Data Driven: A lot of data can be processed the same way (video gaming), called SIMD (Single Instruction Multiple Data)</p>
+</li>
+<li>
+<p>Solutions that use parallel computing can scale more effectively than solutions that use sequential computing</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Parallel-Computing-Pt.-2">
+<a class="anchor" href="#Parallel-Computing-Pt.-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parallel Computing Pt. 2<a class="anchor-link" href="#Parallel-Computing-Pt.-2"> </a>
+</h3>
+<ul>
+<li>Execution Time:<ul>
+<li>Time equals the longest time taken on any given processor.</li>
+<li>A parallel computing solution takes as long as its sequential tasks plus the longest of its parallel tasks.</li>
+<li>Parallel processing works best when the tasks are independent from each other--they don't depend on each other's answers.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Core 1: Task A takes 45ms</li>
+<li>Core 2: Task B takes 50 ms</li>
+<li>Core 3: Task C takes 25 ms; task D takes 30ms</li>
+<li>Core 4: Task E takes 40 ms</li>
+</ul>
+<p>Total time needed: 55ms (Core 3 with tasks C and D in sequence)</p>
+<p>--&gt; Total time is 55ms because that's the longest task, the others will run in parallel but take all Tasks will be done by 55ms</p>
+<h3 id="Comparing-Efficiency-of-Solutions">
+<a class="anchor" href="#Comparing-Efficiency-of-Solutions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparing Efficiency of Solutions<a class="anchor-link" href="#Comparing-Efficiency-of-Solutions"> </a>
+</h3>
+<p>Comparing effieciency of solutions can be done by comparing the time it takes them to perform the same task.</p>
+<p><strong>Sequential:</strong></p>
+<p>☆ Adding up all the individual tasks for execution time.</p>
+<ul>
+<li>Core 1: Task A takes 50ms</li>
+<li>Core 2: Task B takes 40ms</li>
+<li>Core 3: Task C takes 35ms</li>
+</ul>
+<p>Total processing time is 50ms + 40ms + 35ms = 125ms</p>
+<p><strong>Parallel:</strong></p>
+<p>☆ Time is the longest time taken on any given processor</p>
+<ul>
+<li>Core 1: Task A takes 50ms</li>
+<li>Core 2: Task B takes 40ms + task C takes 35ms</li>
+</ul>
+<p>Total time needed: 75ms (Core 2 w/ tasks B and C in sequence)</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/yeaaa/2023/03/29/AP-unit4-3a-parallel-computing.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/yeaaa/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://najaafonseca.github.io/yeaaa/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/yeaaa/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Welcome to my description! Not much going on here, just learning new things ¯\_(ツ)_/¯</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
