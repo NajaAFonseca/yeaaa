@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      10 min read
     
 </span></p>
 
@@ -135,8 +135,12 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Parallel-Computing-Pt.-1">Parallel Computing Pt. 1 </a></li>
 <li class="toc-entry toc-h3"><a href="#Parallel-Computing-Pt.-2">Parallel Computing Pt. 2 </a></li>
 <li class="toc-entry toc-h3"><a href="#Comparing-Efficiency-of-Solutions">Comparing Efficiency of Solutions </a></li>
+<li class="toc-entry toc-h3"><a href="#Speed-Up-Time">Speed Up Time </a></li>
+<li class="toc-entry toc-h3"><a href="#Distributed-Computing">Distributed Computing </a></li>
+<li class="toc-entry toc-h3"><a href="#How-is-Distrubuted-Computing-different-from-Parallel-+-Sequential?">How is Distrubuted Computing different from Parallel + Sequential? </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#Examples">Examples </a></li>
 </ul>
 </li>
 </ul><!--
@@ -541,7 +545,45 @@ Distributed computing allows problems to be solved that could not be solved on a
 <li>Core 2: Task B takes 40ms + task C takes 35ms</li>
 </ul>
 <p>Total time needed: 75ms (Core 2 w/ tasks B and C in sequence)</p>
-
+<h3 id="Speed-Up-Time">
+<a class="anchor" href="#Speed-Up-Time" aria-hidden="true"><span class="octicon octicon-link"></span></a>Speed Up Time<a class="anchor-link" href="#Speed-Up-Time"> </a>
+</h3>
+<p>The "speedup" of a parallel solution is measured in the time it took to complete the task sequentially divided by the time it took to complete the task when done in parallel.</p>
+<ul>
+<li>Sequential Total processing time is 50ms + 40ms + 35ms = 125ms<ul>
+<li>Parallel total time needed = 75ms</li>
+<li>Speedup - 125ms / 75ms equals about 1.67ms</li>
+</ul>
+</li>
+</ul>
+<p><strong>NOTE:</strong> When increasing the use of parallel computing in a solution, the efficiency of the solution is still restricted by the sequential portion. This means that at some point, adding parallel portions will no longer significantly increase efficiency.</p>
+<h3 id="Distributed-Computing">
+<a class="anchor" href="#Distributed-Computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Distributed Computing<a class="anchor-link" href="#Distributed-Computing"> </a>
+</h3>
+<p>☆ Distributed Computing is the sending of tasks from one computer to one or more others. It is a model in which multiple devices are used to run a program.</p>
+<p>☆ Distributed Computing can mix sequential and parallel computing, based on how it sends out tasks to other computers to work.</p>
+<p>☆ Distributed Computing allows problems to be solved that could not be solved on a single computer because of either the processing time or storage needs to be involved.</p>
+<ul>
+<li>Examples:<ul>
+<li>Google Web Search: you ask for a search, and Google sends the request to its thousands of servers in the background. </li>
+<li>Web Services: standards on how computers can ask for task execution over the web. This includes protocals like SOAP, RSS, REST, etc.</li>
+<li>Beowolf Clusters: special software to group different computers together.</li>
+</ul>
+</li>
+</ul>
+<h3 id="How-is-Distrubuted-Computing-different-from-Parallel-+-Sequential?">
+<a class="anchor" href="#How-is-Distrubuted-Computing-different-from-Parallel-+-Sequential?" aria-hidden="true"><span class="octicon octicon-link"></span></a>How is Distrubuted Computing different from Parallel + Sequential?<a class="anchor-link" href="#How-is-Distrubuted-Computing-different-from-Parallel-+-Sequential?"> </a>
+</h3>
+<ul>
+<li>Uses more than one physical computer</li>
+<li>The computers, data, and tasks can be very different from each other</li>
+<li>Needs a network</li>
+<li>Is a mix of sequential and parallel execution of tasks</li>
+<li>Can take longer based on the network and waiting for responses from other computers</li>
+</ul>
+<h2 id="Examples">
+<a class="anchor" href="#Examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples<a class="anchor-link" href="#Examples"> </a>
+</h2>
 </div>
 </div>
 </div>
