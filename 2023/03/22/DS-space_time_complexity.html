@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      125 min read
+      126 min read
     
 </span></p>
 
@@ -161,8 +161,12 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#What-is-the-time-complexity-of-the-following-code:">What is the time complexity of the following code: </a></li>
 <li class="toc-entry toc-h3"><a href="#What-is-the-time-complexity-of-the-following-code:">What is the time complexity of the following code: </a></li>
 <li class="toc-entry toc-h3"><a href="#What-does-it-mean-when-we-say-that-an-algorithm-X-is-asymptotically-more-efficient-than-Y?">What does it mean when we say that an algorithm X is asymptotically more efficient than Y? </a></li>
-<li class="toc-entry toc-h3"><a href="#What-is-the-time-complexity-of-the-following-code:**">What is the time complexity of the following code:** </a></li>
-<li class="toc-entry toc-h3"><a href="#Comprehension-List">Comprehension List </a></li>
+<li class="toc-entry toc-h3"><a href="#What-is-the-time-complexity-of-the-following-code:">What is the time complexity of the following code: </a></li>
+<li class="toc-entry toc-h3"><a href="#Which-of-the-following-best-describes-the-useful-criterion-for-comparing-the-efficiency-of-algorithms?">Which of the following best describes the useful criterion for comparing the efficiency of algorithms? </a></li>
+<li class="toc-entry toc-h3"><a href="#How-is-time-complexity-measured?">How is time complexity measured? </a></li>
+<li class="toc-entry toc-h3"><a href="#What-will-be-the-time-complexity-of-the-following-code?">What will be the time complexity of the following code? </a></li>
+<li class="toc-entry toc-h3"><a href="#What-will-be-the-time-complexity-of-the-following-code?">What will be the time complexity of the following code? </a></li>
+<li class="toc-entry toc-h3"><a href="#Algorithm-A-and-B-have-a-worst-case-running-time-of-O(n)-and-O(logn),-respectively.-Therefore,-algorithm-B-always-runs-faster-than-algorithm-A.">Algorithm A and B have a worst-case running time of O(n) and O(logn), respectively. Therefore, algorithm B always runs faster than algorithm A. </a></li>
 </ul>
 </li>
 </ul><!--
@@ -10021,7 +10025,7 @@ for i in range(N):
 <li>O(N + M) time, O(1) space</li>
 <li>O(N * M) time, O(N + M) space</li>
 </ol>
-<p><em>My Answer:</em></p>
+<p><em>Answer:</em></p>
 <p>3, because N + M is the range which amounts to the time of how long the code will run for depending on the range. Both N + M are independent variables. Spacecomplexity will have a constant of O(1) because variable size is not dependent on the size of input.</p>
 <h4 id="What-is-the-time-complexity-of-the-following-code:">
 <a class="anchor" href="#What-is-the-time-complexity-of-the-following-code:" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>What is the time complexity of the following code:</strong><a class="anchor-link" href="#What-is-the-time-complexity-of-the-following-code:"> </a>
@@ -10039,7 +10043,7 @@ for (i = 0; i &lt; N; i++) {
 <li>O(N * Sqrt(N))</li>
 <li>O(N*N)</li>
 </ol>
-<p><em>My Answer:</em></p>
+<p><em>Answer:</em></p>
 <p>4, the code looks quadratic so you'd multiply instead of it being N^2 it's sipmly just written as N * N.</p>
 <h3 id="What-is-the-time-complexity-of-the-following-code:">
 <a class="anchor" href="#What-is-the-time-complexity-of-the-following-code:" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>What is the time complexity of the following code:</strong><a class="anchor-link" href="#What-is-the-time-complexity-of-the-following-code:"> </a>
@@ -10057,37 +10061,104 @@ for (i = n / 2; i &lt;= n; i++) {
 <li>O(n^2)</li>
 <li>O(n^2Logn)</li>
 </ol>
-<p><em>My Answer:</em>
+<p><em>Answer:</em>
 I can reduce the answers to 2 and 4 because I know that the code is logarithmic.</p>
 <h3 id="What-does-it-mean-when-we-say-that-an-algorithm-X-is-asymptotically-more-efficient-than-Y?">
 <a class="anchor" href="#What-does-it-mean-when-we-say-that-an-algorithm-X-is-asymptotically-more-efficient-than-Y?" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>What does it mean when we say that an algorithm X is asymptotically more efficient than Y?</strong><a class="anchor-link" href="#What-does-it-mean-when-we-say-that-an-algorithm-X-is-asymptotically-more-efficient-than-Y?"> </a>
 </h3>
+<p><em>Answers:</em></p>
 <ol>
 <li>X will always be a better choice for small inputs</li>
 <li>X will always be a better choice for large inputs</li>
 <li>Y will always be a better choice for small inputs</li>
 <li>X will always be a better choice for all inputs</li>
 </ol>
-<p><em>My Answer:</em></p>
+<p><em>Answer:</em></p>
 <p>2, because asymptotic analysis, we consider the growth of the algorithm in terms of input size. An algorithm X is said to be asymptotically better than Y if X takes smaller time than y for all input sizes n larger than a value n0 where n0 &gt; 0.</p>
-<h3 id="What-is-the-time-complexity-of-the-following-code:**">
-<a class="anchor" href="#What-is-the-time-complexity-of-the-following-code:**" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is the time complexity of the following code:**<a class="anchor-link" href="#What-is-the-time-complexity-of-the-following-code:**"> </a>
+<h3 id="What-is-the-time-complexity-of-the-following-code:">
+<a class="anchor" href="#What-is-the-time-complexity-of-the-following-code:" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>What is the time complexity of the following code:</strong><a class="anchor-link" href="#What-is-the-time-complexity-of-the-following-code:"> </a>
 </h3>
 <p>a = 0
 i = N
 while (i &gt; 0):
   a += i
   i //= 2</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comprehension-List">
-<a class="anchor" href="#Comprehension-List" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comprehension List<a class="anchor-link" href="#Comprehension-List"> </a>
+<p><em>Answers:</em></p>
+<ol>
+<li>O(N)</li>
+<li>O(Sqrt(N))</li>
+<li>O(N / 2)</li>
+<li>O(log N)</li>
+</ol>
+<p><em>Answer:</em></p>
+<ol>
+<li>because We have to find the smallest x such that ‘(N / 2^x )&lt; 1 OR  2^x &gt; N’ x = log(N)</li>
+</ol>
+<h3 id="Which-of-the-following-best-describes-the-useful-criterion-for-comparing-the-efficiency-of-algorithms?">
+<a class="anchor" href="#Which-of-the-following-best-describes-the-useful-criterion-for-comparing-the-efficiency-of-algorithms?" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Which of the following best describes the useful criterion for comparing the efficiency of algorithms?</strong><a class="anchor-link" href="#Which-of-the-following-best-describes-the-useful-criterion-for-comparing-the-efficiency-of-algorithms?"> </a>
 </h3>
+<p><em>Answers:</em></p>
+<ol>
+<li>Time</li>
+<li>Memory</li>
+<li>Both of the above</li>
+<li>None of the above</li>
+</ol>
+<p><em>Answer:</em></p>
+<p>3, because comparing the efficiency of an algorithm depends on the time and memory taken by  an algorithm. The algorithm which runs in lesser time and takes less memory even for a large input size is considered a more efficient algorithm.</p>
+<h3 id="How-is-time-complexity-measured?">
+<a class="anchor" href="#How-is-time-complexity-measured?" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>How is time complexity measured?</strong><a class="anchor-link" href="#How-is-time-complexity-measured?"> </a>
+</h3>
+<p><em>Answers:</em></p>
+<ol>
+<li>By counting the number of algorithms in an algorithm.</li>
+<li>By counting the number of primitive operations performed by the algorithm on a given input size.</li>
+<li>By counting the size of data input to the algorithm.</li>
+<li>None of the above</li>
+</ol>
+<p><em>Answer:</em></p>
+<p>2, because by counting the number of primitive operations performed by the algorithm on a given input size.</p>
+<h3 id="What-will-be-the-time-complexity-of-the-following-code?">
+<a class="anchor" href="#What-will-be-the-time-complexity-of-the-following-code?" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>What will be the time complexity of the following code?</strong><a class="anchor-link" href="#What-will-be-the-time-complexity-of-the-following-code?"> </a>
+</h3>
+<p>for i in range(n):
+  i=i*k</p>
+<p><em>Answers:</em></p>
+<ol>
+<li>O(n)</li>
+<li>O(k)</li>
+<li>O(logkn)</li>
+<li>O(lognk)</li>
+</ol>
+<p><em>Answer:</em></p>
+<p>3, because loops for the kn-1 times, so after taking log it becomes logkn.</p>
+<h3 id="What-will-be-the-time-complexity-of-the-following-code?">
+<a class="anchor" href="#What-will-be-the-time-complexity-of-the-following-code?" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>What will be the time complexity of the following code?</strong><a class="anchor-link" href="#What-will-be-the-time-complexity-of-the-following-code?"> </a>
+</h3>
+<p>value = 0;
+for i in range(n):
+  for j in range(i):
+    value=value+1</p>
+<p><em>Answers:</em></p>
+<ol>
+<li>n</li>
+<li>(n+1)</li>
+<li>n(n-1)</li>
+<li>n(n+1)</li>
+</ol>
+<p><em>Answer:</em></p>
+<p>3, because tirst for loop will run for (n) times and another for loop will be run for (n-1) times as the inner loop will only run till the range i which is 1 less than n , so overall time will be n(n-1).</p>
+<h3 id="Algorithm-A-and-B-have-a-worst-case-running-time-of-O(n)-and-O(logn),-respectively.-Therefore,-algorithm-B-always-runs-faster-than-algorithm-A.">
+<a class="anchor" href="#Algorithm-A-and-B-have-a-worst-case-running-time-of-O(n)-and-O(logn),-respectively.-Therefore,-algorithm-B-always-runs-faster-than-algorithm-A." aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Algorithm A and B have a worst-case running time of O(n) and O(logn), respectively. Therefore, algorithm B always runs faster than algorithm A.</strong><a class="anchor-link" href="#Algorithm-A-and-B-have-a-worst-case-running-time-of-O(n)-and-O(logn),-respectively.-Therefore,-algorithm-B-always-runs-faster-than-algorithm-A."> </a>
+</h3>
+<p><em>Answers:</em></p>
+<ol>
+<li>True</li>
+<li>False</li>
+</ol>
+<p><em>Answer:</em></p>
+<p>False, because the Big-O notation provides an asymptotic comparison in the running time of algorithms. For n &lt; n0​​, algorithm A might run faster than algorithm B, for instance.</p>
+
 </div>
 </div>
 </div>
