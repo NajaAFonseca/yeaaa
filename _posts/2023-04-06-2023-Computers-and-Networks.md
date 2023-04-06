@@ -48,9 +48,23 @@ The CPU carries out the instructions provided by software programs, performing a
 
 - Cloud Storage: Cloud storage is a type of online storage that allows users to store and access their data over the internet. It is commonly used for backup and file-sharing purposes.
 
-### Listing Specifications of your Computer, or Computers if working as Pair/Trio
+### Notes + Definitions
 
-- Processor GHz: GHz (gigahertz) is a unit of frequency that is commonly used to measure the clock speed of a computer CPU. It represents the number of clock cycles that the CPU can perform in one second, and it is often used as an indicator of the CPU's processing power.
-- Memory in GB: 
-- Storage in GB:
-- OS:
+**Listing Specifications of your Computer, or Computers if working as Pair/Trio**
+
+- **Processor GHz:** GHz (gigahertz) is a unit of frequency that is commonly used to measure the clock speed of a computer CPU. It represents the number of clock cycles that the CPU can perform in one second, and it is often used as an indicator of the CPU's processing power.
+- **Memory in GB (Gigabytes):** the amount of RAM (Random Access Memory) that a computer has. 
+- **Storage in GB:** the amount of non-volatile storage capacity that a computer has.
+- **OS (Operating System)**: a software program that manages and controls the basic functions of a computer system. It acts as an interface between the computer hardware and the user, providing a way for users to interact with the computer and run applications.
+
+**Definitions**
+
+- **Input devices:** computer hardware components that allow users to input data, commands, and instructions into a computer system. These devices enable users to communicate with the computer and interact with applications, software programs, and operating systems. Examples: keyboards, mouse, touchpad, touchscreen, scanner, microphone, joystick/controller, gamepads, digital cameras, barcode readers, etc.
+- **Output devices:** computer hardware components that display or output data and information from a computer system. These devices allow users to receive feedback, view results, and interact with applications, software programs, and operating systems. Examples: monitor, printer, speaker, headphones, projector, etc.
+- **Program File:** program files are files that contain the instructions and data necessary for a computer program or software application to run. These files are usually stored in specific directories or folders on the computer's file system, and they may include additional resources such as images, icons, and other media. Examples: hard drive, SSD, etc. 
+- **Program Code:** refers to the set of instructions and commands that are used to create software programs and applications. Program code is typically created by software developers, who write the code using a text editor or integrated development environment (IDE). The code is then compiled or interpreted by a software tool into a form that can be executed by a computer's processor. This code is typically written in C++, Java, Python, or JavaScript.
+- **Processes:** 
+- **Ports:** 
+- **Data File:** 
+- **Inspect Running Code:** 
+- **Inspect Variables:** 
