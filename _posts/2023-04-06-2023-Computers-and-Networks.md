@@ -48,4 +48,9 @@ The CPU carries out the instructions provided by software programs, performing a
 
 - Cloud Storage: Cloud storage is a type of online storage that allows users to store and access their data over the internet. It is commonly used for backup and file-sharing purposes.
 
+### Listing Specifications of your Computer, or Computers if working as Pair/Trio
 
+- Processor GHz: GHz (gigahertz) is a unit of frequency that is commonly used to measure the clock speed of a computer CPU. It represents the number of clock cycles that the CPU can perform in one second, and it is often used as an indicator of the CPU's processing power.
+- Memory in GB: 
+- Storage in GB:
+- OS:
