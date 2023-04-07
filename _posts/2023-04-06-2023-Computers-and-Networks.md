@@ -140,3 +140,14 @@ f. a group of interconnected computing devices capable of sending/recieving data
 
 ### Drawn Diagram
 
+# 4.2 Notes 
+
+## 4.2 Daily Video 1 Notes
+
+### Lesson Objective
+
+### Essential Knowledge
+
+### Notes/Network Activity
+
+### Summarized Understanding of Fault Tolerance
