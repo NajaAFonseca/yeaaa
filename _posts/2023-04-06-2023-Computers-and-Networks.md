@@ -88,5 +88,23 @@ The CPU carries out the instructions provided by software programs, performing a
 - The bandwidth of a computer network is the maximum amount of data that can be sent in a fixed amount of time.
 Bandwidth is usually measured in bits per second
 
-### 
+### Notes
+
+**Vocab:**
+
+**Vocab Match-Up:**
+
+1. Path
+2. Route
+3. Computer System
+4. Computer Device
+5. Bandwidth
+6. Computer Network
+
+a. a sequence of directly connected computing devices that begins at the sender nd ends at the reciever.
+b. a group of computing devices and program sworking together for a common purpose.
+c. a physical artifcact that can run a program. some examples include computers, tablets, servers, routers, + smart sensors.
+d. the maximum amout of data that can be sent in a fixed amount of time. 
+e. the process of finding a path from sender to reciever
+f. a group of interconnected computing devices capable of sending/recieving data  
 
