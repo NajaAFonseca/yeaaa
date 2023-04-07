@@ -108,12 +108,12 @@ d. the maximum amout of data that can be sent in a fixed amount of time.
 e. the process of finding a path from sender to reciever
 f. a group of interconnected computing devices capable of sending/recieving data
 
-**1 --> a** <br>
-**2 --> e** <br>
-**3 --> b** <br>
-**4 --> c** <br>
-**5 --> d** <br>
-**6 --> f** <br>
+**1 ---> a** <br>
+**2 ---> e** <br>
+**3 ---> b** <br>
+**4 ---> c** <br>
+**5 ---> d** <br>
+**6 ---> f** <br>
 
 ## 4.1 Daily Video 2 + Diagram
 
