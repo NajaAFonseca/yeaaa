@@ -68,3 +68,17 @@ The CPU carries out the instructions provided by software programs, performing a
 - **Data File:** a file that contains information or data that can be read or processed by a computer program. Data files can take many different forms, depending on the type of data they contain and the format in which the data is stored. Examples: text, image, spreadsheet, audio/video, database, etc.
 - **Inspect Running Code:** the process of examining the execution of a computer program while it is running. There are several tools and techniques that can be used to inspect running code, depending on the programming language, operating system, and development environment being used. This can be done for a variety of purposes, such as debugging, performance tuning, or understanding how a program works.
 - **Inspect Variables:** the process of examining the values of variables at different points during the execution of a program. Variables are used in programming to store and manipulate data, and their values can change as a program runs. Utilized by the same examples as before. 
+
+# 4.1 Video Notes + Vocabulary
+
+## 4.1 Daily Video 1 + Vocab
+
+### Learning Objective
+
+Explain how computing devices work together in a network.
+
+### Essential Knowledge
+
+
+
+
