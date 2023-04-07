@@ -88,9 +88,9 @@ The CPU carries out the instructions provided by software programs, performing a
 - The bandwidth of a computer network is the maximum amount of data that can be sent in a fixed amount of time.
 Bandwidth is usually measured in bits per second
 
-### Notes
+### Video Notes
 
-**Vocab:**
+
 
 **Vocab Match-Up:**
 
@@ -106,5 +106,37 @@ b. a group of computing devices and program sworking together for a common purpo
 c. a physical artifcact that can run a program. some examples include computers, tablets, servers, routers, + smart sensors.
 d. the maximum amout of data that can be sent in a fixed amount of time. 
 e. the process of finding a path from sender to reciever
-f. a group of interconnected computing devices capable of sending/recieving data  
+f. a group of interconnected computing devices capable of sending/recieving data
+
+**1 --> a**
+**2 --> e**
+**3 --> b**
+**4 --> c**
+**5 --> d**
+**6 --> f**
+
+## 4.1 Daily Video 2 + Diagram
+
+### Learning Objective
+
+### Essential Knowledge
+
+- The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
+- Access to the internet depends on the ability to connect a computing device to an internet connected device.
+- A protocol is an agreed-upon set of rules that specify the behavior of a system.
+- The protocols used in the internet are open, which allows users to easily connect additional computing devices to the internet.
+- Routing on the internet is usually dynamic; it is not specified in advance 
+- The scalability of a system is the capacity for the system to change in size and scale to meet new demands.
+- The internet was designed to be scalable
+- Information is passed through the internet as a data stream. Data streams contain chunks of data, which are encapsulated in packets.
+- Packets contain a chunk of data and metadata used for routing the packet between the origin and the destination on the internet, as well as for data reassembly.
+- Packets may arrive at the destination in order, out of order, or not at all
+- IP, TCP and UDP are common protocols used on the internet.
+- The world wide web is a system of linked pages, programs, and files.
+- HTTP is a protocol used by the world wide web
+- The world wide web uses the internet
+
+### Notes
+
+### Drawn Diagram
 
