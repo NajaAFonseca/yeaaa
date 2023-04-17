@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: Correcting the questions I got wrong on the quiz!
-title: 2018 Quiz Corrections
+title: 2018 MC Quiz Corrections
 toc: true 
 badges: true
 comments: true
