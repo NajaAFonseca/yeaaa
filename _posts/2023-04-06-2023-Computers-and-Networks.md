@@ -146,8 +146,24 @@ f. a group of interconnected computing devices capable of sending/recieving data
 
 ### Lesson Objective
 
+**Fault-Tolerant Systems:**
+- Describe the benefits of fault tolerance
+- Identify the vulnerabilities to failure in a system 
+
 ### Essential Knowledge
 
+- The internet has been enginered to be fault-tolerant, with abstractions for routing and transmitting data
+- *Redundancy* is the inclusion of extra components that can be used to mitigate failure of a system if other components fail
+- One way to accomplish network redundancy is by having more than one path between any connected device
+- If a particular device or connection on the Internet fails, subsequent data will be sent via a different route, if possible
+- *Fault-tolerant* is when a system can continue to support failures and still function
+- Redundancy within a system often requires additional resources but can provide the benefit of fault tolerance
+- The redundancy of routing options between two points increases the realiability of the Internet and helps it scale to more devices and more people
+
 ### Notes/Network Activity
+
+**Network Paths:**
+
+
 
 ### Summarized Understanding of Fault Tolerance
