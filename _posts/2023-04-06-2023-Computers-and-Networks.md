@@ -164,6 +164,30 @@ f. a group of interconnected computing devices capable of sending/recieving data
 
 **Network Paths:**
 
+Some networks paths are linked through others in a sequential order. While other network paths are linked through many different connections from different paths. The benefit of them being linked this way is that a network will still have access to another network if one network path has an error. 
 
+## 4.2 Daily Video 2 Notes
+
+### Leson Objectives
+
+**Fault-Tolerant System:**
+- Explain how a given system is fault tolerant
+
+### Essential Knowledge
+
+- The Internet has been engineered to be fault-tolerant, with abstractions for routing and transmitting data
+- *Redundancy* is the inclusion of extra components that can be used to mitigate failure of a system if other components fail
+- One way to accomplish network redundancy is by having more than one path between any connected devices
+- If a particular device or connection on the internet fails, subsequent data will be sent via different route, if possible
+- When a system can support failures and still continue to function, it is called fault-tolerant. This is important because elements of complex systems fail at unexpected times, often in groups, + fault tolerance allows users to continue to use the network.
+- 
 
 ### Summarized Understanding of Fault Tolerance
+
+**I used chatgpt:**
+
+Fault tolerance refers to the ability of a system or component to continue functioning in the event of a failure or fault. This can be achieved through various techniques such as redundancy, error detection and correction, and graceful degradation. The goal of fault tolerance is to ensure that the system remains operational even if one or more components fail, thereby minimizing downtime, data loss, and other negative consequences. Fault tolerance is an important consideration in the design of critical systems such as aircraft, medical equipment, and financial trading systems, as well as in computer systems and networks.
+
+**My Understanding:**
+
+Fault-tolerance helps networks because it is able to continue making connections via other networks despite some path failures. Basically, it's a life lesson about preserving but sometimes it also doesn't work because less connection paths means path failures can lead to overall disconnection of some networks. 
