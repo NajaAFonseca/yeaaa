@@ -48,4 +48,54 @@ A databse that you can utilize to deploy your website using a domain name and IP
 
 **How does EC2 AWS work?**
 
+### Duck DNS
 
+**How does DNS Work?**
+
+Assigns the IP address into a user friendly name, such as "Google."
+
+**How is Duck DNS useful**
+
+It can be used as a remote desktop meaning...
+
+- you can run duck dns + 
+
+**Hacks**
+
+- reflection + questions, mcq + frq
+- venn diagram
+
+### Alternatives to Certbot
+
+**What is Certbot?**
+
+A free service that allows you to get a SSL certificate and connect securely to a domain.
+
+**List of Alternatives:**
+
+### Lego
+
+**What is Lego?**
+
+**Hacks**
+
+- reasearch, research vulnerabilities, 
+
+### Certbot
+
+**What is Certbot?**
+
+- creates a more secure connection
+- https is more secure then http
+
+**Pros + Cons**
+
+Pros:
+- 
+
+Cons: 
+- vulnerable to malware attacks
+
+**HACKS**
+
+- must do 2/4 for .8 and 3/4 u get .9, 4/4 you get a 1
