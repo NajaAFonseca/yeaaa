@@ -82,9 +82,19 @@ I think the answer is C, beacause Amazon Neptune is an AWS database service that
 
 # Certbot Hacks
 
-### Open SSL and LibreSSL Notes
+### OpenSSL and LibreSSL Notes
 
 **What is Open SSL?**
+
+OpenSSL is a software library that provides a secure communications channel between two devices over the internet. It is an open-source implementation of the SSL and TLS protocols that are used to secure communication over the internet. OpenSSL provides a set of cryptographic functions (encryption, decryption, message authentication, digital signature, + key exchange) that allow software developers to incorporate secure communication capabilities into their applications. It is widely used for securing websites, email communication, and other internet-based services. OpenSSL is available for various operating systems, such as Linux, Windows, and macOS.
+
+**What is LibreSSL?**
+
+LibreSSL is a free and open-source software library that provides secure communication using the SSL and TLS protocols. It is a fork of OpenSSL and aims to provide a more secure and lightweight alternative to OpenSSL. LibreSSL provides the same set of cryptographic functions as OpenSSL, however, it is designed to be more secure and reliable, with a more rigorous development and testing process.
+
+**Security Feature Comparisons between OpenSSL + LibreSSL**
+
+
 
 ### Certbot Instructions
 
