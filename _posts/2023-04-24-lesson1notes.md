@@ -106,4 +106,8 @@ Overall, LibreSSL has a more rigorous and security-focused approach than OpenSSL
 
 ### Certbot Instructions
 
----
+For Mac, I only needed to use the command `brew install certbot` to install certbot and all its dependencies. From here, I didn't give certbot my email because I didn't want the notifications but I did install it!
+
+![]({{site.baseurl}}/images/certbot1.jpg)
+
+![]({{site.baseurl}}/images/certbot2.jpg)
