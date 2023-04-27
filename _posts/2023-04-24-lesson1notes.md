@@ -80,3 +80,12 @@ D. Amazon DocumentDB <br>
 
 I think the answer is C, beacause Amazon Neptune is an AWS database service that is optimized for storing and querying highly connected datasets.
 
+# Certbot Hacks
+
+### Open SSL and LibreSSL Notes
+
+**What is Open SSL?**
+
+### Certbot Instructions
+
+---
