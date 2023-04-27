@@ -36,5 +36,5 @@ D. Amazon RDS
 
 **My Answer:**
 
-
+The answer is A because Amazon Neptune isn't designed for low latency speed, Amazon DocumentDB may not provide the same performance as ElastiCache, and Amazon RDS also may not provide the same performance as ElastiCache.
 
