@@ -22,7 +22,7 @@ D. Relational databases are more expensive than non-relational databases.
 
 **My Answer:**
 
-The answer is C because relational databases are based on tables and use SQL (Structured Query Language) to manage data, while non-relational databases are based on collections and use a variety of data models typically use a query language specific to the database. 
+I think the answer is C because relational databases are based on tables and use SQL (Structured Query Language) to manage data, while non-relational databases are based on collections and use a variety of data models typically use a query language specific to the database. 
 
 Which AWS database service is best suited for applications that require low-latency speed?
 
@@ -38,3 +38,16 @@ D. Amazon RDS
 
 The answer is A because Amazon Neptune isn't designed for low latency speed, Amazon DocumentDB may not provide the same performance as ElastiCache, and Amazon RDS also may not provide the same performance as ElastiCache.
 
+What is the purpose of the code example provided in the lesson?
+
+A. To demonstrate how to create a table in Amazon Aurora.
+
+B. To show how to query data from a DynamoDB table.
+
+C. To provide an example of how to connect to a database instance in RDS using Python.
+
+D. To showcase how to insert data into a MySQL table.
+
+**My Answer:**
+
+I think the answer is C because the code example is likely demonstrating how to connect to a database instance in RDS using Python.
