@@ -78,4 +78,5 @@ D. Amazon DocumentDB
 
 **My Answer:**
 
+I think the answer is C, beacause Amazon Neptune is an AWS database service that is optimized for storing and querying highly connected datasets.
 
