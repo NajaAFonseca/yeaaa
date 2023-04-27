@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -191,6 +191,23 @@ D. Amazon DocumentDB <br></nr></p>
 <p>LibreSSL is a free and open-source software library that provides secure communication using the SSL and TLS protocols. It is a fork of OpenSSL and aims to provide a more secure and lightweight alternative to OpenSSL. LibreSSL provides the same set of cryptographic functions as OpenSSL, however, it is designed to be more secure and reliable, with a more rigorous development and testing process.</p>
 
 <p><strong>Security Feature Comparisons between OpenSSL + LibreSSL</strong></p>
+
+<ol>
+  <li>
+    <p>Code quality: LibreSSL puts a strong emphasis on code quality and security. It has removed a lot of outdated and insecure code that is still present in OpenSSL, reducing the attack surface and making it less prone to vulnerabilities.</p>
+  </li>
+  <li>
+    <p>Cryptography: LibreSSL uses modern cryptographic algorithms and methods, which are more resistant to attacks than some of the legacy algorithms supported by OpenSSL. For example, LibreSSL has removed support for SSLv2, RC4, and other insecure ciphers.</p>
+  </li>
+  <li>
+    <p>Testing: LibreSSL has an extensive testing suite that is regularly run to ensure the library is functioning correctly and securely. This is in contrast to OpenSSL, which has been criticized for its lack of testing.</p>
+  </li>
+  <li>
+    <p>API design: LibreSSL has a simpler and more streamlined API design, which makes it easier to use and less prone to errors than OpenSSL.</p>
+  </li>
+</ol>
+
+<p>Overall, LibreSSL has a more rigorous and security-focused approach than OpenSSL, and it has been developed with a stronger emphasis on code quality, modern cryptography, and testing. As a result, LibreSSL is often considered a more secure and reliable option than OpenSSL :)</p>
 
 <h3 id="certbot-instructions">
 <a class="anchor" href="#certbot-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Certbot Instructions</h3>
