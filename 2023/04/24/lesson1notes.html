@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -97,7 +97,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#certbot-hacks">Certbot Hacks</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#open-ssl-and-libressl-notes">Open SSL and LibreSSL Notes</a></li>
+<li class="toc-entry toc-h3"><a href="#openssl-and-libressl-notes">OpenSSL and LibreSSL Notes</a></li>
 <li class="toc-entry toc-h3"><a href="#certbot-instructions">Certbot Instructions</a></li>
 </ul>
 </li>
@@ -179,10 +179,18 @@ D. Amazon DocumentDB <br></nr></p>
 <h1 id="certbot-hacks">
 <a class="anchor" href="#certbot-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Certbot Hacks</h1>
 
-<h3 id="open-ssl-and-libressl-notes">
-<a class="anchor" href="#open-ssl-and-libressl-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Open SSL and LibreSSL Notes</h3>
+<h3 id="openssl-and-libressl-notes">
+<a class="anchor" href="#openssl-and-libressl-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>OpenSSL and LibreSSL Notes</h3>
 
 <p><strong>What is Open SSL?</strong></p>
+
+<p>OpenSSL is a software library that provides a secure communications channel between two devices over the internet. It is an open-source implementation of the SSL and TLS protocols that are used to secure communication over the internet. OpenSSL provides a set of cryptographic functions (encryption, decryption, message authentication, digital signature, + key exchange) that allow software developers to incorporate secure communication capabilities into their applications. It is widely used for securing websites, email communication, and other internet-based services. OpenSSL is available for various operating systems, such as Linux, Windows, and macOS.</p>
+
+<p><strong>What is LibreSSL?</strong></p>
+
+<p>LibreSSL is a free and open-source software library that provides secure communication using the SSL and TLS protocols. It is a fork of OpenSSL and aims to provide a more secure and lightweight alternative to OpenSSL. LibreSSL provides the same set of cryptographic functions as OpenSSL, however, it is designed to be more secure and reliable, with a more rigorous development and testing process.</p>
+
+<p><strong>Security Feature Comparisons between OpenSSL + LibreSSL</strong></p>
 
 <h3 id="certbot-instructions">
 <a class="anchor" href="#certbot-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Certbot Instructions</h3>
