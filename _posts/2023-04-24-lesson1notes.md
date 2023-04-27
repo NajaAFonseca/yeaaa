@@ -8,46 +8,74 @@ comments: true
 layout: post
 ---
 
-# AWS Databse Hacks - Quiz 1
+# AWS Databse Hacks 
 
-What is the main difference between relational and non-relational databases?
+### Quiz 1
+
+**What is the main difference between relational and non-relational databases?**
 
 A. Relational databases are only used for structured data, while non-relational databases are only used for unstructured data.
-
 B. Relational databases can easily handle high data volumes, while non-relational databases cannot.
-
 C. Relational databases are based on tables and use SQL, while non-relational databases are based on collections and use JSON-like documents.
-
 D. Relational databases are more expensive than non-relational databases.
 
 **My Answer:**
 
 I think the answer is C because relational databases are based on tables and use SQL (Structured Query Language) to manage data, while non-relational databases are based on collections and use a variety of data models typically use a query language specific to the database. 
 
-Which AWS database service is best suited for applications that require low-latency speed?
+**Which AWS database service is best suited for applications that require low-latency speed?**
 
 A. Amazon ElastiCache
-
 B. Amazon Neptune
-
 C. Amazon DocumentDB
-
 D. Amazon RDS
 
 **My Answer:**
 
 The answer is A because Amazon Neptune isn't designed for low latency speed, Amazon DocumentDB may not provide the same performance as ElastiCache, and Amazon RDS also may not provide the same performance as ElastiCache.
 
-What is the purpose of the code example provided in the lesson?
+**What is the purpose of the code example provided in the lesson?**
 
 A. To demonstrate how to create a table in Amazon Aurora.
-
 B. To show how to query data from a DynamoDB table.
-
 C. To provide an example of how to connect to a database instance in RDS using Python.
-
 D. To showcase how to insert data into a MySQL table.
 
 **My Answer:**
 
 I think the answer is C because the code example is likely demonstrating how to connect to a database instance in RDS using Python.
+
+### Quiz 2
+
+**Which of the following is not an AWS database option?**
+
+A. Amazon RDS
+B. Amazon Neptune
+C. SQLite
+D. Amazon DynamoDB
+
+**My Answer:**
+
+The answer is C because SQLite is not an AWS option.
+
+**Which of the following is a file-based, lightweight RDBMS?**
+
+A. Amazon RDS
+B. Amazon Neptune
+C Amazon DynamoDB
+D. SQLite
+
+**My Answer:**
+
+The answer is D, SQLite.
+
+**Which AWS service enables you to store and query highly connected datasets?**
+
+A. Amazon Relational Database Service (RDS)
+B. Amazon DynamoDB
+C. Amazon Neptune
+D. Amazon DocumentDB
+
+**My Answer:**
+
+
