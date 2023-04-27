@@ -1,7 +1,7 @@
 ---
 keywords: fastai
 description: Following along the student created lesson plan.
-title: Lesson 1 Notes
+title: 4/24 DevOps for Dev Tools Hacks
 toc: true 
 badges: true
 comments: true
