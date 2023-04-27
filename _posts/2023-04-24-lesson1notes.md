@@ -102,6 +102,8 @@ LibreSSL is a free and open-source software library that provides secure communi
 
 4. API design: LibreSSL has a simpler and more streamlined API design, which makes it easier to use and less prone to errors than OpenSSL.
 
+Overall, LibreSSL has a more rigorous and security-focused approach than OpenSSL, and it has been developed with a stronger emphasis on code quality, modern cryptography, and testing. As a result, LibreSSL is often considered a more secure and reliable option than OpenSSL :)
+
 ### Certbot Instructions
 
 ---
