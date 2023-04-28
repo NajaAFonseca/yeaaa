@@ -89,19 +89,38 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#panda-hacks">Panda hacks</a></li>
+<li class="toc-entry toc-h1"><a href="#panda-hacks">Panda hacks</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#1-what-are-the-two-primary-data-structures-in-pandas-and-how-do-they-differ">1. What are the two primary data structures in pandas and how do they differ?</a></li>
+<li class="toc-entry toc-h3"><a href="#2-how-do-you-read-a-csv-file-into-a-pandas-dataframe">2. How do you read a CSV file into a pandas DataFrame?</a></li>
+<li class="toc-entry toc-h3"><a href="#3-how-do-you-select-a-single-column-from-a-pandas-dataframe">3. How do you select a single column from a pandas DataFrame?</a></li>
+<li class="toc-entry toc-h3"><a href="#4-how-do-you-filter-rows-in-a-pandas-dataframe-based-on-a-condition">4. How do you filter rows in a pandas DataFrame based on a condition?</a></li>
+<li class="toc-entry toc-h3"><a href="#5-how-do-you-group-rows-in-a-pandas-dataframe-by-a-particular-column">5. How do you group rows in a pandas DataFrame by a particular column?</a></li>
+<li class="toc-entry toc-h3"><a href="#6-how-do-you-aggregate-data-in-a-pandas-dataframe-using-functions-like-sum-and-mean">6. How do you aggregate data in a pandas DataFrame using functions like sum and mean?</a></li>
+<li class="toc-entry toc-h3"><a href="#7-how-do-you-handle-missing-values-in-a-pandas-dataframe">7. How do you handle missing values in a pandas DataFrame?</a></li>
+<li class="toc-entry toc-h3"><a href="#8-how-do-you-merge-two-pandas-dataframes-together">8. How do you merge two pandas DataFrames together?</a></li>
+<li class="toc-entry toc-h3"><a href="#9-how-do-you-export-a-pandas-dataframe-to-a-csv-file">9. How do you export a pandas DataFrame to a CSV file?</a></li>
+<li class="toc-entry toc-h3"><a href="#10-what-is-the-difference-between-a-series-and-a-dataframe-in-pandas">10. What is the difference between a Series and a DataFrame in Pandas?</a></li>
+</ul>
+</li>
 </ul><h1 id="panda-hacks">
 <a class="anchor" href="#panda-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Panda hacks</h1>
 
-<p><strong>1. What are the two primary data structures in pandas and how do they differ?</strong></p>
+<h3 id="1-what-are-the-two-primary-data-structures-in-pandas-and-how-do-they-differ">
+<a class="anchor" href="#1-what-are-the-two-primary-data-structures-in-pandas-and-how-do-they-differ" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>1. What are the two primary data structures in pandas and how do they differ?</strong>
+</h3>
 
 <p>The two primary data structures in pandas are Series and DataFrame. A Series represents a single column of data, while a DataFrame represents a whole table of data with rows and columns. A DataFrame is like a Series of objects, where each Series represents a column in the DataFrame, and the row labels are shared between all the columns. Also, a DataFrame can perform operations that are not possible with a Series, such as joining or merging multiple tables, and grouping data based on certain criteria.</p>
 
-<p><strong>2. How do you read a CSV file into a pandas DataFrame?</strong></p>
+<h3 id="2-how-do-you-read-a-csv-file-into-a-pandas-dataframe">
+<a class="anchor" href="#2-how-do-you-read-a-csv-file-into-a-pandas-dataframe" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>2. How do you read a CSV file into a pandas DataFrame?</strong>
+</h3>
 
 <p>You use the read_csv() function.</p>
 
-<p><strong>3. How do you select a single column from a pandas DataFrame?</strong></p>
+<h3 id="3-how-do-you-select-a-single-column-from-a-pandas-dataframe">
+<a class="anchor" href="#3-how-do-you-select-a-single-column-from-a-pandas-dataframe" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>3. How do you select a single column from a pandas DataFrame?</strong>
+</h3>
 
 <p>You can use square brackets [] with the column name as a string.</p>
 
@@ -109,15 +128,21 @@ window.onload = wrap_img;
 
 <p><img src="/yeaaa/images/chatgptexample.jpg" alt=""></p>
 
-<p><strong>4. How do you filter rows in a pandas DataFrame based on a condition?</strong></p>
+<h3 id="4-how-do-you-filter-rows-in-a-pandas-dataframe-based-on-a-condition">
+<a class="anchor" href="#4-how-do-you-filter-rows-in-a-pandas-dataframe-based-on-a-condition" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>4. How do you filter rows in a pandas DataFrame based on a condition?</strong>
+</h3>
 
 <p>You can filter rows in a pandas DataGrame by using the function df_filtered and setting it to the way you want to sort it.</p>
 
-<p><strong>5. How do you group rows in a pandas DataFrame by a particular column?</strong></p>
+<h3 id="5-how-do-you-group-rows-in-a-pandas-dataframe-by-a-particular-column">
+<a class="anchor" href="#5-how-do-you-group-rows-in-a-pandas-dataframe-by-a-particular-column" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>5. How do you group rows in a pandas DataFrame by a particular column?</strong>
+</h3>
 
 <p>You group rows in pandas DataFrame by a particular name by adding them to a group such as the code used in your lesson: <code class="language-plaintext highlighter-rouge">age_groups</code>.</p>
 
-<p><strong>6. How do you aggregate data in a pandas DataFrame using functions like sum and mean?</strong></p>
+<h3 id="6-how-do-you-aggregate-data-in-a-pandas-dataframe-using-functions-like-sum-and-mean">
+<a class="anchor" href="#6-how-do-you-aggregate-data-in-a-pandas-dataframe-using-functions-like-sum-and-mean" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>6. How do you aggregate data in a pandas DataFrame using functions like sum and mean?</strong>
+</h3>
 
 <p>Aggregating data can be done through DataFrames using sum and mean by using the <code class="language-plaintext highlighter-rouge">groupby()</code> function and aggregating it after.</p>
 
@@ -125,10 +150,19 @@ window.onload = wrap_img;
 
 <p><img src="/yeaaa/images/chatgptexample2.jpg" alt=""></p>
 
-<p><strong>7. How do you handle missing values in a pandas DataFrame?</strong>
-<strong>8. How do you merge two pandas DataFrames together?</strong>
-<strong>9. How do you export a pandas DataFrame to a CSV file?</strong>
-<strong>10. What is the difference between a Series and a DataFrame in Pandas?</strong></p>
+<h3 id="7-how-do-you-handle-missing-values-in-a-pandas-dataframe">
+<a class="anchor" href="#7-how-do-you-handle-missing-values-in-a-pandas-dataframe" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>7. How do you handle missing values in a pandas DataFrame?</strong>
+</h3>
+
+<h3 id="8-how-do-you-merge-two-pandas-dataframes-together">
+<a class="anchor" href="#8-how-do-you-merge-two-pandas-dataframes-together" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>8. How do you merge two pandas DataFrames together?</strong>
+</h3>
+<h3 id="9-how-do-you-export-a-pandas-dataframe-to-a-csv-file">
+<a class="anchor" href="#9-how-do-you-export-a-pandas-dataframe-to-a-csv-file" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>9. How do you export a pandas DataFrame to a CSV file?</strong>
+</h3>
+<h3 id="10-what-is-the-difference-between-a-series-and-a-dataframe-in-pandas">
+<a class="anchor" href="#10-what-is-the-difference-between-a-series-and-a-dataframe-in-pandas" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>10. What is the difference between a Series and a DataFrame in Pandas?</strong>
+</h3>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
