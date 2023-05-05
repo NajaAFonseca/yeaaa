@@ -40,4 +40,4 @@ I got this question wrong because the change in course grade can actually be cal
 
 ![]({{site.baseurl}}/images/coinflip.jpg)
 
-I got this question wrong because 
+I got this question wrong because in this code segment, the variable flip is assigned one of four values: 0, 1, 2, or 3. The player wins approximately two out of every four times (when flip is 0 or 3). However, the desired code segment was supposed to output the players chance of winning when the flip is simulated where one 1 is represented, and the other is represented by 0. The player wins when the sum of these is 0 or 3, indicating all heads or all tails. Which leaves like a 1/4 chance of winning. 
