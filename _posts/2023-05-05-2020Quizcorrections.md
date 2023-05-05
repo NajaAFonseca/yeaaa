@@ -30,4 +30,7 @@ I got this question wrong because the code segment I put says that there is a 1/
 
 you can see why the spinner is the correct answer.
 
-# Question 
+# Question 33
+
+![]({{site.baseurl}}/images/assigmentscore.jpg)
+
