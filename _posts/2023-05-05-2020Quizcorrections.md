@@ -17,3 +17,6 @@ I got this question wrong because I miscounted the number's of 3s to be multipli
 # Question 4
 
 ![]({{site.baseurl}}/images/overflow.jpg)
+
+I got this question wrong because while fractions are sometimes represented by decimal approximations that are subject to rounding errors, integers are not. The answer C is correct because overflow errors occur when an arithmetic operation results in a value outside the range of numbers that can be represented by a fixed number of bits.
+
