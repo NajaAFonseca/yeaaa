@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-description: Correcting the questions I got wrong on the quiz!
+description: Correcting the questions I got wrong on the MCQ!
 title: 2020 MCQ Corrections!
 toc: true 
 badges: true
