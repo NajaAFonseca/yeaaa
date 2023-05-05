@@ -35,3 +35,9 @@ you can see why the spinner is the correct answer.
 ![]({{site.baseurl}}/images/assigmentscore.jpg)
 
 I got this question wrong because the change in course grade can actually be calculated by the difference between the original average and the course grade AFTER the lowest grade was dropped. The correct answer was the value of the highest assignment score because we do not know the individual assignment scores making it unable to find any of the individual scores except for the students lowest score. 
+
+# Question 45
+
+![]({{site.baseurl}}/images/coinflip.jpg)
+
+I got this question wrong because 
