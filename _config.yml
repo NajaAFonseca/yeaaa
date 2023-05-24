@@ -61,7 +61,6 @@ exclude:
   - docker-compose.yml
   - action.yml
   - Makefile
-  - settings.ini
 
 # this setting allows you to keep pages organized in the _pages folder
 include:
@@ -75,4 +74,51 @@ default_badges:
   deepnote: true
 
 # Escape HTML in post descriptions
-html_escape
+html_escape:
+  description: false
+
+# Everything below here should be left alone. Modifications may break fastpages
+future: true
+theme: Tactile
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-octicons
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+
+# See https://jekyllrb.com/docs/pagination/
+# For pagination to work, you cannot have index.md at the root of your repo, instead you must rename this file to index.html
+paginate: 15
+paginate_path: /page:num/
+
+remote_theme: jekyll/minima
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# to limit size of xml as it can grow quite large.
+feed:
+  posts_limit: 5 #default posts_limit: 10
+  excerpt_only: true
+  
+exclude:
+  - settings.ini
+  
