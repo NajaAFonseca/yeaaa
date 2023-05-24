@@ -1,0 +1,131 @@
+<html>
+<head>
+    <h1> ⋆⁺₊⋆Search & Sort Tracks!⋆⁺₊⋆</h1>
+<style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .track-box {
+        text-align: center;
+        color: beige;
+    }
+
+    .track-pic {
+        width: 100%;
+        height: 100;
+    }
+    .container {
+        background-color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+ 
+<form align="center" id="searchBar">
+    <label for="trackName">Track:</label>
+    <input type="text" id="trackName" name="trackName" required>
+    <button class="btn" type="submit">Submit</button>
+    <button class="button" align="center" id="sortButton">Sort Tracks</button>
+</form>
+
+
+<div id="tracksContainer" class="grid"></div>
+
+<script>
+    const CLIENT_ID = '4034fb5829ee4eb2b2a2cfaa29336f4e';
+    const CLIENT_SECRET = 'c7768173586d4b13b957dfa84340cd1b';
+
+    const searchBar = document.getElementById('searchBar');
+    const tracksContainer = document.getElementById('tracksContainer');
+    const sortButton = document.getElementById('sortButton');
+
+    searchBar.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const trackName = document.getElementById('trackName').value;
+      getTrack(trackName);
+    });
+
+    sortButton.addEventListener('click', function() {
+      sortTracks();
+    });
+
+    let tracks = [];
+    function getTrack(trackName) {
+        // const url = 'https://spotify23.p.rapidapi.com/search/?q=' + trackName + '&type=multi&offset=0&limit=10&numberOfTopResults=5';
+        // const options = {
+        // method: 'GET',
+        // headers: {
+        //     'X-RapidAPI-Key': '8ca68e698emsh077b34dcb5cedc7p176bfdjsn4a11c2cb1bef',
+        //     'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+        // }
+        // };
+        const parameters = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: 'grant_type=client_credentials&client_id=' + CLIENT_ID + '&client_secret=' + CLIENT_SECRET
+        };
+        fetch('https://accounts.spotify.com/api/token', parameters)
+        .then(result => result.json())
+        .then(data => {
+          const accessToken = data.access_token;
+          const albumsEndpoint = `https://api.spotify.com/v1/search?q=${encodeURIComponent(trackName)}&type=track`;
+
+          fetch(albumsEndpoint, {
+            headers: {
+              'Authorization': 'Bearer ' + accessToken
+            }
+          })
+            .then(response => response.json())
+            .then(data => { 
+            console.log(data)
+              tracks = data.tracks.items;
+              displayTracks(tracks)
+            })
+            .catch(error => console.error(error));
+        })
+        .catch(error => console.error(error));
+    }
+    function displayTracks(tracks) {
+        tracksContainer.innerHTML = '';
+
+        if (tracks.length === 0) {
+            tracks.Container.textContent = 'Track not found';
+            return;
+        }
+
+        tracks.forEach(track=> {
+            const trackBox = document.createElement('div');
+            trackBox.classList.add('track-box');
+
+            const trackPic = document.createElement('pic');
+            trackPic.classList.add('track-pic');
+            
+            trackPic.src = track.album.images[0].url;
+            trackPic.alt = track.name;
+
+            const trackName = document.createElement('p');
+            trackName.textContent = track.name;
+
+            trackBox.appendChild(trackPic);
+            trackBox.appendChild(trackName);
+
+            tracksContainer.appendChild(trackBox);
+        });
+    }
+
+    function sortTracks() {
+        tracks.sort((a, b) => a.name.localeCompare(b.name));
+        displayTracks(tracks);
+    }
+    </script>
+</body>
+</html>
