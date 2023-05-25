@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      4 min read
     
 </span></p>
 
@@ -101,6 +101,24 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#8-how-do-you-merge-two-pandas-dataframes-together">8. How do you merge two pandas DataFrames together?</a></li>
 <li class="toc-entry toc-h3"><a href="#9-how-do-you-export-a-pandas-dataframe-to-a-csv-file">9. How do you export a pandas DataFrame to a CSV file?</a></li>
 <li class="toc-entry toc-h3"><a href="#10-what-is-the-difference-between-a-series-and-a-dataframe-in-pandas">10. What is the difference between a Series and a DataFrame in Pandas?</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#data-analysis--predictive-analysis">Data Analysis + Predictive Analysis</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#1-how-can-numpy-and-pandas-be-used-to-preprocess-data-for-predictive-analysis">1. How can Numpy and Pandas be used to preprocess data for predictive analysis?</a></li>
+<li class="toc-entry toc-h2"><a href="#numpy-and-pandas-are-powerful-libraries-that-can-be-used-to-preprocess-data-for-predictive-analysis">NumPy and Pandas are powerful libraries that can be used to preprocess data for predictive analysis.</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#2-can-you-explain-the-process-of-building-a-handwriting-recognition-system-using-tensorflow">2. Can you explain the process of building a handwriting recognition system using TensorFlow?</a></li>
+<li class="toc-entry toc-h3"><a href="#3-what-machine-learning-algorithms-can-be-used-for-predictive-analysis-and-how-do-they-differ">3. What machine learning algorithms can be used for predictive analysis, and how do they differ?</a></li>
+<li class="toc-entry toc-h3"><a href="#4-can-you-discuss-some-real-world-applications-of-predictive-analysis-in-different-industries">4. Can you discuss some real-world applications of predictive analysis in different industries?</a></li>
+<li class="toc-entry toc-h3"><a href="#5-how-can-numpy-and-pandas-be-used-to-manipulate-and-filter-data-for-more-accurate-predictions">5. How can Numpy and Pandas be used to manipulate and filter data for more accurate predictions?</a></li>
+<li class="toc-entry toc-h3"><a href="#6-what-are-some-challenges-associated-with-handwriting-recognition-and-how-can-they-be-overcome">6. What are some challenges associated with handwriting recognition, and how can they be overcome?</a></li>
+<li class="toc-entry toc-h3"><a href="#7-can-you-explain-the-role-of-feature-engineering-in-predictive-analysis-and-how-it-can-improve-model-accuracy">7. Can you explain the role of feature engineering in predictive analysis, and how it can improve model accuracy?</a></li>
+<li class="toc-entry toc-h3"><a href="#8-how-can-machine-learning-models-be-deployed-in-real-time-applications-for-predictive-analysis">8. How can machine learning models be deployed in real-time applications for predictive analysis?</a></li>
+<li class="toc-entry toc-h3"><a href="#9-can-you-discuss-some-limitations-of-numpy-and-pandas-and-when-it-might-be-necessary-to-use-other-data-analysis-tools">9. Can you discuss some limitations of Numpy and Pandas, and when it might be necessary to use other data analysis tools?</a></li>
+<li class="toc-entry toc-h3"><a href="#10-how-can-predictive-analysis-be-used-to-improve-decision-making-and-optimize-business-processes">10. How can predictive analysis be used to improve decision-making and optimize business processes?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><h1 id="panda-hacks">
@@ -154,15 +172,82 @@ window.onload = wrap_img;
 <a class="anchor" href="#7-how-do-you-handle-missing-values-in-a-pandas-dataframe" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>7. How do you handle missing values in a pandas DataFrame?</strong>
 </h3>
 
+<p>Missing values in a pandas DataFrame can be handled using various methods.</p>
+
 <h3 id="8-how-do-you-merge-two-pandas-dataframes-together">
 <a class="anchor" href="#8-how-do-you-merge-two-pandas-dataframes-together" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>8. How do you merge two pandas DataFrames together?</strong>
 </h3>
+
+<p>You can merge two pandas DataFrames together using the <code class="language-plaintext highlighter-rouge">merge()</code> function. The <code class="language-plaintext highlighter-rouge">merge()</code> function combines DataFrames based on one or more common columns, called keys.</p>
+
 <h3 id="9-how-do-you-export-a-pandas-dataframe-to-a-csv-file">
 <a class="anchor" href="#9-how-do-you-export-a-pandas-dataframe-to-a-csv-file" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>9. How do you export a pandas DataFrame to a CSV file?</strong>
 </h3>
+
+<p>You can export a pandas DataFrame to a CSV file using the <code class="language-plaintext highlighter-rouge">to_csv()</code> function. The <code class="language-plaintext highlighter-rouge">to_csv()</code> function writes the DataFrame to a comma-separated values (CSV) file.</p>
+
 <h3 id="10-what-is-the-difference-between-a-series-and-a-dataframe-in-pandas">
 <a class="anchor" href="#10-what-is-the-difference-between-a-series-and-a-dataframe-in-pandas" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>10. What is the difference between a Series and a DataFrame in Pandas?</strong>
 </h3>
+
+<p>In Pandas, a Series is a one-dimensional labeled array that can hold any data type, while a DataFrame is a two-dimensional labeled data structure with columns of potentially different data types.</p>
+
+<h1 id="data-analysis--predictive-analysis">
+<a class="anchor" href="#data-analysis--predictive-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Analysis + Predictive Analysis</h1>
+
+<h3 id="1-how-can-numpy-and-pandas-be-used-to-preprocess-data-for-predictive-analysis">
+<a class="anchor" href="#1-how-can-numpy-and-pandas-be-used-to-preprocess-data-for-predictive-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>1. How can Numpy and Pandas be used to preprocess data for predictive analysis?</strong>
+</h3>
+
+<h2 id="numpy-and-pandas-are-powerful-libraries-that-can-be-used-to-preprocess-data-for-predictive-analysis">
+<a class="anchor" href="#numpy-and-pandas-are-powerful-libraries-that-can-be-used-to-preprocess-data-for-predictive-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>NumPy and Pandas are powerful libraries that can be used to preprocess data for predictive analysis.</h2>
+
+<h3 id="2-can-you-explain-the-process-of-building-a-handwriting-recognition-system-using-tensorflow">
+<a class="anchor" href="#2-can-you-explain-the-process-of-building-a-handwriting-recognition-system-using-tensorflow" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>2. Can you explain the process of building a handwriting recognition system using TensorFlow?</strong>
+</h3>
+
+<p>no, this part was really confusing.</p>
+
+<h3 id="3-what-machine-learning-algorithms-can-be-used-for-predictive-analysis-and-how-do-they-differ">
+<a class="anchor" href="#3-what-machine-learning-algorithms-can-be-used-for-predictive-analysis-and-how-do-they-differ" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>3. What machine learning algorithms can be used for predictive analysis, and how do they differ?</strong>
+</h3>
+
+<h3 id="4-can-you-discuss-some-real-world-applications-of-predictive-analysis-in-different-industries">
+<a class="anchor" href="#4-can-you-discuss-some-real-world-applications-of-predictive-analysis-in-different-industries" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>4. Can you discuss some real-world applications of predictive analysis in different industries?</strong>
+</h3>
+
+<p>A real-world application of predictive analysis in different industries is the shopping industry, people can predict what new trends will be baased off of from the recent buys or trends within the fashion industry.</p>
+
+<h3 id="5-how-can-numpy-and-pandas-be-used-to-manipulate-and-filter-data-for-more-accurate-predictions">
+<a class="anchor" href="#5-how-can-numpy-and-pandas-be-used-to-manipulate-and-filter-data-for-more-accurate-predictions" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>5. How can Numpy and Pandas be used to manipulate and filter data for more accurate predictions?</strong>
+</h3>
+
+<p>Numpy and Pandas can be used to clean data by identifying and removing missing values, outliers, and other data inconsistencies. This can help to reduce noise in the data and ensure that the predictive model is trained on high-quality data. Numpy and Pandas can be used to filter data based on specific criteria, such as selecting data from a particular time period or location. This can help to ensure that predictive models are trained on relevant data.</p>
+
+<h3 id="6-what-are-some-challenges-associated-with-handwriting-recognition-and-how-can-they-be-overcome">
+<a class="anchor" href="#6-what-are-some-challenges-associated-with-handwriting-recognition-and-how-can-they-be-overcome" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>6. What are some challenges associated with handwriting recognition, and how can they be overcome?</strong>
+</h3>
+
+<p>Bad handwriting can be hard to detect however training a algorithm to recognize pepole’s handwriting by having them write the way they specific write letters will train the algorithm to detect their handwriting.</p>
+
+<h3 id="7-can-you-explain-the-role-of-feature-engineering-in-predictive-analysis-and-how-it-can-improve-model-accuracy">
+<a class="anchor" href="#7-can-you-explain-the-role-of-feature-engineering-in-predictive-analysis-and-how-it-can-improve-model-accuracy" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>7. Can you explain the role of feature engineering in predictive analysis, and how it can improve model accuracy?</strong>
+</h3>
+
+<p>The role of future engineering in predictive analysis is going to be predicting the realiability rates of new models such as flight simulators. It can improve model accuracy by predicting the rates at which how well a model is going to perform.</p>
+
+<h3 id="8-how-can-machine-learning-models-be-deployed-in-real-time-applications-for-predictive-analysis">
+<a class="anchor" href="#8-how-can-machine-learning-models-be-deployed-in-real-time-applications-for-predictive-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>8. How can machine learning models be deployed in real-time applications for predictive analysis?</strong>
+</h3>
+
+<h3 id="9-can-you-discuss-some-limitations-of-numpy-and-pandas-and-when-it-might-be-necessary-to-use-other-data-analysis-tools">
+<a class="anchor" href="#9-can-you-discuss-some-limitations-of-numpy-and-pandas-and-when-it-might-be-necessary-to-use-other-data-analysis-tools" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>9. Can you discuss some limitations of Numpy and Pandas, and when it might be necessary to use other data analysis tools?</strong>
+</h3>
+
+<h3 id="10-how-can-predictive-analysis-be-used-to-improve-decision-making-and-optimize-business-processes">
+<a class="anchor" href="#10-how-can-predictive-analysis-be-used-to-improve-decision-making-and-optimize-business-processes" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>10. How can predictive analysis be used to improve decision-making and optimize business processes?</strong>
+</h3>
+
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
