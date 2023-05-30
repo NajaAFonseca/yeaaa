@@ -33,18 +33,18 @@ async function searchArtists() {
 }
 
 function displayResults(data) {
-    searchResults.innerHTML = '';
+	searchResults.innerHTML = '';
 
-    if (data && data.length > 0) {
-        data.forEach(artist => {
-            const artistName = artist.name;
-            const artistImage = artist.image;
-            const artistElement = document.createElement('div');
-            artistElement.innerHTML = `<img src="${artistImage}" alt="${artistName}">
-                <p>${artistName}</p>`;
-            searchResults.appendChild(artistElement);
-        });
-    } else {
-        searchResults.innerHTML = 'No artists found';
-    }
+	if (data && data.length > 0) {
+		data.forEach(artist => {
+			const artistName = artist.name;
+			const artistImage = artist.image;
+			const artistElement = document.createElement('div');
+			artistElement.innerHTML = `<img src="${artistImage}" alt="${artistName}">
+				<p>${artistName}</p>`;
+			searchResults.appendChild(artistElement);
+		});
+	} else {
+		searchResults.innerHTML = 'No artists found';
+	}
 }
