@@ -30,23 +30,6 @@ permalink: /artist-search
 </html>
 
 <script>
-    const url = 'https://spotify23.p.rapidapi.com/artists/?ids=2w9zwq3AktTeYYMuhMjju8';
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '429049e20amsh168c822ee8b3e75p1d8e72jsncf75688bb197',
-            'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-        }
-    };
-    
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
-    } catch (error) {
-        console.error(error);
-    }
-
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
     const searchResults = document.getElementById('search-results');
