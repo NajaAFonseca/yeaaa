@@ -700,6 +700,17 @@
   
 
   
+      ,"page4": {
+          "title": "Artist Search",
+          "content": "&lt;!DOCTYPE html&gt; . Artist Search . Search .",
+          "url": "https://najaafonseca.github.io/yeaaa/artist-search",
+          "relUrl": "/artist-search",
+          "date": ""
+      }
+      
+  
+
+  
   
 
   
@@ -708,7 +719,7 @@
   
 
   
-      ,"page7": {
+      ,"page8": {
           "title": "Submenu",
           "content": "{% include nav_submenu.html %} .",
           "url": "https://najaafonseca.github.io/yeaaa/submenu",
@@ -741,7 +752,7 @@
   
 
   
-      ,"page17": {
+      ,"page18": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://najaafonseca.github.io/yeaaa/robots.txt",
