@@ -96,26 +96,35 @@ if (localStorage.getItem('likedArtists')) {
 // ...
 
 function displayResults(data) {
-  searchResults.querySelector('tbody').innerHTML = '';
-
-  if (data && data.artists && data.artists.items.length > 0) {
-    data.artists.items.forEach(artist => {
-      const artistName = artist.name;
-      const artistId = artist.id;
-      const likes = countArtistLikes(artistName);
-      const dislikes = countArtistDislikes(artistName);
-      const row = document.createElement('tr');
-      row.innerHTML = `<td>${artistName}</td>
-        <td>${likes}</td>
-        <td>${dislikes}</td>
-        <td><button class="like-button" onclick="likeArtist('${artistId}')">Like</button></td>
-        <td><button class="dislike-button" onclick="dislikeArtist('${artistId}')">Dislike</button></td>`;
-      searchResults.querySelector('tbody').appendChild(row);
-    });
-  } else {
-    searchResults.innerHTML = 'No artists found';
+    const tableBody = searchResults.querySelector('tbody');
+    tableBody.innerHTML = '';
+  
+    if (data && data.artists && data.artists.items.length > 0) {
+      data.artists.items.forEach((artist) => {
+        const artistName = artist.name;
+        const likes = countArtistLikes(artistName);
+        const dislikes = countArtistDislikes(artistName);
+  
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${artistName}</td>
+          <td>${likes}</td>
+          <td>${dislikes}</td>
+          <td>
+            <button class="like-button" onclick="likeArtist('${artist.id}')">Like</button>
+          </td>
+          <td>
+            <button class="dislike-button" onclick="dislikeArtist('${artist.id}')">Dislike</button>
+          </td>
+        `;
+  
+        tableBody.appendChild(row);
+      });
+    } else {
+      tableBody.innerHTML = '<tr><td colspan="5">No artists found</td></tr>';
+    }
   }
-}
+  
 
 function likeArtist(artistId) {
   const likedArtists = getLikedArtists();
