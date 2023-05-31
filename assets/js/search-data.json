@@ -674,9 +674,20 @@
 
   
   
+      ,"page0": {
+          "title": "Artist Search",
+          "content": "&lt;!DOCTYPE html&gt; . Artist Search . Search Artist Name Likes Dislikes . .",
+          "url": "https://najaafonseca.github.io/yeaaa/artist-search",
+          "relUrl": "/artist-search",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page1": {
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "Age Name Favorite Hobby Favorite Food Favorite Subject . About Me | 14 | Naja | Running XC | Spaghetti | Comp Sci! | .",
           "url": "https://najaafonseca.github.io/yeaaa/about/",
@@ -687,22 +698,11 @@
   
 
   
-      ,"page2": {
+      ,"page3": {
           "title": "Agile Methodology Diagram",
           "content": ".",
           "url": "https://najaafonseca.github.io/yeaaa/agile-methodology/",
           "relUrl": "/agile-methodology/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page3": {
-          "title": "Artist Search",
-          "content": "&lt;!DOCTYPE html&gt; . Artist Search . Search Artist Name Likes Dislikes . .",
-          "url": "https://najaafonseca.github.io/yeaaa/artist-search",
-          "relUrl": "/artist-search",
           "date": ""
       }
       
