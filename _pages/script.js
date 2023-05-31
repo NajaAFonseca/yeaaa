@@ -6,23 +6,25 @@ const apiKey = '429049e20amsh168c822ee8b3e75p1d8e72jsncf75688bb197';
 const apiHost = 'spotify23.p.rapidapi.com';
 
 async function loadInitialArtists() {
-	const url = 'https://spotify23.p.rapidapi.com/artists/?ids=2w9zwq3AktTeYYMuhMjju8';
-	const options = {
-		method: 'GET',
-		headers: {
-			'X-RapidAPI-Key': '429049e20amsh168c822ee8b3e75p1d8e72jsncf75688bb197',
-			'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-		}
-	};
-
-	try {
-		const response = await fetch(url, options);
-		const data = await response.json();
-		displayResults(data);
-	} catch (error) {
-		console.error(error);
-	}
-}
+    const artistIds = '2w9zwq3AktTeYYMuhMjju8';
+    const url = `https://${apiHost}/artists/?ids=${artistIds}`;
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': apiKey,
+        'X-RapidAPI-Host': apiHost
+      }
+    };
+  
+    try {
+      const response = await fetch(url, options);
+      const data = await response.json();
+      displayResults(data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  
 
 loadInitialArtists();
 
