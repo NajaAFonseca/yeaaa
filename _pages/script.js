@@ -26,32 +26,35 @@ async function fetchArtistName(artistId) {
 }
 
 async function loadInitialArtists() {
-  const artistIds = '2w9zwq3AktTeYYMuhMjju8';
-  const url = `https://${apiHost}/artists/?ids=${artistIds}`;
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': apiKey,
-      'X-RapidAPI-Host': apiHost
+    const artistIds = '2w9zwq3AktTeYYMuhMjju8';
+    const url = `https://${apiHost}/artists/?ids=${artistIds}`;
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': apiKey,
+        'X-RapidAPI-Host': apiHost,
+      },
+    };
+  
+    try {
+      const response = await fetch(url, options);
+      const data = await response.json();
+      const artists = data.artists.items;
+  
+      for (const artist of artists) {
+        const artistId = artist.id;
+        const artistName = await fetchArtistName(artistId);
+        const likes = countArtistLikes(artistName);
+        const dislikes = countArtistDislikes(artistName);
+        artist.likes = likes;
+        artist.dislikes = dislikes;
+      }
+  
+      displayResults(data);
+    } catch (error) {
+      console.error(error);
     }
-  };
-
-  try {
-    const response = await fetch(url, options);
-    const data = await response.json();
-    const artists = data.artists.items;
-
-    for (const artist of artists) {
-      const artistId = artist.id;
-      const artistName = await fetchArtistName(artistId);
-      artist.name = artistName;
-    }
-
-    displayResults(data);
-  } catch (error) {
-    console.error(error);
-  }
-}
+  }  
 
 loadInitialArtists();
 
