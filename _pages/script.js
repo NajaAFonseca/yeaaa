@@ -32,6 +32,16 @@ async function searchArtists() {
 	}
 }
 
+// Initialize the liked artists with an empty array
+let likedArtists = [];
+
+// Load liked artists from localStorage if available
+if (localStorage.getItem('likedArtists')) {
+	likedArtists = JSON.parse(localStorage.getItem('likedArtists'));
+}
+
+// ...
+
 function displayResults(data) {
 	searchResults.querySelector('tbody').innerHTML = '';
 
@@ -39,8 +49,12 @@ function displayResults(data) {
 		data.artists.items.forEach(artist => {
 			const artistName = artist.name;
 			const artistId = artist.id;
+			const likes = countArtistLikes(artistName);
+			const dislikes = countArtistDislikes(artistName);
 			const row = document.createElement('tr');
 			row.innerHTML = `<td>${artistName}</td>
+				<td>${likes}</td>
+				<td>${dislikes}</td>
 				<td><button class="like-button" onclick="likeArtist('${artistId}')">Like</button></td>
 				<td><button class="dislike-button" onclick="dislikeArtist('${artistId}')">Dislike</button></td>`;
 			searchResults.querySelector('tbody').appendChild(row);
