@@ -142,11 +142,6 @@ function countArtistLikes(artistName) {
 }
 
 function getArtistNameById(artistId) {
-	// You might need to implement an additional API request
-	// to get the artist name by the ID if it's not available in the search results
-	// This will depend on the specific behavior of the Spotify API you are using
-	// and the data it provides.
-	// For the sake of simplicity in this example, let's assume the artist ID and name are the same.
 	return artistId;
 }
 
