@@ -183,6 +183,3 @@ function countArtistLikes(artistName) {
 function getArtistNameById(artistId) {
   return artistId;
 }
-
-
-
