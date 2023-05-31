@@ -700,7 +700,7 @@
   
       ,"page3": {
           "title": "Artist Search",
-          "content": "&lt;!DOCTYPE html&gt; . Artist Search . Search .",
+          "content": "&lt;!DOCTYPE html&gt; . Artist Search . Search Artist Name Likes Dislikes . .",
           "url": "https://najaafonseca.github.io/yeaaa/artist-search",
           "relUrl": "/artist-search",
           "date": ""
