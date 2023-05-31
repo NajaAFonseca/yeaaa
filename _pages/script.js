@@ -52,6 +52,26 @@ async function fetchArtistName(artistId) {
       console.error(error);
     }
   }
+
+  async function loadInitialArtists() {
+    const artistIds = '2w9zwq3AktTeYYMuhMjju8';
+    const url = `https://${apiHost}/artists/?ids=${artistIds}`;
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': apiKey,
+        'X-RapidAPI-Host': apiHost
+      }
+    };
+  
+    try {
+      const response = await fetch(url, options);
+      const data = await response.json();
+      displayResults(data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
   
   loadInitialArtists();
 
