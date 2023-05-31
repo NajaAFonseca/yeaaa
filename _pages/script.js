@@ -5,7 +5,27 @@ const searchResults = document.getElementById('search-results');
 const apiKey = '429049e20amsh168c822ee8b3e75p1d8e72jsncf75688bb197';
 const apiHost = 'spotify23.p.rapidapi.com';
 
-async function loadInitialArtists() {
+async function fetchArtistName(artistId) {
+    const url = `https://${apiHost}/artists/${artistId}`;
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': apiKey,
+        'X-RapidAPI-Host': apiHost
+      }
+    };
+  
+    try {
+      const response = await fetch(url, options);
+      const data = await response.json();
+      return data.name;
+    } catch (error) {
+      console.error(error);
+      return null;
+    }
+  }
+  
+  async function loadInitialArtists() {
     const artistIds = '2w9zwq3AktTeYYMuhMjju8';
     const url = `https://${apiHost}/artists/?ids=${artistIds}`;
     const options = {
@@ -19,14 +39,21 @@ async function loadInitialArtists() {
     try {
       const response = await fetch(url, options);
       const data = await response.json();
+      const artists = data.artists.items;
+  
+      for (const artist of artists) {
+        const artistId = artist.id;
+        const artistName = await fetchArtistName(artistId);
+        artist.name = artistName;
+      }
+  
       displayResults(data);
     } catch (error) {
       console.error(error);
     }
   }
   
-
-loadInitialArtists();
+  loadInitialArtists();
 
 searchButton.addEventListener('click', searchArtists);
 
